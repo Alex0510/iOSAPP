@@ -91,30 +91,10 @@ class StoreClient {
         EncryptedKeychainWrapper.saveAuthInfo(base64: base64)
     }
 
-<<<<<<< HEAD
-    func tryLoadAuthInfo() -> Bool {
-        if let base64 = EncryptedKeychainWrapper.loadAuthInfo() {
-            var data = Data(base64Encoded: base64)!
-            var out = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-            appleId = out["appleId"] as! String
-            password = out["password"] as! String
-            guid = out["guid"] as? String
-            accountName = out["accountName"] as? String
-            authHeaders = out["authHeaders"] as? [String: String]
-            var authCookiesEnc = out["authCookies"] as! String
-            var authCookiesEnc1 = Data(base64Encoded: authCookiesEnc)!
-            authCookies = NSKeyedUnarchiver.unarchiveObject(with: authCookiesEnc1) as? [HTTPCookie]
-            print("Loaded auth info")
-            return true
-        }
-        print("No auth info found, need to authenticate")
-        return false
-=======
     // 模拟认证成功（直接返回 true）
     func authenticate() async -> Bool {
         print("免登录模式：跳过 Apple ID 认证")
         return true
->>>>>>> 1f3447e8cd55253d0b2f7eea2b451457628b2030
     }
 
     func authenticate(requestCode: Bool = false) -> Bool {
@@ -122,14 +102,6 @@ class StoreClient {
             self.guid = generateGuid(appleId: appleId)
         }
 
-<<<<<<< HEAD
-        var req = [
-            "appleId": appleId,
-            "password": password,
-            "guid": guid!,
-            "rmp": "0",
-            "why": "signIn"
-=======
         print("📡 正在获取版本列表: \(url.absoluteString)")
 
         let (data, response) = try await session.data(from: url)
@@ -225,7 +197,6 @@ class StoreClient {
             "kind": "software",
             "softwareIcon512URL": "",
             "softwareVersionBundleId": appId
->>>>>>> 1f3447e8cd55253d0b2f7eea2b451457628b2030
         ]
 
         var url = URL(string: "https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/authenticate")!
@@ -248,7 +219,6 @@ class StoreClient {
                     return
                 }
                 if let response = response {
-//                    print("Response: \(response)")
                     if let response = response as? HTTPURLResponse {
                         print("New URL: \(response.url!)")
                         request.url = response.url

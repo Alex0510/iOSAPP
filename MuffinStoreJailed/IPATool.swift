@@ -43,7 +43,7 @@ class IPATool {
     }
 
     // 从 bilin API 获取某 App 的所有历史版本 ID 列表
-    func getVersionIDList(appId: String) async throws -> [String] {
+    func getVersionIDList(appId: String) async throws -> [AppVersionInfo] {
         guard let url = URL(string: "https://apis.bilin.eu.org/history/\(appId)") else {
             throw NSError(domain: "Network", code: 1001, userInfo: [NSLocalizedDescriptionKey: "无效的应用 ID"])
         }
@@ -53,18 +53,27 @@ class IPATool {
         let (data, response) = try await session.data(from: url)
 
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-            throw NSError(domain: "Network", code: 1002, userInfo: [NSLocalizedDescriptionKey: "服务器返回错误状态"])
+            // 打印状态码
+            let statusCode = httpResponse?.statusCode ?? 0
+            throw NSError(domain: "Network", code: 1002, userInfo: [
+                NSLocalizedDescriptionKey: "服务器返回错误状态: \(statusCode)",
+                "statusCode": statusCode
+            ])
         }
 
         do {
+            // 打印原始响应内容（关键调试信息）
+            if let str = String(data: data, encoding: .utf8) {
+                print("📝 响应内容: \(str)")
+            }
+
             let decoder = JSONDecoder()
             let result = try decoder.decode(VersionResponse.self, from: data)
             if result.data.isEmpty {
                 throw NSError(domain: "Data", code: 1003, userInfo: [NSLocalizedDescriptionKey: "未找到该应用的历史版本"])
             }
-            let versionIds = result.data.map { $0.external_identifier }
-            print("📦 获取到 \(versionIds.count) 个版本: \(versionIds)")
-            return versionIds
+            print("📦 获取到 \(result.data.count) 个版本: \(result.data.map { $0.external_identifier })")
+            return result.data
         } catch {
             print("❌ 解析版本列表失败: \(error.localizedDescription)")
             throw error
@@ -73,7 +82,6 @@ class IPATool {
 
     // 下载指定版本的 IPA 并解压，返回 Payload 所在目录路径
     func downloadIPAForVersion(appId: String, appVerId: String) async throws -> String {
-        // 构造下载链接
         let downloadURLString = "https://download.bilin.eu.org/ipa/\(appId)/\(appVerId).ipa"
         guard let downloadURL = URL(string: downloadURLString) else {
             throw NSError(domain: "Download", code: 2001, userInfo: [NSLocalizedDescriptionKey: "无法构建下载链接"])

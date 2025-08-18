@@ -1,23 +1,24 @@
-mkdir -p ./build
+BASEDIR = $(shell pwd)
+BUILD_DIR = $(BASEDIR)/build
+INSTALL_DIR = $(BUILD_DIR)/install
+PROJECT = $(BASEDIR)/MuffinStoreJailed.xcodeproj
+SCHEME = MuffinStoreJailed
+CONFIGURATION = Release
+SDK = iphoneos
+DERIVED_DATA_PATH = $(BUILD_DIR)
 
-xcodebuild \
-    -project "/Users/runner/work/MuffinStoreJailed_iOS/MuffinStoreJailed_iOS/MuffinStoreJailed.xcodeproj" \
-    -scheme MuffinStoreJailed \
-    -configuration Release \
-    -sdk iphoneos \
-    -destination 'generic/platform=iOS' \
-    -derivedDataPath "./build" \
-    SDKROOT=iphoneos18.0 \
-    IPHONEOS_DEPLOYMENT_TARGET=15.0 \
-    CODE_SIGN_IDENTITY="" \
-    CODE_SIGNING_REQUIRED=NO \
-    CODE_SIGNING_ALLOWED=NO \
-    ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES=NO \
-    DSTROOT="./build/install" \
-    clean build \
-    | tee build.log
+all: ipa
 
-# 打包成 .ipa
-xcrun --sdk iphoneos PackageApplication \
-    -v "./build/Build/Products/Release-iphoneos/MuffinStoreJailed.app" \
-    -o "./build/MuffinStoreJailed.ipa"
+ipa:
+	mkdir -p ./build
+	xcodebuild -jobs 8 -project $(PROJECT) -scheme $(SCHEME) -configuration $(CONFIGURATION) -sdk $(SDK) -derivedDataPath $(DERIVED_DATA_PATH) CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES=NO DSTROOT=$(INSTALL_DIR)
+	rm -rf ./build/MuffinStoreJailed.ipa
+	rm -rf ./build/Payload
+	mkdir -p ./build/Payload
+	cp -rv ./build/Build/Products/Release-iphoneos/MuffinStoreJailed.app ./build/Payload
+	cd ./build && zip -r MuffinStoreJailed.ipa Payload
+	mv ./build/MuffinStoreJailed.ipa ./
+
+clean:
+	rm -rf ./build
+	rm -rf ./MuffinStoreJailed.ipa

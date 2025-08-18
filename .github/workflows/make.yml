@@ -1,20 +1,26 @@
-name: Build IPA
+mkdir -p ./build
 
-on:
-  push:
-    branches: [ "main" ]
-  workflow_dispatch:
+rm -rf MuffinStoreJailed/"Preview Content"
 
-jobs:
-  build:
-    runs-on: macos-15
-    steps:
-     - uses: actions/checkout@v3
-     - name: Compile
-       run: make
-     
-     - name: Upload artifact
-       uses: actions/upload-artifact@v4
-       with:
-        name: MuffinStoreJailed
-        path: MuffinStoreJailed.ipa
+xcodebuild \
+    -project "MuffinStoreJailed.xcodeproj" \
+    -scheme MuffinStoreJailed \
+    -configuration Release \
+    -sdk iphoneos \
+    -destination 'generic/platform=iOS' \
+    -derivedDataPath "./build" \
+    SDKROOT=iphoneos18.0 \
+    IPHONEOS_DEPLOYMENT_TARGET=15.0 \
+    CODE_SIGN_IDENTITY="" \
+    CODE_SIGNING_REQUIRED=NO \
+    CODE_SIGNING_ALLOWED=NO \
+    ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES=NO \
+    ENABLE_PREVIEWS=NO \
+    SWIFT_OPTIMIZATION_LEVEL=-Osize \
+    GCC_OPTIMIZATION_LEVEL=3 \
+    DSTROOT="./build/install" \
+    clean build
+
+# 手动打包 IPA
+cd ./build/Build/Products/Release-iphoneos
+zip -r MuffinStoreJailed.ipa MuffinStoreJailed.app

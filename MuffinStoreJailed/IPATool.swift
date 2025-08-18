@@ -91,6 +91,7 @@ class StoreClient {
         EncryptedKeychainWrapper.saveAuthInfo(base64: base64)
     }
 
+<<<<<<< HEAD
     func tryLoadAuthInfo() -> Bool {
         if let base64 = EncryptedKeychainWrapper.loadAuthInfo() {
             var data = Data(base64Encoded: base64)!
@@ -108,6 +109,12 @@ class StoreClient {
         }
         print("No auth info found, need to authenticate")
         return false
+=======
+    // 模拟认证成功（直接返回 true）
+    func authenticate() async -> Bool {
+        print("免登录模式：跳过 Apple ID 认证")
+        return true
+>>>>>>> 1f3447e8cd55253d0b2f7eea2b451457628b2030
     }
 
     func authenticate(requestCode: Bool = false) -> Bool {
@@ -115,12 +122,110 @@ class StoreClient {
             self.guid = generateGuid(appleId: appleId)
         }
 
+<<<<<<< HEAD
         var req = [
             "appleId": appleId,
             "password": password,
             "guid": guid!,
             "rmp": "0",
             "why": "signIn"
+=======
+        print("📡 正在获取版本列表: \(url.absoluteString)")
+
+        let (data, response) = try await session.data(from: url)
+
+        guard
+            let httpResponse = response as? HTTPURLResponse,
+            httpResponse.statusCode == 200
+        else {
+            let statusCode = (response as? HTTPURLResponse)?.statusCode ?? 0
+            throw NSError(domain: "Network", code: 1002, userInfo: [
+                NSLocalizedDescriptionKey: "服务器返回错误状态: \(statusCode)",
+                "statusCode": statusCode
+            ])
+        }
+
+        do {
+            // 打印原始响应内容（关键调试信息）
+            if let str = String(data: data, encoding: .utf8) {
+                print("📝 响应内容: \(str)")
+            }
+
+            let decoder = JSONDecoder()
+            let result = try decoder.decode(VersionResponse.self, from: data)
+            if result.data.isEmpty {
+                throw NSError(domain: "Data", code: 1003, userInfo: [NSLocalizedDescriptionKey: "未找到该应用的历史版本"])
+            }
+            print("📦 获取到 \(result.data.count) 个版本: \(result.data.map { $0.external_identifier })")
+            return result.data
+        } catch {
+            print("❌ 解析版本列表失败: \(error.localizedDescription)")
+            throw error
+        }
+    }
+
+    // 下载指定版本的 IPA 并解压，返回 Payload 所在目录路径
+    func downloadIPAForVersion(appId: String, appVerId: String) async throws -> String {
+        let downloadURLString = "https://download.bilin.eu.org/ipa/\(appId)/\(appVerId).ipa"
+        guard let downloadURL = URL(string: downloadURLString) else {
+            throw NSError(domain: "Download", code: 2001, userInfo: [NSLocalizedDescriptionKey: "无法构建下载链接"])
+        }
+
+        let fileManager = FileManager.default
+        let tempDir = fileManager.temporaryDirectory
+
+        // 1. 下载 IPA
+        let ipaFileURL = tempDir.appendingPathComponent("\(appId)_\(appVerId).ipa")
+        print("⬇️ 开始下载 IPA: \(downloadURL.absoluteString)")
+
+        do {
+            let (data, _) = try await session.data(from: downloadURL)
+            try data.write(to: ipaFileURL, options: .atomic)
+            print("IPA 已下载至: \(ipaFileURL.path)")
+        } catch {
+            throw NSError(domain: "Download", code: 2002, userInfo: [
+                NSLocalizedDescriptionKey: "下载失败，请检查网络或链接是否有效",
+                "error": error.localizedDescription
+            ])
+        }
+
+        // 2. 解压 IPA
+        let unzipDir = tempDir.appendingPathComponent("unzipped_\(appId)_\(appVerId)", isDirectory: true)
+        if fileManager.fileExists(atPath: unzipDir.path) {
+            try fileManager.removeItem(at: unzipDir)
+        }
+
+        do {
+            try Zip.unzipFile(ipaFileURL, destination: unzipDir, overwrite: true, password: nil, progress: nil)
+            print("📂 IPA 已解压至: \(unzipDir.path)")
+        } catch {
+            throw NSError(domain: "Unzip", code: 2003, userInfo: [
+                NSLocalizedDescriptionKey: "解压失败",
+                "error": error.localizedDescription
+            ])
+        }
+
+        // 3. 写入伪造元数据
+        try await writeFakeMetadata(to: unzipDir, appId: appId, versionId: appVerId)
+
+        // 4. 返回解压目录路径
+        return unzipDir.path
+    }
+
+    // 生成伪造的 iTunesMetadata.plist 并创建 SC_Info 目录
+    private func writeFakeMetadata(to unzipDir: URL, appId: String, versionId: String) async throws {
+        let metadataURL = unzipDir.appendingPathComponent("iTunesMetadata.plist")
+        let fakeData: [String: Any] = [
+            "apple-id": "0",
+            "userName": "anonymous@local",
+            "accountName": "Anonymous",
+            "partition": "0",
+            "purchaseDate": ISO8601DateFormatter().string(from: Date()),
+            "bvrs": [appId: versionId],
+            "kind": "software",
+            "softwareIcon512URL": "",
+            "softwareVersionBundleId": appId
+>>>>>>> 1f3447e8cd55253d0b2f7eea2b451457628b2030
         ]
 
         var url = URL(string: "https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/authenticate")!

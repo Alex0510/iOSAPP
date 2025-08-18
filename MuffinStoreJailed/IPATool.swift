@@ -388,25 +388,26 @@ class EncryptedKeychainWrapper {
     static func generateAndStoreKey() -> Void {
         self.deleteKey()
         print("生成密钥")
-        let query: [String: Any] = [
+        var query: [String: Any] = [
             kSecClass as String: kSecClassKey,
             kSecAttrKeyType as String: kSecAttrKeyTypeECSECPrimeRandom,
             kSecAttrKeySizeInBits as String: 256,
-            kSecAttrTokenID as String: kSecAttrTokenIDSecureEnclave,
-            kSecPrivateKeyAttrs as String: [
-                kSecAttrIsPermanent as String: true,
-                kSecAttrApplicationTag as String: "dev.mineek.muffinstorejailed.key",
-                kSecAttrAccessControl as String: SecAccessControlCreateWithFlags(
-                    kCFAllocatorDefault,
-                    kSecAttrAccessibleWhenUnlockedThisDeviceOnly,
-                    [.privateKeyUsage, .biometryAny],
-                    nil
-                )!
-            ]
+            kSecAttrIsPermanent as String: true,
+            kSecAttrApplicationTag as String: "dev.mineek.muffinstorejailed.key",
+            kSecAttrAccessControl as String: SecAccessControlCreateWithFlags(
+                kCFAllocatorDefault,
+                kSecAttrAccessibleWhenUnlockedThisDeviceOnly,
+                [.privateKeyUsage, .biometryAny],
+                nil
+            )!
         ]
+        // 检查是否支持 Secure Enclave
+        if #available(iOS 13.0, *) {
+            query[kSecAttrTokenID as String] = kSecAttrTokenIDSecureEnclave
+        }
         var error: Unmanaged<CFError>?
         guard let privateKey = SecKeyCreateRandomKey(query as CFDictionary, &error) else {
-            print("生成密钥失败！")
+            print("生成密钥失败：\(error?.takeRetainedValue().localizedDescription ?? "未知错误")")
             return
         }
         print("密钥生成成功！")

@@ -82,14 +82,13 @@ struct ContentView: View {
                             errorMessage = "模拟器模式：请输入 Apple ID 和密码"
                         }
                         .padding()
-                        #else
+                        #endif
                         Button("打开设置") {
                             if let url = URL(string: "App-Prefs:root=APPLE_ACCOUNT") {
                                 UIApplication.shared.open(url)
                             }
                         }
                         .padding()
-                        #endif
                     }
                 } else {
                     VStack {

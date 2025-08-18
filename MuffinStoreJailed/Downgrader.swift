@@ -2,7 +2,7 @@
 //  Downgrader.swift
 //  MuffinStoreJailed
 //
-//  Created by pxx917144686 on 2025.08.18
+//  Created by Mineek on 19/10/2024.
 //
 
 import Foundation
@@ -12,7 +12,6 @@ import Zip
 import SwiftUI
 import SafariServices
 
-// MARK: - Safari WebView Wrapper
 struct SafariWebView: UIViewControllerRepresentable {
     let url: URL
     
@@ -20,179 +19,184 @@ struct SafariWebView: UIViewControllerRepresentable {
         return SFSafariViewController(url: url)
     }
     
-    func updateUIViewController(_ uiViewController: SFSafariViewController, context: Context) {}
+    func updateUIViewController(_ uiViewController: SFSafariViewController, context: Context) {
+    }
 }
 
-// MARK: - Downgrade Functions
-
-/// 主入口：开始降级应用（仅需 appId）
-func downgradeApp(appId: String, ipaTool: IPATool? = nil) {
-    print("开始降级应用，App ID: \(appId)")
+func downgradeAppToVersion(appId: String, versionId: String, ipaTool: IPATool) {
+    print("开始下载应用 \(appId) 版本 \(versionId)")
+    let ipaPath = ipaTool.downloadIPAForVersion(appId: appId, appVerId: versionId)
     
-    // 使用传入或新建的 IPATool
-    let tool = ipaTool ?? IPATool()
-
-    // 获取版本列表（异步）
-    Task {
+    if ipaPath.isEmpty {
+        print("下载失败")
+        DispatchQueue.main.async {
+            showAlert(title: "下载失败", message: "无法下载指定版本的应用")
+        }
+        return
+    }
+    
+    print("IPA文件下载完成: \(ipaPath)")
+    
+    // 检查文件是否存在
+    let fileManager = FileManager.default
+    guard fileManager.fileExists(atPath: ipaPath) else {
+        print("IPA文件不存在: \(ipaPath)")
+        DispatchQueue.main.async {
+            showAlert(title: "文件错误", message: "下载的IPA文件不存在")
+        }
+        return
+    }
+    
+    let destinationUrl = URL(fileURLWithPath: ipaPath)
+    
+    // 尝试解析IPA文件获取应用信息
+    var appBundleId = "unknown.app.\(appId)"
+    var appVersion = versionId
+    
+    // 如果是模拟IPA文件，使用默认值
+    if ipaPath.contains("mock_") {
+        print("使用模拟IPA文件，设置默认应用信息")
+        appBundleId = "com.example.\(appId)"
+        appVersion = versionId
+    } else {
+        // 尝试解析真实IPA文件
         do {
-            // ✅ 使用新方法获取完整版本信息
-            let versions = try await fetchVersionList(from: "https://apis.bilin.eu.org/history/\(appId)")
-            guard let latest = versions.first else {
-                await MainActor.run {
-                    showAlert(title: "无版本", message: "未找到该应用的历史版本")
-                }
-                return
-            }
-            await MainActor.run {
-                showProgressAlert(version: latest.bundle_version) {
-                    // 开始降级
-                    Task {
-                        do {
-                            try await downgradeAppToVersion(appId: appId, versionId: latest.external_identifier, ipaTool: tool)
-                        } catch {
-                            await MainActor.run {
-                                showAlert(title: "失败", message: "降级失败：\(error.localizedDescription)")
-                            }
+            let tempDir = fileManager.temporaryDirectory.appendingPathComponent("extract_\(UUID().uuidString)")
+            try fileManager.createDirectory(at: tempDir, withIntermediateDirectories: true)
+            
+            try Zip.unzipFile(destinationUrl, destination: tempDir, overwrite: true, password: nil)
+            
+            let payloadDir = tempDir.appendingPathComponent("Payload")
+            if let appDirs = try? fileManager.contentsOfDirectory(atPath: payloadDir.path) {
+                for appDir in appDirs {
+                    if appDir.hasSuffix(".app") {
+                        let infoPlistPath = payloadDir.appendingPathComponent(appDir).appendingPathComponent("Info.plist")
+                        if let infoPlist = NSDictionary(contentsOf: infoPlistPath) {
+                            appBundleId = infoPlist["CFBundleIdentifier"] as? String ?? appBundleId
+                            appVersion = infoPlist["CFBundleShortVersionString"] as? String ?? appVersion
+                            print("解析到应用信息 - Bundle ID: \(appBundleId), Version: \(appVersion)")
                         }
+                        break
                     }
                 }
             }
+            
+            // 清理临时文件
+            try? fileManager.removeItem(at: tempDir)
         } catch {
-            await MainActor.run {
-                showAlert(title: "错误", message: "获取版本失败：\(error.localizedDescription)")
-            }
+            print("解析IPA文件失败: \(error.localizedDescription)，使用默认值")
         }
     }
-}
 
-/// 从远程 URL 获取版本列表（返回完整 AppVersionInfo）
-func fetchVersionList(from urlString: String) async throws -> [AppVersionInfo] {
-    guard let url = URL(string: urlString) else {
-        throw NSError(domain: "Network", code: 1001, userInfo: [NSLocalizedDescriptionKey: "无效的 URL"])
-    }
+    let finalURL = "https://api.palera.in/genPlist?bundleid=\(appBundleId)&name=\(appBundleId)&version=\(appVersion)&fetchurl=http://127.0.0.1:9090/signed.ipa"
+    let installURL = "itms-services://?action=download-manifest&url=" + finalURL.addingPercentEncoding(withAllowedCharacters: .alphanumerics)!
     
-    let (data, response) = try await URLSession.shared.data(from: url)
-    
-    guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-        throw NSError(domain: "Network", code: 1002, userInfo: [NSLocalizedDescriptionKey: "服务器返回错误状态"])
-    }
-    
-    let decoder = JSONDecoder()
-    let result = try decoder.decode(VersionResponse.self, from: data)
-    return result.data
-}
-
-/// 显示进度提示
-func showProgressAlert(version: String, onAppear: @escaping () -> Void) {
-    let alert = UIAlertController(
-        title: "正在降级",
-        message: "即将安装版本 \(version)...\n请勿关闭应用。",
-        preferredStyle: .alert
-    )
-    let vc = UIApplication.shared.windows.first?.rootViewController
-    vc?.present(alert, animated: true) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: onAppear)
-    }
-}
-
-/// 执行降级：下载 → 打包 → 启动安装
-@MainActor
-func downgradeAppToVersion(appId: String, versionId: String, ipaTool: IPATool) async throws {
-    do {
-        // 1. 下载 IPA（异步）
-        let downloadPath = try await ipaTool.downloadIPAForVersion(appId: appId, appVerId: versionId)
-        print("IPA 下载完成: \(downloadPath)")
-
-        // 2. 查找 Payload 中的 .app
-        let payloadURL = URL(fileURLWithPath: downloadPath).appendingPathComponent("Payload")
-        let manager = FileManager.default
-        let contents = try manager.contentsOfDirectory(at: payloadURL, includingPropertiesForKeys: nil)
-
-        var appBundleURL: URL?
-        for entry in contents {
-            if entry.pathExtension == "app" {
-                appBundleURL = entry
-                break
-            }
-        }
-
-        guard let appBundleURL = appBundleURL else {
-            throw NSError(domain: "Downgrader", code: 1, userInfo: [NSLocalizedDescriptionKey: "未找到 .app 文件夹"])
-        }
-
-        // 3. 读取 Info.plist
-        let infoPlistPath = appBundleURL.appendingPathComponent("Info.plist")
-        let infoDict = NSDictionary(contentsOf: infoPlistPath) as? [String: Any]
-        guard let bundleId = infoDict?["CFBundleIdentifier"] as? String,
-              let version = infoDict?["CFBundleShortVersionString"] as? String else {
-            throw NSError(domain: "Downgrader", code: 2, userInfo: [NSLocalizedDescriptionKey: "无法读取应用信息"])
-        }
-
-        print("Bundle ID: \(bundleId), Version: \(version)")
-
-        // 4. 重新打包为 IPA
-        let tempDir = manager.temporaryDirectory
-        let zipUrl = tempDir.appendingPathComponent("signed.ipa")
-        try? manager.removeItem(at: zipUrl)
-
-        // 打包整个 Payload 文件夹
-        try Zip.zipFiles(paths: [payloadURL], zipFilePath: zipUrl, password: nil, progress: nil)
-        print("IPA 已打包: \(zipUrl)")
-
-        // 5. 构造安装链接
-        let plistUrl = "https://api.palera.in/genPlist?bundleid=\(bundleId)&name=\(bundleId)&version=\(version)&fetchurl=http://127.0.0.1:9090/signed.ipa"
-        let installUrlStr = "itms-services://?action=download-manifest&url=" + plistUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-
-        // 6. 启动本地服务器
+    DispatchQueue.global(qos: .background).async {
         let server = Server()
 
-        server.route(.GET, "signed.ipa") { _ in
-            let data = try Data(contentsOf: zipUrl)
-            return HTTPResponse(body: data)
-        }
+        server.route(.GET, "signed.ipa", { _ in
+            print("Serving signed.ipa")
+            let signedIPAData = try Data(contentsOf: destinationUrl)
+            return HTTPResponse(body: signedIPAData)
+        })
 
-        server.route(.GET, "install") { _ in
-            let html = "<script>window.location = \"\(installUrlStr)\";</script>"
-            return HTTPResponse(.ok, headers: ["Content-Type": "text/html"], content: html)
-        }
-
-        try server.start(port: 9090)
-        print("本地服务器已启动: http://127.0.0.1:9090")
-
-        // 7. 打开安装链接
-        let majorVersion = Int(UIDevice.current.systemVersion.split(separator: ".").first.map(String.init) ?? "0") ?? 0
-        let installUrl = URL(string: "http://127.0.0.1:9090/install")!
-
-        if majorVersion >= 18 {
-            let safari = SafariWebView(url: installUrl)
-            let host = UIHostingController(rootView: safari)
-            host.modalPresentationStyle = .automatic
-            await MainActor.run {
-                UIApplication.shared.windows.first?.rootViewController?.present(host, animated: true)
+        server.route(.GET, "install", { _ in
+            print("Serving install page")
+            let installPage = """
+            <script type="text/javascript">
+                window.location = "\(installURL)"
+            </script>
+            """
+            return HTTPResponse(.ok, headers: ["Content-Type": "text/html"], content: installPage)
+        })
+        
+        try! server.start(port: 9090)
+        print("Server has started listening")
+        
+        DispatchQueue.main.async {
+            print("Requesting app install")
+            let majoriOSVersion = Int(UIDevice.current.systemVersion.components(separatedBy: ".").first!)!
+            if majoriOSVersion >= 18 {
+                // iOS 18+ ( idk why this is needed but it seems to fix it for some people )
+                let safariView = SafariWebView(url: URL(string: "http://127.0.0.1:9090/install")!)
+                UIApplication.shared.windows.first?.rootViewController?.present(UIHostingController(rootView: safariView), animated: true, completion: nil)
+            } else {
+                // iOS 17-
+                UIApplication.shared.open(URL(string: installURL)!)
             }
-        } else {
-            await MainActor.run {
-                UIApplication.shared.open(URL(string: installUrlStr)!, options: [:])
-            }
         }
-
-        // 保持服务器运行
+        
         while server.isRunning {
-            try await Task.sleep(nanoseconds: 1_000_000_000)
+            sleep(1)
         }
-
-    } catch {
-        print("降级失败: \(error.localizedDescription)")
-        throw error
+        print("Server has stopped")
     }
 }
 
-// MARK: - Alert Helper
-
-@MainActor
-func showAlert(title: String, message: String) {
+func promptForVersionId(appId: String, versionIds: [String], ipaTool: IPATool) {
     let isiPad = UIDevice.current.userInterfaceIdiom == .pad
-    let alert = UIAlertController(title: title, message: message, preferredStyle: isiPad ? .alert : .actionSheet)
-    alert.addAction(UIAlertAction(title: "确定", style: .default))
-    UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true)
+    let alert = UIAlertController(title: "Enter version ID", message: "Select a version to downgrade to", preferredStyle: isiPad ? .alert : .actionSheet)
+    for versionId in versionIds {
+        alert.addAction(UIAlertAction(title: versionId, style: .default, handler: { _ in
+            downgradeAppToVersion(appId: appId, versionId: versionId, ipaTool: ipaTool)
+        }))
+    }
+    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+    UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true, completion: nil)
+}
+
+func showAlert(title: String, message: String) {
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true, completion: nil)
+}
+
+func getAllAppVersionIdsFromServer(appId: String, ipaTool: IPATool) {
+    let serverURL = "https://apis.bilin.eu.org/history/"
+    let url = URL(string: "\(serverURL)\(appId)")!
+    let request = URLRequest(url: url)
+    let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        if let error = error {
+            DispatchQueue.main.async {
+                showAlert(title: "Error", message: error.localizedDescription)
+            }
+            return
+        }
+        let json = try! JSONSerialization.jsonObject(with: data!) as! [String: Any]
+        let versionIds = json["data"] as! [Dictionary<String, Any>]
+        if versionIds.count == 0 {
+            DispatchQueue.main.async {
+                showAlert(title: "Error", message: "No version IDs, internal error maybe?")
+            }
+            return
+        }
+        DispatchQueue.main.async {
+            let isiPad = UIDevice.current.userInterfaceIdiom == .pad
+            let alert = UIAlertController(title: "Select a version", message: "Select a version to downgrade to", preferredStyle: isiPad ? .alert : .actionSheet)
+            for versionId in versionIds {
+                alert.addAction(UIAlertAction(title: "\(versionId["bundle_version"]!)", style: .default, handler: { _ in
+                    downgradeAppToVersion(appId: appId, versionId: "\(versionId["external_identifier"]!)", ipaTool: ipaTool)
+                }))
+            }
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true, completion: nil)
+        }
+    }
+    task.resume()
+}
+
+func downgradeApp(appId: String, ipaTool: IPATool) {
+    let versionIds = ipaTool.getVersionIDList(appId: appId)
+    var selectedVersion = ""
+    let isiPad = UIDevice.current.userInterfaceIdiom == .pad
+    
+    let alert = UIAlertController(title: "Version ID", message: "Do you want to enter the version ID manually or request the list of version IDs from the server?", preferredStyle: isiPad ? .alert : .actionSheet)
+    alert.addAction(UIAlertAction(title: "Manual", style: .default, handler: { _ in
+        promptForVersionId(appId: appId, versionIds: versionIds, ipaTool: ipaTool)
+    }))
+    alert.addAction(UIAlertAction(title: "Server", style: .default, handler: { _ in
+        getAllAppVersionIdsFromServer(appId: appId, ipaTool: ipaTool)
+    }))
+    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+    UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true, completion: nil)
 }

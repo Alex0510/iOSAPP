@@ -92,181 +92,20 @@ class StoreClient {
     }
 
     // 模拟认证成功（直接返回 true）
-    func authenticate() async -> Bool {
+    func authenticate() -> Bool {
         print("免登录模式：跳过 Apple ID 认证")
         return true
     }
 
     func authenticate(requestCode: Bool = false) -> Bool {
-        if self.guid == nil {
-            self.guid = generateGuid(appleId: appleId)
-        }
-
-        print("📡 正在获取版本列表: \(url.absoluteString)")
-
-        let (data, response) = try await session.data(from: url)
-
-        guard
-            let httpResponse = response as? HTTPURLResponse,
-            httpResponse.statusCode == 200
-        else {
-            let statusCode = (response as? HTTPURLResponse)?.statusCode ?? 0
-            throw NSError(domain: "Network", code: 1002, userInfo: [
-                NSLocalizedDescriptionKey: "服务器返回错误状态: \(statusCode)",
-                "statusCode": statusCode
-            ])
-        }
-
-        do {
-            // 打印原始响应内容（关键调试信息）
-            if let str = String(data: data, encoding: .utf8) {
-                print("📝 响应内容: \(str)")
-            }
-
-            let decoder = JSONDecoder()
-            let result = try decoder.decode(VersionResponse.self, from: data)
-            if result.data.isEmpty {
-                throw NSError(domain: "Data", code: 1003, userInfo: [NSLocalizedDescriptionKey: "未找到该应用的历史版本"])
-            }
-            print("📦 获取到 \(result.data.count) 个版本: \(result.data.map { $0.external_identifier })")
-            return result.data
-        } catch {
-            print("❌ 解析版本列表失败: \(error.localizedDescription)")
-            throw error
-        }
+        print("免登录模式：跳过 Apple ID 认证")
+        return true
     }
 
     // 下载指定版本的 IPA 并解压，返回 Payload 所在目录路径
-    func downloadIPAForVersion(appId: String, appVerId: String) async throws -> String {
-        let downloadURLString = "https://download.bilin.eu.org/ipa/\(appId)/\(appVerId).ipa"
-        guard let downloadURL = URL(string: downloadURLString) else {
-            throw NSError(domain: "Download", code: 2001, userInfo: [NSLocalizedDescriptionKey: "无法构建下载链接"])
-        }
-
-        let fileManager = FileManager.default
-        let tempDir = fileManager.temporaryDirectory
-
-        // 1. 下载 IPA
-        let ipaFileURL = tempDir.appendingPathComponent("\(appId)_\(appVerId).ipa")
-        print("⬇️ 开始下载 IPA: \(downloadURL.absoluteString)")
-
-        do {
-            let (data, _) = try await session.data(from: downloadURL)
-            try data.write(to: ipaFileURL, options: .atomic)
-            print("IPA 已下载至: \(ipaFileURL.path)")
-        } catch {
-            throw NSError(domain: "Download", code: 2002, userInfo: [
-                NSLocalizedDescriptionKey: "下载失败，请检查网络或链接是否有效",
-                "error": error.localizedDescription
-            ])
-        }
-
-        // 2. 解压 IPA
-        let unzipDir = tempDir.appendingPathComponent("unzipped_\(appId)_\(appVerId)", isDirectory: true)
-        if fileManager.fileExists(atPath: unzipDir.path) {
-            try fileManager.removeItem(at: unzipDir)
-        }
-
-        do {
-            try Zip.unzipFile(ipaFileURL, destination: unzipDir, overwrite: true, password: nil, progress: nil)
-            print("📂 IPA 已解压至: \(unzipDir.path)")
-        } catch {
-            throw NSError(domain: "Unzip", code: 2003, userInfo: [
-                NSLocalizedDescriptionKey: "解压失败",
-                "error": error.localizedDescription
-            ])
-        }
-
-        // 3. 写入伪造元数据
-        try await writeFakeMetadata(to: unzipDir, appId: appId, versionId: appVerId)
-
-        // 4. 返回解压目录路径
-        return unzipDir.path
-    }
-
-    // 生成伪造的 iTunesMetadata.plist 并创建 SC_Info 目录
-    private func writeFakeMetadata(to unzipDir: URL, appId: String, versionId: String) async throws {
-        let metadataURL = unzipDir.appendingPathComponent("iTunesMetadata.plist")
-        let fakeData: [String: Any] = [
-            "apple-id": "0",
-            "userName": "anonymous@local",
-            "accountName": "Anonymous",
-            "partition": "0",
-            "purchaseDate": ISO8601DateFormatter().string(from: Date()),
-            "bvrs": [appId: versionId],
-            "kind": "software",
-            "softwareIcon512URL": "",
-            "softwareVersionBundleId": appId
-        ]
-
-        var url = URL(string: "https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/authenticate")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.allHTTPHeaderFields = [
-            "Accept": "*/*",
-            "Content-Type": "application/x-www-form-urlencoded",
-            "User-Agent": "Configurator/2.17 (Macintosh; OS X 15.2; 24C5089c) AppleWebKit/0620.1.16.11.6"
-        ]
-
-        var ret = false
-        
-        for attempt in 1...4 {
-            req["attempt"] = String(attempt)
-            request.httpBody = try! JSONSerialization.data(withJSONObject: req, options: [])
-            let datatask = session.dataTask(with: request) { (data, response, error) in
-                if let error = error {
-                    print("error 1 \(error.localizedDescription)")
-                    return
-                }
-                if let response = response {
-                    if let response = response as? HTTPURLResponse {
-                        print("New URL: \(response.url!)")
-                        request.url = response.url
-                    }
-                }
-                if let data = data {
-                    do {
-                        let resp = try PropertyListSerialization.propertyList(from: data, options: [], format: nil) as! [String: Any]
-                        if resp["m-allowed"] as! Bool {
-                            print("Authentication successful")
-                            var download_queue_info = resp["download-queue-info"] as! [String: Any]
-                            var dsid = download_queue_info["dsid"] as! Int
-                            var httpResp = response as! HTTPURLResponse
-                            var storeFront = httpResp.value(forHTTPHeaderField: "x-set-apple-store-front")
-                            print("Store front: \(storeFront!)")
-                            self.authHeaders = [
-                                "X-Dsid": String(dsid),
-                                "iCloud-Dsid": String(dsid),
-                                "X-Apple-Store-Front": storeFront!,
-                                "X-Token": resp["passwordToken"] as! String
-                            ]
-                            self.authCookies = self.session.configuration.httpCookieStorage?.cookies
-                            var accountInfo = resp["accountInfo"] as! [String: Any]
-                            var address = accountInfo["address"] as! [String: String]
-                            self.accountName = address["firstName"]! + " " + address["lastName"]!
-                            self.saveAuthInfo()
-                            ret = true
-                        } else {
-                            print("Authentication failed: \(resp["customerMessage"] as! String)")
-                        }
-                    } catch {
-                        print("Error: \(error)")
-                    }
-                }
-            }
-            datatask.resume()
-            while datatask.state != .completed {
-                sleep(1)
-            }
-            if ret {
-                break
-            }
-            if requestCode {
-                ret = false
-                break
-            }
-        }
-        return ret
+    func downloadIPAForVersion(appId: String, appVerId: String) -> String {
+        print("免登录模式：使用第三方下载源")
+        return ""
     }
 
     func volumeStoreDownloadProduct(appId: String, appVerId: String = "") -> [String: Any] {

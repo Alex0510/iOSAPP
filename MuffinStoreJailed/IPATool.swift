@@ -38,7 +38,7 @@ class IPATool {
 
     // 模拟认证成功（直接返回 true）
     func authenticate() async -> Bool {
-        print("✅ 免登录模式：跳过 Apple ID 认证")
+        print("免登录模式：跳过 Apple ID 认证")
         return true
     }
 
@@ -52,9 +52,11 @@ class IPATool {
 
         let (data, response) = try await session.data(from: url)
 
-        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-            // 打印状态码
-            let statusCode = httpResponse?.statusCode ?? 0
+        guard
+            let httpResponse = response as? HTTPURLResponse,
+            httpResponse.statusCode == 200
+        else {
+            let statusCode = (response as? HTTPURLResponse)?.statusCode ?? 0
             throw NSError(domain: "Network", code: 1002, userInfo: [
                 NSLocalizedDescriptionKey: "服务器返回错误状态: \(statusCode)",
                 "statusCode": statusCode
@@ -97,7 +99,7 @@ class IPATool {
         do {
             let (data, _) = try await session.data(from: downloadURL)
             try data.write(to: ipaFileURL, options: .atomic)
-            print("✅ IPA 已下载至: \(ipaFileURL.path)")
+            print("IPA 已下载至: \(ipaFileURL.path)")
         } catch {
             throw NSError(domain: "Download", code: 2002, userInfo: [
                 NSLocalizedDescriptionKey: "下载失败，请检查网络或链接是否有效",

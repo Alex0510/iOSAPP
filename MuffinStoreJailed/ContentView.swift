@@ -39,16 +39,15 @@ struct FooterView: View {
 }
 
 struct ContentView: View {
-    @State var ipaTool: IPATool?
-    
-    @State var appleId: String = ""
-    @State var password: String = ""
-    @State var errorMessage: String = ""
-    @State var isAuthenticated: Bool = false
-    @State var isDowngrading: Bool = false
-    @State var isCheckingAppleID: Bool = true
-    @State var isAppleIDSignedIn: Bool = false
-    @State var appLink: String = ""
+    @State private var ipaTool: IPATool?
+    @State private var appleId: String = ""
+    @State private var password: String = ""
+    @State private var errorMessage: String = ""
+    @State private var isAuthenticated: Bool = false
+    @State private var isDowngrading: Bool = false
+    @State private var isCheckingAppleID: Bool = true
+    @State private var isAppleIDSignedIn: Bool = false
+    @State private var appLink: String = ""
     
     var body: some View {
         VStack {
@@ -72,17 +71,9 @@ struct ContentView: View {
                             .font(.caption)
                             .multilineTextAlignment(.center)
                         Button("重试") {
-                            checkAppleIDStatus()
+                            Task { await checkAppleIDStatus() }
                         }
                         .padding()
-                        #if targetEnvironment(simulator)
-                        Button("跳过（模拟器模式）") {
-                            isAppleIDSignedIn = true
-                            isCheckingAppleID = false
-                            errorMessage = "模拟器模式：请输入 Apple ID 和密码"
-                        }
-                        .padding()
-                        #endif
                         Button("打开设置") {
                             if let url = URL(string: "App-Prefs:root=APPLE_ACCOUNT") {
                                 UIApplication.shared.open(url)
@@ -113,25 +104,23 @@ struct ContentView: View {
                             .padding()
                     }
                     Button("验证") {
-                        guard !appleId.isEmpty, !password.isEmpty else {
-                            errorMessage = "Apple ID 或密码不能为空"
-                            return
-                        }
-                        errorMessage = ""
-                        do {
-                            ipaTool = try IPATool(appleId: appleId, password: password)
-                            if let success = try ipaTool?.authenticate() {
+                        Task {
+                            guard !appleId.isEmpty, !password.isEmpty else {
+                                errorMessage = "Apple ID 或密码不能为空"
+                                return
+                            }
+                            errorMessage = ""
+                            do {
+                                ipaTool = try IPATool(appleId: appleId, password: password)
+                                let success = await ipaTool!.authenticate()
                                 isAuthenticated = success
                                 if !success {
                                     errorMessage = "验证失败，请检查您的凭证或网络连接"
                                 }
-                            } else {
+                            } catch {
                                 isAuthenticated = false
-                                errorMessage = "验证过程中发生错误，请稍后重试"
+                                errorMessage = "认证初始化失败：\(error.localizedDescription)"
                             }
-                        } catch {
-                            isAuthenticated = false
-                            errorMessage = "认证初始化失败：\(error.localizedDescription)"
                         }
                     }
                     .padding()
@@ -171,6 +160,7 @@ struct ContentView: View {
                     Button("降级") {
                         guard !appLink.isEmpty else {
                             print("应用链接为空")
+                            errorMessage = "应用链接不能为空"
                             return
                         }
                         var appLinkParsed = appLink
@@ -183,15 +173,16 @@ struct ContentView: View {
                         }
                         print("应用 ID: \(appLinkParsed)")
                         isDowngrading = true
-                        do {
-                            try downgradeApp(appId: appLinkParsed, ipaTool: ipaTool!)
-                        } catch {
-                            isDowngrading = false
-                            errorMessage = "降级失败：\(error.localizedDescription)"
+                        Task {
+                            do {
+                                try await downgradeApp(appId: appLinkParsed, ipaTool: ipaTool!)
+                            } catch {
+                                isDowngrading = false
+                                errorMessage = "降级失败：\(error.localizedDescription)"
+                            }
                         }
                     }
                     .padding()
-
                     Button("退出登录并重置") {
                         resetAppState()
                     }
@@ -202,72 +193,57 @@ struct ContentView: View {
             FooterView()
         }
         .padding()
-        .onAppear {
+        .task {
             print("应用启动，检查 Apple ID 状态")
-            #if targetEnvironment(simulator)
-            print("运行在模拟器上，跳过 Apple ID 检查")
-            isCheckingAppleID = false
-            isAppleIDSignedIn = true
-            errorMessage = "模拟器模式：请输入 Apple ID 和密码"
             do {
-                try EncryptedKeychainWrapper.generateAndStoreKey()
-                print("在模拟器上生成钥匙链密钥成功")
-            } catch {
-                print("在模拟器上生成钥匙链密钥失败：\(error.localizedDescription)")
-                errorMessage = "初始化失败：\(error.localizedDescription)"
-            }
-            #else
-            checkAppleIDStatus()
-            if isAuthenticated {
-                print("检测到已认证状态，尝试重新认证")
-                do {
+                try await EncryptedKeychainWrapper.generateAndStoreKey()
+                print("生成钥匙链密钥成功")
+                await checkAppleIDStatus()
+                if isAuthenticated {
+                    print("检测到已认证状态，尝试重新认证")
                     guard let authInfo = try EncryptedKeychainWrapper.getAuthInfo() else {
                         print("无法从钥匙链获取认证信息，正在退出登录")
                         isAuthenticated = false
-                        try EncryptedKeychainWrapper.nuke()
-                        try EncryptedKeychainWrapper.generateAndStoreKey()
+                        try await EncryptedKeychainWrapper.nuke()
+                        try await EncryptedKeychainWrapper.generateAndStoreKey()
                         return
                     }
                     appleId = authInfo["appleId"]! as! String
                     password = authInfo["password"]! as! String
-                    ipaTool = try IPATool(appleId: appleId, password: password)
-                    if let success = try ipaTool?.authenticate() {
+                    do {
+                        ipaTool = try IPATool(appleId: appleId, password: password)
+                        let success = await ipaTool!.authenticate()
                         print("重新认证 \(success ? "成功" : "失败")")
                         isAuthenticated = success
                         if !success {
                             errorMessage = "重新认证失败，请重新登录"
                         }
-                    } else {
-                        print("重新认证返回空值")
+                    } catch {
+                        print("重新认证失败：\(error.localizedDescription)")
                         isAuthenticated = false
-                        errorMessage = "重新认证失败，请重新登录"
+                        errorMessage = "重新认证失败：\(error.localizedDescription)"
                     }
-                } catch {
-                    print("重新认证失败：\(error.localizedDescription)")
-                    isAuthenticated = false
-                    errorMessage = "重新认证失败：\(error.localizedDescription)"
                 }
-            } else {
-                print("钥匙链中未找到认证信息，生成新密钥")
-                do {
-                    try EncryptedKeychainWrapper.generateAndStoreKey()
-                } catch {
-                    print("生成密钥失败：\(error.localizedDescription)")
-                    errorMessage = "初始化失败，请重试"
-                }
+            } catch {
+                print("初始化失败：\(error.localizedDescription)")
+                errorMessage = "初始化失败，请重试"
             }
-            #endif
         }
         .alert(isPresented: Binding<Bool>(get: { !errorMessage.isEmpty }, set: { if !$0 { errorMessage = "" } })) {
             Alert(title: Text("错误"), message: Text(errorMessage), dismissButton: .default(Text("确定")))
         }
     }
     
-    private func checkAppleIDStatus() {
+    private func checkAppleIDStatus() async {
         isCheckingAppleID = true
         print("开始检查 Apple ID 登录状态")
-        SKCloudServiceController.requestAuthorization { status in
-            DispatchQueue.main.async {
+        do {
+            let status = await withCheckedContinuation { continuation in
+                SKCloudServiceController.requestAuthorization { status in
+                    continuation.resume(returning: status)
+                }
+            }
+            await MainActor.run {
                 isCheckingAppleID = false
                 isAppleIDSignedIn = (status == .authorized)
                 if !isAppleIDSignedIn {
@@ -275,28 +251,30 @@ struct ContentView: View {
                     errorMessage = "请在 iPhone 设置中登录 Apple ID"
                 } else {
                     print("检测到 Apple ID 已登录")
-                    // 尝试从钥匙链加载凭证
-                    do {
-                        if try EncryptedKeychainWrapper.hasAuthInfo() {
-                            guard let authInfo = try EncryptedKeychainWrapper.getAuthInfo() else {
-                                print("无法从钥匙链获取认证信息")
-                                return
-                            }
-                            appleId = authInfo["appleId"]! as! String
-                            password = authInfo["password"]! as! String
-                            ipaTool = try IPATool(appleId: appleId, password: password)
-                            if let success = try ipaTool?.authenticate() {
-                                isAuthenticated = success
-                                if !success {
-                                    errorMessage = "自动认证失败，请手动输入凭证"
+                    Task {
+                        do {
+                            if try EncryptedKeychainWrapper.hasAuthInfo() {
+                                guard let authInfo = try EncryptedKeychainWrapper.getAuthInfo() else {
+                                    print("无法从钥匙链获取认证信息")
+                                    return
                                 }
-                            } else {
-                                errorMessage = "自动认证失败，请手动输入凭证"
+                                appleId = authInfo["appleId"]! as! String
+                                password = authInfo["password"]! as! String
+                                do {
+                                    ipaTool = try IPATool(appleId: appleId, password: password)
+                                    let success = await ipaTool!.authenticate()
+                                    isAuthenticated = success
+                                    if !success {
+                                        errorMessage = "自动认证失败，请手动输入凭证"
+                                    }
+                                } catch {
+                                    errorMessage = "自动认证失败：\(error.localizedDescription)"
+                                }
                             }
+                        } catch {
+                            print("钥匙链或认证初始化失败：\(error.localizedDescription)")
+                            errorMessage = "自动认证失败：\(error.localizedDescription)"
                         }
-                    } catch {
-                        print("钥匙链或认证初始化失败：\(error.localizedDescription)")
-                        errorMessage = "自动认证失败：\(error.localizedDescription)"
                     }
                 }
             }

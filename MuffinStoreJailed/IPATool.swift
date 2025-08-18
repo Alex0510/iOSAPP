@@ -26,7 +26,7 @@ class IPATool {
         config.timeoutIntervalForRequest = 30
         config.timeoutIntervalForResource = 60
         config.httpAdditionalHeaders = [
-            "User-Agent": "MuffinStoreJailed++/1.0 (iPhone; iOS 18.0)"
+            "User-Agent": "MuffinStoreJailed++/1.0 (iPhone; iOS 15.0)"
         ]
         return URLSession(configuration: config)
     }()

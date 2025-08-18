@@ -18,7 +18,7 @@ ipa:
 		-sdk iphoneos \
 		-destination 'platform=iOS,device=*' \
 		-derivedDataPath $(BUILD_DIR) \
-		IPHONEOS_DEPLOYMENT_TARGET=15.0 \  # 支持 iOS 15+
+		IPHONEOS_DEPLOYMENT_TARGET=15.0 \
 		CODE_SIGN_IDENTITY="" \
 		CODE_SIGNING_REQUIRED=NO \
 		CODE_SIGNING_ALLOWED=NO \

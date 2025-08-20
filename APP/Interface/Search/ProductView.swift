@@ -146,54 +146,109 @@ struct ProductView: View {
             }
         }
     
+    // 加载版本信息的方法
+    private func loadVersions() {
+        guard let account = account else {
+            versionError = "请先选择一个账户"
+            return
+        }
+        
+        loadingVersions = true
+        versionError = nil
+        
+        let request = VersionModels.VersionFetchRequest(
+            appId: String(archive.identifier),
+            forceRefresh: false
+        )
+        
+        versionManager.fetchVersionsWithRetry(
+            request: request,
+            using: account,
+            maxRetries: 3
+        ) { result in
+            DispatchQueue.main.async {
+                self.loadingVersions = false
+                
+                switch result {
+                case .success(let response):
+                    self.versions = response.versions
+                    self.versionError = nil
+                    print("✅ 成功加载 \(response.versions.count) 个版本")
+                case .failure(let error):
+                    self.versionError = error.localizedDescription
+                    print("❌ 加载版本失败: \(error)")
+                }
+            }
+        }
+    }
+    
     // 开始下载APP
     private func startDownload() {
-        showingVersionSelector = true
-        loadingVersions = true
+        guard let account = account else {
+            hint = "请选择一个账户"
+            return
+        }
+        
+        // 如果有多个版本，显示版本选择器
+        if versions.count > 1 {
+            showingVersionSelector = true
+            return
+        }
+        
+        // 如果只有一个版本或没有版本信息，直接下载
+        obtainDownloadURL = true
+        hint = ""
         
         Task {
             do {
-                // 获取版本列表
-                if let versionManager = versionManager {
-                    let fetchedVersions = try await versionManager.getVersionIDs(appId: String(archive.identifier))
-                    DispatchQueue.main.async {
-                        versions = fetchedVersions
-                        loadingVersions = false
-                    }
-                } else {
-                    throw NSError(domain: "VersionManager", code: -1, userInfo: [NSLocalizedDescriptionKey: "版本管理器未初始化"])
+                let request = try await Downloader.this.requestDownload(
+                    archive: archive,
+                    account: account
+                )
+                
+                DispatchQueue.main.async {
+                    obtainDownloadURL = false
+                    hint = "Requested \(archive.name)"
                 }
             } catch {
                 DispatchQueue.main.async {
-                    versionError = error.localizedDescription
-                    loadingVersions = false
+                    obtainDownloadURL = false
+                    hint = error.localizedDescription
                 }
             }
         }
     }
     
     // 使用指定版本开始下载
-    private func startDownloadWithVersion(versionId: String) {
-        showingVersionSelector = false
+    private func startDownloadWithVersion(version: VersionModels.AppVersion) {
+        guard let account = account else {
+            hint = "请选择一个账户"
+            return
+        }
+        
         obtainDownloadURL = true
-        hint = "正在请求下载..."
+        hint = ""
+        showingVersionSelector = false
         
         Task {
             do {
-                if let account = account {
-                    // 获取下载URL
-                    let downloadURL = try await dvm.obtainDownloadURL(
-                        for: archive,
-                        account: account,
-                        versionId: versionId
-                    )
-                    
-                    DispatchQueue.main.async {
-                        obtainDownloadURL = false
-                        hint = "下载请求已提交"
-                    }
-                } else {
-                    throw NSError(domain: "Account", code: -1, userInfo: [NSLocalizedDescriptionKey: "未选择账户"])
+                // 创建版本下载请求
+                let versionRequest = VersionModels.VersionDownloadRequest(
+                    appId: String(archive.identifier),
+                    versionId: version.id,
+                    version: version
+                )
+                
+                // 这里需要实现使用指定版本ID的下载逻辑
+                // 目前先使用普通下载，后续需要扩展Downloader以支持版本选择
+                let request = try await Downloader.this.requestDownload(
+                    archive: archive,
+                    account: account
+                )
+                
+                DispatchQueue.main.async {
+                    obtainDownloadURL = false
+                    hint = "Requested \(archive.name) (版本: \(version.versionString))"
                 }
             } catch {
                 DispatchQueue.main.async {
@@ -301,14 +356,15 @@ struct ProductView: View {
                 // 版本选择器视图
                 VersionSelectorView(
                     appInfo: AppInfo(
-                        name: archive.name,
-                        developer: archive.artistName,
-                        iconURL: archive.artworkUrl100 ?? "",
-                        identifier: String(archive.identifier)
+                        trackId: archive.identifier,
+                        trackName: archive.name,
+                        artistName: archive.artistName,
+                        bundleId: archive.bundleIdentifier,
+                        artworkUrl512: archive.artworkUrl512
                     ),
                     versions: versions,
-                    onVersionSelected: { versionId in
-                        startDownloadWithVersion(versionId: versionId)
+                    onVersionSelected: { version in
+                        startDownloadWithVersion(version: version)
                     },
                     onCancel: {
                         showingVersionSelector = false
@@ -678,10 +734,11 @@ struct ProductView: View {
 
 // APP信息结构体，用于传递给版本选择器
 struct AppInfo {
-    let name: String
-    let developer: String
-    let iconURL: String
-    let identifier: String
+    let trackId: Int
+    let trackName: String?
+    let artistName: String?
+    let bundleId: String?
+    let artworkUrl512: String?
 }
 
 // 扩展String类型，提供字节计数格式化

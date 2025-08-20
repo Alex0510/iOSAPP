@@ -41,6 +41,7 @@ class Downloads: ObservableObject {
         DiggerManager.shared.timeout = 15
     }
 
+    /// 检查下载请求是否已完成
     func isCompleted(for request: Request) -> Bool {
         if FileManager.default.fileExists(atPath: request.targetLocation.path) {
             reportSuccess(reqId: request.id)
@@ -49,6 +50,7 @@ class Downloads: ObservableObject {
         return false
     }
 
+    /// 添加新的下载请求
     @discardableResult
     func add(request: Request) -> Request.ID {
         if Thread.isMainThread {
@@ -62,6 +64,7 @@ class Downloads: ObservableObject {
         }
     }
 
+    /// 格式化字节数为可读字符串
     func byteFormat(bytes: Int64) -> String {
         if bytes > 0 {
             return byteFormatter.string(fromByteCount: bytes)
@@ -69,6 +72,7 @@ class Downloads: ObservableObject {
         return ""
     }
 
+    /// 暂停下载请求
     func suspend(requestID: Request.ID) {
         let request = requests.first(where: { $0.id == requestID })
         guard let request else { return }
@@ -85,6 +89,7 @@ class Downloads: ObservableObject {
         }
     }
 
+    /// 恢复下载请求
     func resume(requestID: Request.ID) {
         let request = requests.first(where: { $0.id == requestID })
         guard let request else { return }
@@ -119,6 +124,8 @@ class Downloads: ObservableObject {
         }
     }
 
+    /// 处理下载完成的文件
+    /// 包括验证、移动和添加元数据
     func finalize(request: Request, url: URL) {
         let targetLocation = request.targetLocation
 
@@ -159,6 +166,7 @@ class Downloads: ObservableObject {
         }
     }
 
+    /// 删除下载请求及其文件
     func delete(request: Request) {
         DispatchQueue.main.async { [self] in
             DiggerManager.shared.cancelTask(for: request.url)
@@ -168,16 +176,19 @@ class Downloads: ObservableObject {
         }
     }
 
+    /// 恢复所有下载请求
     func resumeAll() {
         for req in requests {
             resume(requestID: req.id)
         }
     }
 
+    /// 暂停所有下载请求
     func suspendAll() {
         DiggerManager.shared.stopAllTasks()
     }
 
+    /// 删除所有下载请求及其文件
     func removeAll() {
         let copy = requests
         for req in copy {
@@ -185,6 +196,7 @@ class Downloads: ObservableObject {
         }
     }
 
+    /// 根据iTunes归档查找下载请求
     func downloadRequest(forArchive archive: iTunesResponse.iTunesArchive) -> Request? {
         for req in requests {
             if req.package == archive {

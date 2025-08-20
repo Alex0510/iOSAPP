@@ -7,13 +7,13 @@ import SwiftUI
 
 // MARK: - 颜色系统
 extension Color {
-    // Fluent 颜色
+    // Fluent 设计语言颜色
     static let fluentBlue = Color(red: 0.04, green: 0.36, blue: 0.87)
     static let fluentPurple = Color(red: 0.41, green: 0.18, blue: 0.86)
     static let fluentTeal = Color(red: 0.0, green: 0.69, blue: 0.69)
     static let fluentOrange = Color(red: 1.0, green: 0.55, blue: 0.0)
     
-    // Material 颜色
+    // Material 设计语言颜色
     static let materialBlue = Color(red: 0.12, green: 0.47, blue: 1.0)
     static let materialGreen = Color(red: 0.0, green: 0.76, blue: 0.35)
     static let materialRed = Color(red: 0.96, green: 0.26, blue: 0.21)
@@ -29,25 +29,25 @@ extension Color {
     static let materialDeepPurple = Color(red: 0.40, green: 0.23, blue: 0.72)
     static let materialDeepOrange = Color(red: 1.0, green: 0.34, blue: 0.13)
     
-    // 表面颜色 - 使用自定义颜色简化
+    // 表面颜色 - 用于界面背景和卡片
     static let surfacePrimary = Color(red: 1.0, green: 1.0, blue: 1.0)
     static let surfaceSecondary = Color(red: 0.95, green: 0.95, blue: 0.97)
     static let surfaceTertiary = Color(red: 0.93, green: 0.93, blue: 0.95)
     static let cardBackground = Color(red: 0.98, green: 0.98, blue: 1.0)
     
-    // 强调色
+    // 强调色 - 用于重要元素和交互反馈
     static let primaryAccent = fluentBlue
     static let secondaryAccent = materialGreen
 }
 
 // MARK: - 字体排版系统
 extension Font {
-    // 展示字体 (大标题)
+    // 展示字体 - 用于大标题
     static let displayLarge = Font.system(size: 57, weight: .regular, design: .rounded)
     static let displayMedium = Font.system(size: 45, weight: .regular, design: .rounded)
     static let displaySmall = Font.system(size: 36, weight: .regular, design: .rounded)
     
-    // 标题字体
+    // 大标题字体
     static let headlineLarge = Font.system(size: 32, weight: .medium, design: .rounded)
     static let headlineMedium = Font.system(size: 28, weight: .medium, design: .rounded)
     static let headlineSmall = Font.system(size: 24, weight: .medium, design: .rounded)
@@ -62,7 +62,7 @@ extension Font {
     static let bodyMedium = Font.system(size: 14, weight: .regular, design: .default)
     static let bodySmall = Font.system(size: 12, weight: .regular, design: .default)
     
-    // 标签字体
+    // 标签字体 - 用于按钮和小文本
     static let labelLarge = Font.system(size: 14, weight: .medium, design: .default)
     static let labelMedium = Font.system(size: 12, weight: .medium, design: .default)
     static let labelSmall = Font.system(size: 11, weight: .medium, design: .default)
@@ -106,9 +106,9 @@ struct ShadowStyle {
 
 // 提取卡片样式以避免泛型不匹配
 enum ModernCardStyle {
-    case elevated  // 提升式
-    case outlined  // 轮廓式
-    case filled    // 填充式
+    case elevated  // 提升式 - 带阴影的卡片
+    case outlined  // 轮廓式 - 带边框的卡片
+    case filled    // 填充式 - 带背景色的卡片
 }
 
 // MARK: - 现代卡片组件
@@ -174,16 +174,16 @@ struct ModernButton<Label: View>: View {
     var isDisabled: Bool = false         // 是否禁用
     
     enum ButtonStyle {
-        case primary    // 主要按钮
-        case secondary  // 次要按钮
-        case ghost      // 幽灵按钮
-        case danger     // 危险按钮
+        case primary    // 主要按钮 - 用于主要操作
+        case secondary  // 次要按钮 - 用于次要操作
+        case ghost      // 幽灵按钮 - 透明背景
+        case danger     // 危险按钮 - 用于危险操作
     }
     
     enum ButtonSize {
-        case small   // 小尺寸
-        case medium  // 中等尺寸
-        case large   // 大尺寸
+        case small   // 小尺寸按钮
+        case medium  // 中等尺寸按钮
+        case large   // 大尺寸按钮
         
         var height: CGFloat {
             switch self {
@@ -408,14 +408,14 @@ struct ModernSearchBar: View {
     }
 }
 
-// MARK: - Animation Presets
+// MARK: - 动画预设
 extension Animation {
     static let modernSpring = Animation.spring(response: 0.5, dampingFraction: 0.8, blendDuration: 0.2)
     static let modernEaseInOut = Animation.easeInOut(duration: 0.3)
     static let modernBounce = Animation.interpolatingSpring(stiffness: 170, damping: 15)
 }
 
-// MARK: - View Modifiers
+// MARK: - 视图修饰符
 extension View {
     func modernCardStyle() -> some View {
         self.modifier(ModernCardStyleModifier())

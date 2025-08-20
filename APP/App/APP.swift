@@ -1,33 +1,30 @@
 //
 //  APP.swift
-//  由 pxx917144686 创建于 2025/08/19。
-//  APP入口文件：包含应用的初始化配置、目录结构设置和主窗口定义
+//  应用入口文件
+//  负责应用初始化、目录设置和主窗口定义
 
 import SwiftUI
 
-/// 应用入口结构体
-/// 标记为@main，表示这是应用的入口点，系统会从这里开始执行
+/// APP入口
 @main
 struct App: SwiftUI.App {
     
-    /// 初始化方法
-    /// 应用启动时执行的第一个方法，用于设置应用环境
+    /// 初始化方法，应用启动时执行
     init() {
         // 初始化应用：设置目录结构和应用配置
         setupDirectories()
         setupApp()
     }
     
-    /// 应用场景定义：设置应用的主窗口
+    /// 应用场景定义，设置主窗口
     var body: some Scene {
         WindowGroup {
             MainView()  // 应用的主视图
         }
     }
     
-    /// 设置应用所需的目录结构
-    /// 负责创建、检查和清理应用所需的各种目录，确保文件系统环境正确配置
-    /// 包括文档目录（用于持久化存储）和临时目录（用于短期存储）
+    /// 设置应用目录结构
+    /// 创建并配置文档目录和临时目录
     private func setupDirectories() {
         // 获取应用包标识符
         let bundleIdentifier = Bundle.main.bundleIdentifier!
@@ -78,10 +75,8 @@ struct App: SwiftUI.App {
         }
     }
 
-    /// 初始化应用的基本配置
-    /// 负责设置应用的全局状态和核心服务
-    /// - 设置应用唯一标识符(GUID)
-    /// - 初始化下载管理器单例
+    /// 初始化应用配置
+    /// 设置GUID标识和下载管理器
     private func setupApp() {
         // 设置应用GUID标识
         AppStore.this.setupGUID()
@@ -91,27 +86,19 @@ struct App: SwiftUI.App {
 }
 
 // 全局变量，供其他文件访问
-/// 应用包标识符
-/// 用于唯一标识应用，从应用的Bundle中获取
+/// 应用包标识符，从Bundle中获取
 let bundleIdentifier = Bundle.main.bundleIdentifier!
-/// 应用版本号
-/// 格式为 "版本号 (构建号)"
-/// 从应用的Info.plist文件中获取版本信息
+/// 应用版本号，格式：版本号 (构建号)
 let appVersion = "\(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "") (\(Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""))"
 
 // 目录路径配置
-/// 可用文档目录列表
-/// 从系统获取的所有文档目录路径，通常只有一个
+/// 系统文档目录列表
 private let availableDirectories = FileManager
     .default
     .urls(for: .documentDirectory, in: .userDomainMask)
-/// 应用专用文档目录
-/// 用于存储用户数据和应用持久化信息
-/// 位于系统文档目录下的APP子目录
+/// 应用文档目录，用于存储用户数据
 let documentsDirectory = availableDirectories[0]
     .appendingPathComponent("APP")
-/// 应用专用临时目录
-/// 用于存储临时数据，应用退出后可能被系统清理
-/// 位于系统临时目录下，以应用包标识符命名
+/// 应用临时目录，用于存储短期数据
 let temporaryDirectory = URL(fileURLWithPath: NSTemporaryDirectory())
     .appendingPathComponent(bundleIdentifier)

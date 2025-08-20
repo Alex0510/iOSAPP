@@ -1,2 +1,0 @@
-dependencies: \
-  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/CNIOWASI/CNIOWASI.c

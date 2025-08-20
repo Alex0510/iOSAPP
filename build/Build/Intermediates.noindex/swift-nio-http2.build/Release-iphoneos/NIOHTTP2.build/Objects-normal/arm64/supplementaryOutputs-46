@@ -1,9 +1,0 @@
-"/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/ConnectionStateMachine/ConnectionStateMachine.swift":
-  abi-baseline-json: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio-http2.build/Release-iphoneos/NIOHTTP2.build/Objects-normal/arm64/NIOHTTP2.abi.json"
-  swiftmodule: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio-http2.build/Release-iphoneos/NIOHTTP2.build/Objects-normal/arm64/NIOHTTP2.swiftmodule"
-  dependencies: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio-http2.build/Release-iphoneos/NIOHTTP2.build/Objects-normal/arm64/NIOHTTP2-master.d"
-  const-values: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio-http2.build/Release-iphoneos/NIOHTTP2.build/Objects-normal/arm64/NIOHTTP2-master.swiftconstvalues"
-  swiftdoc: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio-http2.build/Release-iphoneos/NIOHTTP2.build/Objects-normal/arm64/NIOHTTP2.swiftdoc"
-  diagnostics: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio-http2.build/Release-iphoneos/NIOHTTP2.build/Objects-normal/arm64/NIOHTTP2-master.dia"
-  swiftsourceinfo: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio-http2.build/Release-iphoneos/NIOHTTP2.build/Objects-normal/arm64/NIOHTTP2.swiftsourceinfo"
-  objc-header: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio-http2.build/Release-iphoneos/NIOHTTP2.build/Objects-normal/arm64/NIOHTTP2-Swift.h"

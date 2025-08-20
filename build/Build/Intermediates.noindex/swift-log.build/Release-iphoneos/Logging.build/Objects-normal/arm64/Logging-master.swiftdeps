@@ -1,9 +1,0 @@
-version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
-options: "b8be0519992cd7d0e4abea9d4dd7933d0b46f8593da5908f310363289c275238"
-build_start_time: [1755694545, 760905000]
-build_end_time: [1755694557, 789062000]
-inputs:
-  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-log/Sources/Logging/Locks.swift": [1755694537, 834878292]
-  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-log/Sources/Logging/LogHandler.swift": [1755694537, 834926710]
-  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-log/Sources/Logging/Logging.swift": [1755694537, 835087824]
-  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-log/Sources/Logging/MetadataProvider.swift": [1755694537, 835183407]

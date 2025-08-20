@@ -1,7 +1,0 @@
-version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
-options: "b21d6a1d8bd6b851eb03ff44853ff545f6e9581cbd2a0f90b11663f1a5ffdef5"
-build_start_time: [1755694545, 927899000]
-build_end_time: [1755694557, 801361000]
-inputs:
-  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-metrics/Sources/CoreMetrics/Locks.swift": [1755694538, 185453288]
-  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-metrics/Sources/CoreMetrics/Metrics.swift": [1755694538, 185587048]

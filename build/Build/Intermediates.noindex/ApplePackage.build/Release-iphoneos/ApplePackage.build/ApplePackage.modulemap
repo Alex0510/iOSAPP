@@ -1,4 +1,0 @@
-module ApplePackage {
-header "ApplePackage-Swift.h"
-export *
-}

@@ -18,6 +18,8 @@ private let storeDir = {
 extension Downloads {
     // 定义一个请求结构体，实现 Identifiable、Codable 和 Hashable 协议
     struct Request: Identifiable, Codable, Hashable {
+    /// 用户选择的版本号
+    var version: String?
         // 唯一标识符，默认生成一个新的 UUID
         var id: UUID = .init()
 

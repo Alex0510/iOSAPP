@@ -1,4 +1,0 @@
-module ColorVector {
-header "ColorVector-Swift.h"
-export *
-}

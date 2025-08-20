@@ -286,24 +286,28 @@ struct ModernButton<Label: View>: View {
 }
 
 // MARK: - 浮动操作按钮
+/// 浮动操作按钮，通常用于页面的主要操作
 struct FloatingActionButton: View {
     let icon: String      // 图标名称
     let action: () -> Void  // 点击动作
     var style: FABStyle = .primary  // 默认主要样式
     var size: FABSize = .regular    // 默认常规尺寸
     
+    /// 浮动按钮样式枚举
     enum FABStyle {
-        case primary    // 主要样式
-        case secondary  // 次要样式
-        case surface    // 表面样式
+        case primary    // 主要样式（强调色背景）
+        case secondary  // 次要样式（浅灰色背景）
+        case surface    // 表面样式（白色背景）
     }
     
+    /// 浮动按钮尺寸枚举
     enum FABSize {
         case small      // 小尺寸
         case regular    // 常规尺寸
         case large      // 大尺寸
         case extended   // 扩展尺寸
         
+        /// 获取按钮直径
         var diameter: CGFloat {
             switch self {
             case .small: return 40
@@ -336,8 +340,9 @@ struct FloatingActionButton: View {
         }
     }
     
-    @State private var isPressed = false
+    @State private var isPressed = false  // 按钮按下状态
     
+    /// 根据尺寸获取图标大小
     private var iconSize: CGFloat {
         switch size {
         case .small: return 18
@@ -347,6 +352,7 @@ struct FloatingActionButton: View {
         }
     }
     
+    /// 根据样式获取前景色
     private var foregroundColor: Color {
         switch style {
         case .primary: return .white
@@ -355,6 +361,7 @@ struct FloatingActionButton: View {
         }
     }
     
+    /// 根据样式获取背景色
     private var backgroundColor: Color {
         switch style {
         case .primary: return .primaryAccent
@@ -365,16 +372,19 @@ struct FloatingActionButton: View {
 }
 
 // MARK: - 现代进度指示器
+/// 现代化进度指示器，支持线性和圆形两种样式
 struct ModernProgressIndicator: View {
     let progress: Double  // 进度值 (0-1)
     var style: ProgressStyle = .linear  // 默认线性样式
     var color: Color = .primaryAccent   // 默认主题色
     
+    /// 进度条样式枚举
     enum ProgressStyle {
         case linear     // 线性进度条
         case circular   // 圆形进度条
     }
     
+    /// 安全处理进度值，确保在0-1范围内
     private var safeProgress: Double {
         // 检查并处理NaN、无穷大或负值
         if progress.isNaN || progress.isInfinite || progress < 0 {
@@ -398,6 +408,7 @@ struct ModernProgressIndicator: View {
 }
 
 // MARK: - 现代搜索栏
+/// 现代化搜索栏组件，支持焦点状态、清除按钮和提交回调
 struct ModernSearchBar: View {
     @Binding var text: String  // 搜索文本绑定
     @FocusState private var isFocused: Bool  // 焦点状态
@@ -437,24 +448,27 @@ struct ModernSearchBar: View {
     }
 }
 
-// MARK: - Animation Presets
+/// 预定义的动画效果
 extension Animation {
-    static let modernSpring = Animation.spring(response: 0.5, dampingFraction: 0.8, blendDuration: 0.2)
-    static let modernEaseInOut = Animation.easeInOut(duration: 0.3)
-    static let modernBounce = Animation.interpolatingSpring(stiffness: 170, damping: 15)
+    static let modernSpring = Animation.spring(response: 0.5, dampingFraction: 0.8, blendDuration: 0.2)  // 现代弹簧动画
+    static let modernEaseInOut = Animation.easeInOut(duration: 0.3)  // 现代缓入缓出动画
+    static let modernBounce = Animation.interpolatingSpring(stiffness: 170, damping: 15)  // 现代弹跳动画
 }
 
-// MARK: - View Modifiers
+/// 自定义视图修饰器扩展
 extension View {
+    /// 应用现代卡片样式
     func modernCardStyle() -> some View {
         self.modifier(ModernCardStyleModifier())
     }
     
+    /// 应用现代玻璃态效果
     func modernGlassEffect() -> some View {
         self.modifier(GlassEffectModifier())
     }
 }
 
+/// 现代卡片样式修饰器
 struct ModernCardStyleModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -463,6 +477,7 @@ struct ModernCardStyleModifier: ViewModifier {
     }
 }
 
+/// 玻璃态效果修饰器
 struct GlassEffectModifier: ViewModifier {
     func body(content: Content) -> some View {
         content

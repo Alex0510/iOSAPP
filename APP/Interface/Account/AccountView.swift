@@ -2,8 +2,11 @@ import ApplePackage
 import Combine
 import SwiftUI
 
+// 账户视图，显示账户列表和添加账户的功能
 struct AccountView: View {
+    // 应用状态管理对象
     @StateObject var vm = AppStore.this
+    // 控制是否显示添加账户视图的状态
     @State var addAccount = false
 
     var body: some View {
@@ -30,6 +33,7 @@ struct AccountView: View {
         .navigationViewStyle(.stack)
     }
 
+    // 账户列表内容视图
     var content: some View {
         List {
             Section {

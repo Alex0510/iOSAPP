@@ -7,38 +7,51 @@ import ApplePackage
 import Kingfisher
 import SwiftUI
 
+// 产品视图，显示应用的详细信息
 struct ProductView: View {
+    // 要显示的应用归档信息
     let archive: iTunesResponse.iTunesArchive
+    // 地区代码
     let region: String
 
+    // 账户状态管理对象
     @StateObject var vm = AppStore.this
+    // 下载状态管理对象
     @StateObject var dvm = Downloads.this
 
+    // 符合地区条件的账户列表
     var eligibleAccounts: [AppStore.Account] {
         vm.accounts.filter { $0.countryCode == region }
     }
 
+    // 根据选中的ID获取账户对象
     var account: AppStore.Account? {
         vm.accounts.first { $0.id == selection }
     }
 
+    // 选中的账户ID
     @State var selection: AppStore.Account.ID = .init()
+    // 是否正在获取下载URL
     @State var obtainDownloadURL = false
+    // 提示信息
     @State var hint: String = ""
+    // 许可证提示信息
     @State var licenseHint: String = ""
+    // 是否正在获取许可证
     @State var acquiringLicense = false
+    // 卡片动画状态
     @State var animateCards = false
 
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: Spacing.lg) {
-                // App Header Card
+                // 应用头部卡片
                 packageHeaderCard
                     .scaleEffect(animateCards ? 1 : 0.9)
                     .opacity(animateCards ? 1 : 0)
                     .animation(.spring().delay(0.1), value: animateCards)
                 
-                // Error Card (if needed)
+                // 错误卡片（如果需要）
                 if account == nil {
                     errorCard
                         .scaleEffect(animateCards ? 1 : 0.9)
@@ -46,25 +59,25 @@ struct ProductView: View {
                         .animation(.spring().delay(0.2), value: animateCards)
                 }
                 
-                // Pricing Card
+                // 价格卡片
                 pricingCard
                     .scaleEffect(animateCards ? 1 : 0.9)
                     .opacity(animateCards ? 1 : 0)
                     .animation(.spring().delay(0.3), value: animateCards)
                 
-                // Account Selection Card
+                // 账户选择卡片
                 accountSelectorCard
                     .scaleEffect(animateCards ? 1 : 0.9)
                     .opacity(animateCards ? 1 : 0)
                     .animation(.spring().delay(0.4), value: animateCards)
                 
-                // Download Button Card
+                // 下载按钮卡片
                 downloadButtonCard
                     .scaleEffect(animateCards ? 1 : 0.9)
                     .opacity(animateCards ? 1 : 0)
                     .animation(.spring().delay(0.5), value: animateCards)
                 
-                // Description Card
+                // 描述卡片
                 descriptionCard
                     .scaleEffect(animateCards ? 1 : 0.9)
                     .opacity(animateCards ? 1 : 0)
@@ -83,11 +96,12 @@ struct ProductView: View {
         }
     }
 
+    // 应用头部卡片视图
     var packageHeaderCard: some View {
         ModernCard(style: .elevated, padding: Spacing.lg) {
             VStack(alignment: .leading, spacing: Spacing.md) {
                 HStack(alignment: .top, spacing: Spacing.md) {
-                    // App Icon
+                    // 应用图标
                     KFImage(URL(string: archive.artworkUrl512 ?? ""))
                         .antialiased(true)
                         .resizable()
@@ -141,6 +155,7 @@ struct ProductView: View {
         }
     }
 
+    // 错误卡片视图
     var errorCard: some View {
         ModernCard(style: .filled, padding: Spacing.md) {
             VStack(spacing: Spacing.sm) {
@@ -164,6 +179,7 @@ struct ProductView: View {
         )
     }
 
+    // 价格卡片视图
     var pricingCard: some View {
         ModernCard(style: .elevated, padding: Spacing.lg) {
             VStack(alignment: .leading, spacing: Spacing.md) {

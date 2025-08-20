@@ -3,20 +3,29 @@
 //  Created by pxx917144686 on 2025/08/19.
 //
 
+// 导入 Apple 相关包
 import ApplePackage
+// 导入 Kingfisher 库，用于图片加载
 import Kingfisher
+// 导入 SwiftUI 框架
 import SwiftUI
 
+// 定义搜索视图结构体，遵循 View 协议
 struct SearchView: View {
+    // 从 AppStorage 中读取或存储搜索关键词
     @AppStorage("searchKey") var searchKey = ""
+    // 从 AppStorage 中读取或存储搜索地区
     @AppStorage("searchRegion") var searchRegion = "US"
+    // 从 AppStorage 中读取或存储搜索历史数据
     @AppStorage("searchHistory") var searchHistoryData = Data()
+    // 控制搜索关键词输入框的焦点状态
     @FocusState var searchKeyFocused
+    // 记录当前搜索类型
     @State var searchType = EntityType.iPhone
-
+    // 标记是否正在搜索
     @State var searching = false
     
-    // Static country code to name mapping
+    // 静态属性：国家代码到国家名称的映射
     static let countryCodeMap: [String: String] = [
         "AE": "United Arab Emirates", "AG": "Antigua and Barbuda", "AI": "Anguilla", "AL": "Albania", "AM": "Armenia",
         "AO": "Angola", "AR": "Argentina", "AT": "Austria", "AU": "Australia", "AZ": "Azerbaijan",
@@ -47,6 +56,7 @@ struct SearchView: View {
         "VG": "British Virgin Islands", "VN": "Vietnam", "YE": "Yemen", "ZA": "South Africa"
     ]
     
+    // 静态属性：国家代码到商店前台代码的映射
     static let storeFrontCodeMap = [
         "AE": "143481", "AG": "143540", "AI": "143538", "AL": "143575", "AM": "143524",
         "AO": "143564", "AR": "143505", "AT": "143445", "AU": "143460", "AZ": "143568",
@@ -77,30 +87,51 @@ struct SearchView: View {
         "VN": "143471", "YE": "143571", "ZA": "143472"
     ]
     
+    // 存储按字母顺序排序的地区代码数组
     let regionKeys = Array(SearchView.storeFrontCodeMap.keys.sorted())
 
+    // 当前搜索输入内容
     @State var searchInput: String = ""
+    // 存储搜索结果
     @State var searchResult: [iTunesResponse.iTunesArchive] = []
+    // 当前搜索结果的页码
     @State private var currentPage = 1
+    // 标记是否正在加载更多结果
     @State private var isLoadingMore = false
+    // 每页显示的结果数量
     private let pageSize = 20
+    // 存储搜索历史记录
     @State var searchHistory: [String] = []
+    // 标记是否显示搜索历史
     @State var showSearchHistory = false
+    // 当前的排序选项
     @State var sortOption: SortOption = .relevance
+    // 标记是否显示筛选器
     @State var showFilters = false
+    // 标记是否显示地区选择器
     @State var showRegionPicker = false
+    // 标记是否处于悬停状态
     @State var isHovered = false
 
+    // 状态对象，存储 AppStore 实例
     @StateObject var vm = AppStore.this
 
+    // 标记是否对搜索头部区域进行动画
     @State private var animateHeader = false
+    // 标记是否对搜索栏进行动画
     @State private var animateSearchBar = false
+    // 标记是否对搜索结果区域进行动画
     @State private var animateResults = false
+    // 当前选中的搜索分类
     @State private var selectedCategory: SearchCategory = .all
+    // 标记是否显示高级筛选器
     @State private var showAdvancedFilters = false
+    // 网格视图的列数
     @State private var gridColumns = 2
+    // 当前的视图模式
     @State private var viewMode: ViewMode = .grid
     
+    // 定义搜索分类枚举
     enum SearchCategory: String, CaseIterable {
         case all = "全部"
         case apps = "应用"
@@ -108,6 +139,7 @@ struct SearchView: View {
         case productivity = "效率"
         case entertainment = "娱乐"
         
+        // 获取每个分类对应的图标名称
         var icon: String {
             switch self {
             case .all: return "square.grid.2x2"
@@ -118,6 +150,7 @@ struct SearchView: View {
             }
         }
         
+        // 获取每个分类对应的颜色
         var color: Color {
             switch self {
             case .all: return .primaryAccent
@@ -129,10 +162,12 @@ struct SearchView: View {
         }
     }
     
+    // 定义视图模式枚举
     enum ViewMode: String, CaseIterable {
         case grid = "网格"
         case list = "列表"
         
+        // 获取每个视图模式对应的图标名称
         var icon: String {
             switch self {
             case .grid: return "square.grid.2x2"
@@ -141,6 +176,7 @@ struct SearchView: View {
         }
     }
     
+    // 定义排序选项枚举
     enum SortOption: String, CaseIterable {
         case relevance = "Relevance"
         case name = "Name"
@@ -148,6 +184,7 @@ struct SearchView: View {
         case rating = "Rating"
         case price = "Price"
         
+        // 获取每个排序选项对应的系统图标名称
         var systemImage: String {
             switch self {
             case .relevance: return "star.fill"
@@ -158,6 +195,7 @@ struct SearchView: View {
             }
         }
         
+        // 获取每个排序选项的本地化名称
         var localizedName: String {
             switch self {
             case .relevance: return "相关性"
@@ -169,10 +207,12 @@ struct SearchView: View {
         }
     }
 
+    // 计算属性，获取可能的地区代码集合
     var possibleReigon: Set<String> {
         Set(vm.accounts.map(\.countryCode))
     }
 
+    // 视图主体，定义视图的布局和结构
     var body: some View {
         NavigationView {
             ZStack {
@@ -225,6 +265,7 @@ struct SearchView: View {
     }
     
     // MARK: - 搜索头部区域
+    // 搜索头部区域视图
     var searchHeaderSection: some View {
         VStack(spacing: Spacing.lg) {
             // 标题和操作按钮
@@ -290,6 +331,7 @@ struct SearchView: View {
     }
     
     // MARK: - 现代化搜索栏
+    // 现代化搜索栏视图
     var modernSearchBar: some View {
         VStack(spacing: Spacing.md) {
             HStack(spacing: Spacing.sm) {
@@ -427,6 +469,7 @@ struct SearchView: View {
     }
     
     // MARK: - 搜索历史区域
+    // 搜索历史区域视图
     var searchHistorySection: some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             HStack {
@@ -483,6 +526,7 @@ struct SearchView: View {
     }
     
     // MARK: - 分类选择器
+    // 分类选择器视图
     var categorySelector: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: Spacing.sm) {
@@ -528,6 +572,7 @@ struct SearchView: View {
     }
     
     // MARK: - 搜索结果区域
+    // 搜索结果区域视图
     var searchResultsSection: some View {
         VStack(spacing: Spacing.lg) {
             if !searchResult.isEmpty {
@@ -596,6 +641,7 @@ struct SearchView: View {
     }
     
     // MARK: - 搜索中指示器
+    // 搜索中指示器视图
     var searchingIndicator: some View {
         VStack(spacing: Spacing.lg) {
             // 动画加载指示器
@@ -637,6 +683,7 @@ struct SearchView: View {
     }
     
     // MARK: - 空状态视图
+    // 空状态视图
     var emptyStateView: some View {
         VStack(spacing: Spacing.lg) {
             // 空状态图标
@@ -706,6 +753,7 @@ struct SearchView: View {
     }
     
     // MARK: - 搜索结果网格
+    // 搜索结果网格视图
     var searchResultsGrid: some View {
         LazyVStack(spacing: Spacing.md) {
             if viewMode == .grid {
@@ -741,6 +789,7 @@ struct SearchView: View {
     }
     
     // MARK: - 结果卡片视图
+    // 结果卡片视图
     func resultCardView(item: iTunesResponse.iTunesArchive, index: Int) -> some View {
         NavigationLink(destination: ProductView(archive: item, region: searchRegion)) {
             VStack(alignment: .leading, spacing: Spacing.sm) {
@@ -834,6 +883,7 @@ struct SearchView: View {
     }
     
     // MARK: - 结果列表视图
+    // 结果列表视图
     func resultListView(item: iTunesResponse.iTunesArchive, index: Int) -> some View {
         NavigationLink(destination: ProductView(archive: item, region: searchRegion)) {
             HStack(spacing: Spacing.md) {
@@ -903,6 +953,7 @@ struct SearchView: View {
     }
     
     // MARK: - 地区选择器
+    // 构建地区选择器视图
     func buildRegionSelector() -> some View {
         Menu {
             ForEach(regionKeys, id: \.self) { code in
@@ -940,6 +991,7 @@ struct SearchView: View {
     }
     
     // MARK: - 高级筛选面板
+    // 高级筛选面板视图
     var advancedFiltersSheet: some View {
         NavigationView {
             ScrollView {
@@ -1108,6 +1160,7 @@ struct SearchView: View {
     }
     
     // MARK: - 辅助方法
+    // 启动视图动画
     func startAnimations() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             animateHeader = true
@@ -1117,6 +1170,7 @@ struct SearchView: View {
         }
     }
     
+    // 根据国家代码获取对应的国旗 emoji
     func flag(country: String) -> String {
         let base: UInt32 = 127397
         var s = ""
@@ -1126,6 +1180,7 @@ struct SearchView: View {
         return String(s)
     }
     
+    // 执行搜索操作
     @MainActor
     func performSearch() async {
         guard !searchKey.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { return }
@@ -1141,7 +1196,7 @@ struct SearchView: View {
         showSearchHistory = false
         
         do {
-            // Create iTunes search request
+            // 创建 iTunes 搜索请求
             let httpClient = HTTPClient(urlSession: URLSession.shared)
             let itunesClient = iTunesClient(httpClient: httpClient)
             let response = try await itunesClient.searchAsync(
@@ -1167,18 +1222,21 @@ struct SearchView: View {
         }
     }
     
+    // 加载搜索历史记录
     func loadSearchHistory() {
         if let data = try? JSONDecoder().decode([String].self, from: searchHistoryData) {
             searchHistory = data
         }
     }
     
+    // 保存搜索历史记录
     func saveSearchHistory() {
         if let data = try? JSONEncoder().encode(searchHistory) {
             searchHistoryData = data
         }
     }
     
+    // 将搜索词添加到搜索历史记录中
     func addToSearchHistory(_ query: String) {
         let trimmedQuery = query.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmedQuery.isEmpty else { return }
@@ -1195,17 +1253,20 @@ struct SearchView: View {
         saveSearchHistory()
     }
     
+    // 从搜索历史记录中移除指定的搜索词
     func removeFromHistory(_ query: String) {
         searchHistory.removeAll { $0 == query }
         saveSearchHistory()
     }
     
+    // 清除所有搜索历史记录
     func clearSearchHistory() {
         searchHistory.removeAll()
         saveSearchHistory()
         showSearchHistory = false
     }
     
+    // 根据排序选项对搜索结果进行排序
     func sortedResults() -> [iTunesResponse.iTunesArchive] {
         switch sortOption {
         case .relevance:
@@ -1221,11 +1282,13 @@ struct SearchView: View {
         }
     }
     
+    // 触发搜索结果排序
     func sortResults() {
         // 触发视图更新
         let _ = sortedResults()
     }
     
+    // 加载更多搜索结果
     func loadMoreResults() {
         guard !isLoadingMore && !searching && !searchKey.isEmpty else { return }
         

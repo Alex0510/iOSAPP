@@ -2,7 +2,9 @@ import ApplePackage
 import Kingfisher
 import SwiftUI
 
+// 归档预览视图，显示应用的基本信息
 struct ArchivePreviewView: View {
+    // 要显示的应用归档信息
     let archive: iTunesResponse.iTunesArchive
 
     var body: some View {

@@ -1,20 +1,31 @@
 import ApplePackage
 import SwiftUI
 
+// 添加下载视图，用于直接下载App Store中不再可用的应用
 struct AddDownloadView: View {
+    // 应用包ID
     @State var bundleID: String = ""
+    // 搜索的实体类型（iPhone、iPad等）
     @State var searchType: EntityType = .iPhone
+    // 选中的账户ID
     @State var selection: AppStore.Account.ID = .init()
+    // 是否正在获取下载URL
     @State var obtainDownloadURL = false
+    // 提示信息
     @State var hint = ""
 
+    // 搜索框焦点状态
     @FocusState var searchKeyFocused
 
+    // 账户状态管理对象
     @StateObject var avm = AppStore.this
+    // 下载状态管理对象
     @StateObject var dvm = Downloads.this
 
+    // 用于关闭当前视图的环境变量
     @Environment(\.dismiss) var dismiss
 
+    // 根据选中的ID获取账户对象
     var account: AppStore.Account? {
         avm.accounts.first { $0.id == selection }
     }
@@ -79,6 +90,7 @@ struct AddDownloadView: View {
         .navigationTitle("直接下载")
     }
 
+    // 开始下载的方法
     func startDownload() {
         guard let account else { return }
         searchKeyFocused = false

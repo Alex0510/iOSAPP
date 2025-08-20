@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio.build/Release-iphoneos/NIOFileSystem.build/Objects-normal/arm64/NIOFileSystem-master.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio.build/Release-iphoneos/NIOFileSystem.build/Objects-normal/arm64/NIOFileSystem-master.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio.build/Release-iphoneos/NIOFileSystem.build/Objects-normal/arm64/NIOFileSystem-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio.build/Release-iphoneos/NIOFileSystem.build/Objects-normal/arm64/NIOFileSystem-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio.build/Release-iphoneos/NIOFileSystem.build/Objects-normal/arm64/NIOFileSystem-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio.build/Release-iphoneos/NIOFileSystem.build/Objects-normal/arm64/NIOFileSystem-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/_NIOFileSystemExported/Exports.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release-iphoneos/NIOFileSystem.build/Objects-normal/arm64/Exports.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio.build/Release-iphoneos/NIOFileSystem.build/Objects-normal/arm64/Exports.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-nio.build/Release-iphoneos/NIOFileSystem.build/Objects-normal/arm64/Exports.o"
+  }
+}

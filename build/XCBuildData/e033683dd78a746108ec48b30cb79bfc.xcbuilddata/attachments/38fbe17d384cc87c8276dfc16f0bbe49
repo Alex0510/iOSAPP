@@ -1,4 +1,0 @@
-module ColorfulX {
-header "ColorfulX-Swift.h"
-export *
-}

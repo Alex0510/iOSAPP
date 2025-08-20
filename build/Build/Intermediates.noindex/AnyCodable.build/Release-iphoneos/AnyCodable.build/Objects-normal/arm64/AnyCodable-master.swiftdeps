@@ -1,0 +1,8 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "943f0eba4e7f2aa13af82659143aa5cb3e1086fb154e898f3fd950d69ff9e6e1"
+build_start_time: [1755694546, 152570000]
+build_end_time: [1755694558, 969055000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/AnyCodable/Sources/AnyCodable/AnyCodable.swift": [1755694538, 435993787]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/AnyCodable/Sources/AnyCodable/AnyDecodable.swift": [1755694538, 436045120]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/AnyCodable/Sources/AnyCodable/AnyEncodable.swift": [1755694538, 436092865]

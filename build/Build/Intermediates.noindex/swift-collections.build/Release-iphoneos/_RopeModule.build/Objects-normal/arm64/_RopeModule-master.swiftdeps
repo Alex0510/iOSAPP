@@ -1,0 +1,156 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "de3efb414075dda03aa0c822e8a3adce52809a1c9027943a8011b6d143005b77"
+build_start_time: [1755694556, 49580000]
+build_end_time: [1755694561, 359323000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Basics/BigString+Builder.swift"
+  : [1755694538, 285058615]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Basics/BigString+Contents.swift"
+  : [1755694538, 285131568]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Basics/BigString+Debugging.swift"
+  : [1755694538, 285211365]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Basics/BigString+Index.swift"
+  : [1755694538, 285267498]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Basics/BigString+Ingester.swift"
+  : [1755694538, 285333481]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Basics/BigString+Invariants.swift"
+  : [1755694538, 285384648]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Basics/BigString+Iterators.swift"
+  : [1755694538, 285446415]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Basics/BigString+Metrics.swift"
+  : [1755694538, 285506305]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Basics/BigString+Summary.swift"
+  : [1755694538, 285556345]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Basics/BigString.swift"
+  : [1755694538, 285633220]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Chunk/BigString+Chunk+Append and Insert.swift"
+  : [1755694538, 285712057]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Chunk/BigString+Chunk+Breaks.swift"
+  : [1755694538, 285763349]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Chunk/BigString+Chunk+Counts.swift"
+  : [1755694538, 285814182]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Chunk/BigString+Chunk+Description.swift"
+  : [1755694538, 285871902]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Chunk/BigString+Chunk+Indexing by Characters.swift"
+  : [1755694538, 285931499]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Chunk/BigString+Chunk+Indexing by UTF16.swift"
+  : [1755694538, 285984627]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Chunk/BigString+Chunk+RopeElement.swift"
+  : [1755694538, 286043098]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Chunk/BigString+Chunk+Splitting.swift"
+  : [1755694538, 286099481]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Chunk/BigString+Chunk.swift"
+  : [1755694538, 286149897]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Conformances/BigString+BidirectionalCollection.swift"
+  : [1755694538, 286238083]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Conformances/BigString+Comparable.swift"
+  : [1755694538, 286312079]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Conformances/BigString+CustomDebugStringConvertible.swift"
+  : [1755694538, 286358780]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Conformances/BigString+CustomStringConvertible.swift"
+  : [1755694538, 286404438]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Conformances/BigString+Equatable.swift"
+  : [1755694538, 286447257]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Conformances/BigString+ExpressibleByStringLiteral.swift"
+  : [1755694538, 286532396]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Conformances/BigString+Hashing.swift"
+  : [1755694538, 286598045]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Conformances/BigString+LosslessStringConvertible.swift"
+  : [1755694538, 286680972]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Conformances/BigString+RangeReplaceableCollection.swift"
+  : [1755694538, 286749250]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Conformances/BigString+Sequence.swift"
+  : [1755694538, 286811018]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Conformances/BigString+TextOutputStream.swift"
+  : [1755694538, 286869614]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Operations/BigString+Append.swift"
+  : [1755694538, 286971363]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Operations/BigString+Initializers.swift"
+  : [1755694538, 287025034]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Operations/BigString+Insert.swift"
+  : [1755694538, 287076243]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Operations/BigString+Managing Breaks.swift"
+  : [1755694538, 287135005]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Operations/BigString+RemoveSubrange.swift"
+  : [1755694538, 287218391]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Operations/BigString+ReplaceSubrange.swift"
+  : [1755694538, 287269183]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Operations/BigString+Split.swift"
+  : [1755694538, 287323062]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Operations/Range+BigString.swift"
+  : [1755694538, 287375440]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Views/BigString+UTF16View.swift"
+  : [1755694538, 287484868]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Views/BigString+UTF8View.swift"
+  : [1755694538, 287538831]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Views/BigString+UnicodeScalarView.swift"
+  : [1755694538, 287627601]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Views/BigSubstring+UTF16View.swift"
+  : [1755694538, 287689160]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Views/BigSubstring+UTF8View.swift"
+  : [1755694538, 287754684]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Views/BigSubstring+UnicodeScalarView.swift"
+  : [1755694538, 287809982]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/BigString/Views/BigSubstring.swift"
+  : [1755694538, 287890530]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope+Builder.swift"
+  : [1755694538, 288110723]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope+Debugging.swift"
+  : [1755694538, 288164269]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope+Invariants.swift"
+  : [1755694538, 288216855]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope+_Node.swift"
+  : [1755694538, 288301410]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope+_Storage.swift"
+  : [1755694538, 288372568]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope+_UnmanagedLeaf.swift"
+  : [1755694538, 288429243]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope+_UnsafeHandle.swift"
+  : [1755694538, 288483958]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope.swift": [1755694538, 288531452]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/RopeElement.swift"
+  : [1755694538, 288600523]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/RopeMetric.swift"
+  : [1755694538, 288652441]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/RopeSummary.swift"
+  : [1755694538, 288711371]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/_RopeItem.swift"
+  : [1755694538, 288767587]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/_RopePath.swift"
+  : [1755694538, 288833612]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/_RopeVersion.swift"
+  : [1755694538, 288879270]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Conformances/Rope+Collection.swift"
+  : [1755694538, 288998548]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Conformances/Rope+Index.swift"
+  : [1755694538, 289053805]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Conformances/Rope+Sequence.swift"
+  : [1755694538, 289129846]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Operations/Rope+Append.swift"
+  : [1755694538, 289213106]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Operations/Rope+Extract.swift"
+  : [1755694538, 289264858]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Operations/Rope+Find.swift"
+  : [1755694538, 289319822]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Operations/Rope+ForEachWhile.swift"
+  : [1755694538, 289394027]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Operations/Rope+Insert.swift"
+  : [1755694538, 289447030]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Operations/Rope+Join.swift"
+  : [1755694538, 289497195]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Operations/Rope+MutatingForEach.swift"
+  : [1755694538, 289550574]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Operations/Rope+Remove.swift"
+  : [1755694538, 289622567]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Operations/Rope+RemoveSubrange.swift"
+  : [1755694538, 289682247]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Operations/Rope+Split.swift"
+  : [1755694538, 289741469]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Utilities/Optional Utilities.swift"
+  : [1755694538, 289828069]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Utilities/String Utilities.swift"
+  : [1755694538, 289905028]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Utilities/String.Index+ABI.swift"
+  : [1755694538, 289963123]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Utilities/_CharacterRecognizer.swift"
+  : [1755694538, 290018087]

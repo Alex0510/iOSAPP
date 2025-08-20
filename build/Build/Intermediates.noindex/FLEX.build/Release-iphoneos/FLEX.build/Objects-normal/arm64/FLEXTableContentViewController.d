@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableContentViewController.m \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableContentViewController.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/os_availability.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/ObjectiveC.modulemap \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/DatabaseBrowser/FLEXDatabaseManager.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/DatabaseBrowser/FLEXSQLResult.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableRowDataViewController.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXFilteringTableViewController.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableViewController.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableView.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/DatabaseBrowser/FLEXMultiColumnTableView.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableColumnHeader.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/FLEXWebViewController.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXUtility.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTypeEncodingParser.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXAlert.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/NSArray+FLEX.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/UIFont+FLEX.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXMacros.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/UIBarButtonItem+FLEX.h

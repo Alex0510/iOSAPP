@@ -1,0 +1,8 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "fc57308756741cfaaa0f7a35f74e82fdeb8fac18b127aabe5c0154514604934d"
+build_start_time: [1755694565, 258708000]
+build_end_time: [1755694566, 851477000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOEmbedded/AsyncTestingChannel.swift": [1755694538, 666716137]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOEmbedded/AsyncTestingEventLoop.swift": [1755694538, 666833663]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOEmbedded/Embedded.swift": [1755694538, 666919845]

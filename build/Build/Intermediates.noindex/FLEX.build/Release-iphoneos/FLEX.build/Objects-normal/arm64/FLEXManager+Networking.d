@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Manager/FLEXManager+Networking.m \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Manager/FLEXManager+Networking.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Manager/FLEXManager.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXExplorerToolbar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/ObjectiveC.modulemap \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Manager/Private/FLEXManager+Private.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXManager.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/ExplorerInterface/FLEXWindow.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Network/PonyDebugger/FLEXNetworkObserver.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Network/FLEXNetworkRecorder.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXObjectExplorerFactory.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXGlobalsEntry.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXObjectExplorerViewController.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXFilteringTableViewController.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableViewController.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableView.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXObjectExplorer.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXRuntime+UIKitHelpers.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXProperty.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXRuntimeConstants.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXIvar.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXMethod.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXMethodBase.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXProtocol.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableViewSection.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/NSArray+FLEX.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/FLEX/Classes/Headers/NSUserDefaults+FLEX.h

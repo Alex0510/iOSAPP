@@ -1,0 +1,16 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "5a0195b92640208a47cfea966428ac061280894ea6af08e87926831d9e369f4a"
+build_start_time: [1755694574, 149355000]
+build_end_time: [1755694576, 252114000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHPACK/DynamicHeaderTable.swift": [1755694538, 934976928]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHPACK/HPACKDecoder.swift": [1755694538, 935045158]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHPACK/HPACKEncoder.swift": [1755694538, 935200687]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHPACK/HPACKErrors.swift": [1755694538, 935273716]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHPACK/HPACKHeader.swift": [1755694538, 935365732]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHPACK/HeaderTables.swift": [1755694538, 935448609]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHPACK/HuffmanCoding.swift": [1755694538, 935515545]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHPACK/HuffmanTables.swift": [1755694538, 935774524]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHPACK/IndexedHeaderTable.swift": [1755694538, 935880562]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHPACK/IntegerCoding.swift": [1755694538, 935949292]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHPACK/StaticHeaderTable.swift": [1755694538, 936007089]

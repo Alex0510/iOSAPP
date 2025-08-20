@@ -1,0 +1,19 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "532242dfbe4852813f12440b8e23edd42ae7bb884b442fd381c2f9b1f44233db"
+build_start_time: [1755694574, 140140000]
+build_end_time: [1755694575, 326191000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/NIOWebSocketClientUpgrader.swift"
+  : [1755694538, 680458490]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/NIOWebSocketFrameAggregator.swift"
+  : [1755694538, 680518755]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/NIOWebSocketServerUpgrader.swift"
+  : [1755694538, 680607150]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/SHA1.swift": [1755694538, 680660946]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/WebSocketErrorCodes.swift": [1755694538, 680725176]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/WebSocketFrame.swift": [1755694538, 681025082]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/WebSocketFrameDecoder.swift": [1755694538, 681101958]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/WebSocketFrameEncoder.swift": [1755694538, 681160929]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/WebSocketOpcode.swift": [1755694538, 681209341]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/WebSocketProtocolErrorHandler.swift"
+  : [1755694538, 681264264]

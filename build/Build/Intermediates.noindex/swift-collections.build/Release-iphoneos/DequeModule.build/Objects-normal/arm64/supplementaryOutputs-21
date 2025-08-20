@@ -1,0 +1,9 @@
+"/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Codable.swift":
+  objc-header: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-collections.build/Release-iphoneos/DequeModule.build/Objects-normal/arm64/DequeModule-Swift.h"
+  abi-baseline-json: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-collections.build/Release-iphoneos/DequeModule.build/Objects-normal/arm64/DequeModule.abi.json"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-collections.build/Release-iphoneos/DequeModule.build/Objects-normal/arm64/DequeModule-master.d"
+  swiftmodule: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-collections.build/Release-iphoneos/DequeModule.build/Objects-normal/arm64/DequeModule.swiftmodule"
+  const-values: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-collections.build/Release-iphoneos/DequeModule.build/Objects-normal/arm64/DequeModule-master.swiftconstvalues"
+  swiftdoc: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-collections.build/Release-iphoneos/DequeModule.build/Objects-normal/arm64/DequeModule.swiftdoc"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-collections.build/Release-iphoneos/DequeModule.build/Objects-normal/arm64/DequeModule-master.dia"
+  swiftsourceinfo: "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/swift-collections.build/Release-iphoneos/DequeModule.build/Objects-normal/arm64/DequeModule.swiftsourceinfo"

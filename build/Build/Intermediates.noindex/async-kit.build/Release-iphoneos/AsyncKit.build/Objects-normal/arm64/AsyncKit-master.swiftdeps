@@ -1,0 +1,47 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "97e8c5db6cdd59f320023e3260699abc5c1d227766f64a0db73174cef45e6c35"
+build_start_time: [1755694570, 794007000]
+build_end_time: [1755694576, 185692000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/ConnectionPoolError.swift"
+  : [1755694540, 80786750]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/ConnectionPoolItem.swift"
+  : [1755694540, 80832733]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/ConnectionPoolSource.swift"
+  : [1755694540, 80871413]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/EventLoopConnectionPool.swift"
+  : [1755694540, 81003228]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/EventLoopGroupConnectionPool.swift"
+  : [1755694540, 81135000]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoop+Concurrency.swift"
+  : [1755694540, 81438352]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoop+Flatten.swift": [1755694540, 81524852]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoop+Future.swift": [1755694540, 81582476]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoopGroup+Concurrency.swift"
+  : [1755694540, 81662215]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoopGroup+Throwing.swift"
+  : [1755694540, 81719840]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Collection+Flatten.swift"
+  : [1755694540, 81800205]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/EventLoopFutureQueue+Sequence.swift"
+  : [1755694540, 81848441]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/EventLoopFutureQueue.swift"
+  : [1755694540, 81897053]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Collection.swift"
+  : [1755694540, 82176454]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Conjunctions.swift"
+  : [1755694540, 82269003]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Miscellaneous.swift"
+  : [1755694540, 82337852]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Nonempty.swift"
+  : [1755694540, 82386964]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Optional.swift"
+  : [1755694540, 82441292]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Transform.swift"
+  : [1755694540, 82486691]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Try.swift": [1755694540, 82534593]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/FutureOperators.swift"
+  : [1755694540, 82588045]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Optional+StrictMap.swift"
+  : [1755694540, 82636489]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/async-kit/Sources/AsyncKit/Exports.swift": [1755694540, 82679259]

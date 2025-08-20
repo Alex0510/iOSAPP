@@ -1,0 +1,6 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "3b2a78c0c2a19ec783d6a65e55adcd7ddb01c22cf68e8720a9fe0d620ade3fa0"
+build_start_time: [1755694561, 299821000]
+build_end_time: [1755694561, 416232000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/Collections/Collections.swift": [1755694538, 269632221]

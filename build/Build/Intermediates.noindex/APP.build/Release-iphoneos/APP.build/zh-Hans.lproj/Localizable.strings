@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%@ %@ %@</key>
+	<string>%@ %@ %@</string>
+	<key>%@ - %@</key>
+	<string>%@ - %@</string>
+	<key>%@ - %@ - %@</key>
+	<string>%@ - %@ - %@</string>
+	<key>%lld%%...</key>
+	<string>%lld%%...</string>
+	<key>2FA Code</key>
+	<string>验证码</string>
+	<key>2FA Code (Optional)</key>
+	<string>验证码（可选）</string>
+	<key>88888888888</key>
+	<string>88888888888</string>
+	<key>Account</key>
+	<string>账户</string>
+	<key>Add Account</key>
+	<string>添加账号</string>
+	<key>Although 2FA code is marked as optional, that is because we dont know if you have it or just incorrect password, you should provide it if you have it enabled.
+
+https://support.apple.com/102606</key>
+	<string>你的账户是否启用了双重认证，因此无法确定是否需要填写验证码。尽管此处标记为可选，若你的账户已经开启这项功能，请务必提供验证码。
+
+如果没有收到验证码，请从系统设置中获取一个验证码。
+
+https://support.apple.com/zh-cn/102606</string>
+	<key>App Store requires this country code to identify your package region.</key>
+	<string>App Store 需要你的国家代码来确认软件包的所属区域。</string>
+	<key>Authenticate</key>
+	<string>验证</string>
+	<key>Cancel</key>
+	<string>取消</string>
+	<key>Completed</key>
+	<string>已完成</string>
+	<key>Continue Download</key>
+	<string>继续下载</string>
+	<key>Control</key>
+	<string>控制</string>
+	<key>Country Code</key>
+	<string>国家代码</string>
+	<key>Danger Zone</key>
+	<string>⚠️ 操作提示</string>
+	<key>Delete</key>
+	<string>删除</string>
+	<key>Detail</key>
+	<string>详情</string>
+	<key>Direct install may have limitations that is not able to bypass. Use AirDrop method if possible on another device.</key>
+	<string>直接安装模式包含限制，无法覆盖安装，也无法升级软件。这可能无法满足你的需求。请考虑使用 AirDrop 来安装软件包。</string>
+	<key>Download</key>
+	<string>下载</string>
+	<key>Download In Progress...</key>
+	<string>正在下载...</string>
+	<key>Download Requested</key>
+	<string>已请求下载</string>
+	<key>Either connection is lost or the download is interrupted. Tap to continue.</key>
+	<string>下载被中断。点击以继续。</string>
+	<key>Email (Apple ID)</key>
+	<string>邮箱（Apple ID）</string>
+	<key>Failed to rotate password token, please re-authenticate within account page.</key>
+	<string>无法更新你的凭证，请删除账户并重新认证。</string>
+	<key>ID</key>
+	<string>ID</string>
+	<key>ID combined with a random seed generated on this device can download package from App Store.</key>
+	<string>你的 ID 与设备随机数将会被用于下载软件包。</string>
+	<key>IDs</key>
+	<string>ID</string>
+	<key>If you failed to acquire license for product, rotate the password token may help. This will use the initial password to authenticate with App Store again.</key>
+	<string>如果你无法获取软件许可证，可以在此处刷新你的账户信息。</string>
+	<key>Incomplete Package</key>
+	<string>未完成的软件包</string>
+	<key>Install</key>
+	<string>安装</string>
+	<key>Install Completed</key>
+	<string>安装已完成</string>
+	<key>Install via AirDrop</key>
+	<string>安装 @ AirDrop</string>
+	<key>License Not Found, please acquire license first.</key>
+	<string>无法找到软件许可证，请先获取。</string>
+	<key>MD5 mismatch</key>
+	<string>MD5 比对失败</string>
+	<key>Package</key>
+	<string>软件包</string>
+	<key>Packages</key>
+	<string>软件包</string>
+	<key>Password</key>
+	<string>密码</string>
+	<key>Password Token</key>
+	<string>密码凭证</string>
+	<key>Password Token Expired, please re-authenticate within account page.</key>
+	<string>密码凭证已过期，请重新验证账户。</string>
+	<key>Pending...</key>
+	<string>正在等待下载...</string>
+	<key>Puase</key>
+	<string>暂停</string>
+	<key>Ready To Install</key>
+	<string>准备就绪</string>
+	<key>Request Successes</key>
+	<string>请求成功</string>
+	<key>Resume</key>
+	<string>继续</string>
+	<key>Rotate Token</key>
+	<string>更新凭证</string>
+	<key>Rotating...</key>
+	<string>正在更新...</string>
+	<key>Search</key>
+	<string>搜索</string>
+	<key>Sending Manifest...</key>
+	<string>正在发送清单</string>
+	<key>Sending Payload...</key>
+	<string>正在发送软件包</string>
+	<key>Services ID</key>
+	<string>服务 ID</string>
+	<key>Sorry, nothing here.</key>
+	<string>『有问题~联系pxx917144686』</string>
+	<key>Success</key>
+	<string>成功</string>
+	<key>Suspended</key>
+	<string>已暂停</string>
+	<key>Temporarily Unavailable, please try again later.</key>
+	<string>服务暂不可用，请稍后再试。</string>
+	<key>This account is used to download this package. If you choose to AirDrop, your target device must sign in or previously signed in to this account and have at least one app installed.</key>
+	<string>此账号被用于下载这个APP</string>
+	<key>This email is used to sign in to Apple services.</key>
+	<string>这个邮箱地址通常是用于登录各个 Apple 服务的地址。</string>
+	<key>To install app, you need to grant local area network permission in order to communicate with system services.</key>
+	<string>若要安装软件，爱啪思道需要本地网络连接权限。请前往设置授予这个权限。</string>
+	<key>Unable to retrieve download url, please try again later.</key>
+	<string>无法获取下载链接，请稍后再试。</string>
+	<key>Unknown</key>
+	<string>未知</string>
+	<key>Verification In Progress...</key>
+	<string>正在验证...</string>
+	<key>Verifying...</key>
+	<string>正在验证...</string>
+	<key>We will store your account and password on disk without encryption. Please do not connect your device to untrusted hardware or use this app on a open system like macOS.</key>
+	<string>⚠️ 账户信息存储在设备本地。</string>
+	<key>Your account is not encrypted on disk.</key>
+	<string>🔐 账户数据以存储在设备本地</string>
+</dict>
+</plist>

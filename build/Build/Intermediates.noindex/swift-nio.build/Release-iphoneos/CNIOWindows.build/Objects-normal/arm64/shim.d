@@ -1,0 +1,3 @@
+dependencies: \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/CNIOWindows/include/module.modulemap \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/CNIOWindows/shim.c

@@ -1,0 +1,4 @@
+module CNIOBoringSSLShims {
+umbrella header "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSLShims/include/CNIOBoringSSLShims.h"
+export *
+}

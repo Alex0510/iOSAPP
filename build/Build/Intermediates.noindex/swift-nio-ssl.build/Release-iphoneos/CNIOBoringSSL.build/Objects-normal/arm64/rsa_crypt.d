@@ -1,0 +1,33 @@
+dependencies: \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/rsa/rsa_crypt.cc \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_base.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_is_boringssl.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_opensslconf.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_target.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_boringssl_prefix_symbols.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_bn.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_thread.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_err.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_evp.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_evp_errors.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_aead.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_base64.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_cipher.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_digest.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_nid.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_mem.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_rand.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_rsa.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_engine.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_ex_data.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_stack.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/rsa/../fipsmodule/bn/internal.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/rsa/../fipsmodule/bn/../../internal.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_arm_arch.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_crypto.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_sha.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_bcm_public.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/rsa/../fipsmodule/rsa/internal.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/rsa/../fipsmodule/rsa/../../internal.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/rsa/../internal.h \
+  /Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/rsa/internal.h

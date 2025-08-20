@@ -1,0 +1,64 @@
+{
+  "source": "/Users/pxx917144686/Downloads/APP123/APP/Interface/Download/DownloadView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Download",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "Packages",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Packages",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sorry, nothing here.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "Resume",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 91
+        }
+      },
+      {
+        "comment": "",
+        "key": "Puase",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 99
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 113
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,60 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "7af218707b7fae2cc424008ccb4b8553009f22fe14a11f368dce48514dc6c540"
+build_start_time: [1755694557, 811067000]
+build_end_time: [1755694559, 826110000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Activity/ActivityBar.swift"
+  : [1755694539, 465149522]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Activity/ActivityIndicator.swift"
+  : [1755694539, 465212034]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Activity/ActivityIndicatorRenderer.swift"
+  : [1755694539, 465271124]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Activity/ActivityIndicatorState.swift"
+  : [1755694539, 465317111]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Activity/CustomActivity.swift"
+  : [1755694539, 465372571]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Activity/LoadingBar.swift"
+  : [1755694539, 465428699]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Activity/ProgressBar.swift"
+  : [1755694539, 465479986]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Clear/Console+Clear.swift"
+  : [1755694539, 465558898]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Clear/Console+Ephemeral.swift"
+  : [1755694539, 465611103]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Clear/ConsoleClear.swift"
+  : [1755694539, 465658759]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Input/Console+Ask.swift"
+  : [1755694539, 465944697]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Input/Console+Choose.swift"
+  : [1755694539, 465995358]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Input/Console+Confirm.swift"
+  : [1755694539, 466048106]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Input/Console+Input.swift"
+  : [1755694539, 466097640]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Output/Console+Center.swift"
+  : [1755694539, 466178931]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Output/Console+Output.swift"
+  : [1755694539, 466276622]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Output/Console+Wait.swift"
+  : [1755694539, 466346688]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Output/ConsoleColor.swift"
+  : [1755694539, 466408991]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Output/ConsoleStyle.swift"
+  : [1755694539, 466471253]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Output/ConsoleText.swift"
+  : [1755694539, 466537981]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Output/ConsoleTextFragment.swift"
+  : [1755694539, 466599366]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Terminal/ANSI.swift": [1755694539, 466707031]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Terminal/Console.swift"
+  : [1755694539, 466769293]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Terminal/Terminal.swift"
+  : [1755694539, 466831889]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Terminal/readpassphrase_linux.swift"
+  : [1755694539, 466897906]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Utilities/AnySendableHashable.swift"
+  : [1755694539, 466973606]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Utilities/ConsoleLogger.swift"
+  : [1755694539, 467060572]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/console-kit/Sources/ConsoleKitTerminal/Utilities/LoggerFragment.swift"
+  : [1755694539, 467149166]

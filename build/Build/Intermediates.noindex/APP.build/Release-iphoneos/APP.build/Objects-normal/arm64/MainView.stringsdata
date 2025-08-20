@@ -1,0 +1,32 @@
+{
+  "source": "/Users/pxx917144686/Downloads/APP123/APP/Interface/Welcome/MainView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Account",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "Search",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Download",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 38
+        }
+      }
+    ]
+  },
+  "version": 1
+}

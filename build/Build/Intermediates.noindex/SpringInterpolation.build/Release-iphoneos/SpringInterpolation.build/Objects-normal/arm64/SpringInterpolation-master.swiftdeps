@@ -1,0 +1,15 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "52663d4da3929bd3e5f8dd3d2c242dc0b3a7556612a6ad2c02698bd98f9aa3d5"
+build_start_time: [1755694545, 327352000]
+build_end_time: [1755694557, 783156000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/SpringInterpolation/Sources/SpringInterpolation/SpringInterpolation+Configuration.swift"
+  : [1755694538, 784323063]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/SpringInterpolation/Sources/SpringInterpolation/SpringInterpolation+Context.swift"
+  : [1755694538, 784379112]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/SpringInterpolation/Sources/SpringInterpolation/SpringInterpolation+Parameters.swift"
+  : [1755694538, 784429069]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/SpringInterpolation/Sources/SpringInterpolation/SpringInterpolation.swift"
+  : [1755694538, 784481446]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/SpringInterpolation/Sources/SpringInterpolation/SpringInterpolation2D.swift"
+  : [1755694538, 784536745]

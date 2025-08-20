@@ -1,0 +1,13 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "39a0398128636a07d60d8bd14e16b09e7c9860cc253910966d71844e9edb5d74"
+build_start_time: [1755694570, 869176000]
+build_end_time: [1755694571, 559727000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOTLS/ApplicationProtocolNegotiationHandler.swift"
+  : [1755694538, 679491620]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOTLS/NIOTypedApplicationProtocolNegotiationHandler.swift"
+  : [1755694538, 679554765]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOTLS/ProtocolNegotiationHandlerStateMachine.swift"
+  : [1755694538, 679656681]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOTLS/SNIHandler.swift": [1755694538, 679726462]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOTLS/TLSEvents.swift": [1755694538, 679795032]

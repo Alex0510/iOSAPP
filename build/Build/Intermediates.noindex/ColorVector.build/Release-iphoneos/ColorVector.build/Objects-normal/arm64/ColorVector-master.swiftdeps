@@ -1,0 +1,24 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "61c570d8af12e476e1d2156e10fec5bed11b9ee3ace73815dca7e0471811c773"
+build_start_time: [1755694545, 955981000]
+build_end_time: [1755694558, 912850000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion+LAB_LCH.swift"
+  : [1755694537, 999702485]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion+LAB_XYZ.swift"
+  : [1755694537, 999743802]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion+LCH_LAB.swift"
+  : [1755694537, 999780988]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion+RGB_XYZ.swift"
+  : [1755694537, 999820010]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion+XYZ_LAB.swift"
+  : [1755694537, 999858489]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion+XYZ_RGB.swift"
+  : [1755694537, 999908112]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion.swift"
+  : [1755694537, 999959195]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorVector+LAB.swift": [1755694538, 5855]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorVector+LCH.swift": [1755694538, 148796]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorVector+RGB.swift": [1755694538, 314108]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorVector+XYZ.swift": [1755694538, 378964]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorVector.swift": [1755694538, 432760]

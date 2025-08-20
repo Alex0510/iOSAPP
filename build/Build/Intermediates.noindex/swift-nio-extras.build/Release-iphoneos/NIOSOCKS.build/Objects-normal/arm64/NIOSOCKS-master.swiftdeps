@@ -1,0 +1,26 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "75a185fcd272798660654323a648a561e88d1db89c2b0fccad5d611befbc61d3"
+build_start_time: [1755694570, 871747000]
+build_end_time: [1755694571, 676537000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Channel Handlers/SOCKSClientHandler.swift"
+  : [1755694538, 827570753]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Channel Handlers/SOCKSServerHandshakeHandler.swift"
+  : [1755694538, 827631269]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/AuthenticationMethod.swift"
+  : [1755694538, 827799544]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/ClientGreeting.swift"
+  : [1755694538, 827849250]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Errors.swift": [1755694538, 827894365]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Helpers.swift": [1755694538, 827943237]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Messages.swift": [1755694538, 827988227]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SOCKSRequest.swift"
+  : [1755694538, 828038935]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SOCKSResponse.swift"
+  : [1755694538, 828084676]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SelectedAuthenticationMethod.swift"
+  : [1755694538, 828134173]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/State/ClientStateMachine.swift"
+  : [1755694538, 828204705]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/State/ServerStateMachine.swift"
+  : [1755694538, 828237717]

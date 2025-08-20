@@ -1,0 +1,14 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "5d746bb14b2396b6bb0efc7283f7bc5c8a7a9e02037b03832618e45990318664"
+build_start_time: [1755694575, 865381000]
+build_end_time: [1755694577, 45975000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/Concurrency/WebSocket+Concurrency.swift"
+  : [1755694539, 255623202]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/Exports.swift": [1755694539, 255852136]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/HTTPUpgradeRequestHandler.swift"
+  : [1755694539, 255902129]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/WebSocket+Connect.swift": [1755694539, 255979205]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/WebSocket.swift": [1755694539, 256063710]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/WebSocketClient.swift": [1755694539, 256133775]
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/WebSocketHandler.swift": [1755694539, 256177801]

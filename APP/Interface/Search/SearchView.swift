@@ -1,16 +1,16 @@
 //
 //  SearchView.swift
-//  Created by pxx917144686 on 2025/08/19.
+//  Created by pxx917144686 on 2025/08/20.
 //
 
-// Apple 相关包
+// Apple 相关
 import ApplePackage
 // Kingfisher 库，用于图片加载
 import Kingfisher
 // SwiftUI 框架
 import SwiftUI
 
-// 定义搜索视图结构体，遵循 View 协议
+// 搜索视图结构
 struct SearchView: View {
     // 从 AppStorage 中读取或存储搜索关键词
     @AppStorage("searchKey") var searchKey = ""
@@ -100,8 +100,34 @@ struct SearchView: View {
     @State private var isLoadingMore = false
     // 每页显示的结果数量
     private let pageSize = 20
+    // 搜索历史条目结构体
+    struct SearchHistoryItem: Codable, Identifiable, Hashable {
+        let id: UUID
+        let query: String
+        let timestamp: Date
+        let searchType: EntityType
+        let region: String
+    
+        // 格式化时间显示
+        var formattedDate: String {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .short
+            formatter.timeStyle = .short
+            return formatter.string(from: timestamp)
+        }
+        
+        // 实现Hashable协议
+        func hash(into hasher: inout Hasher) {
+            hasher.combine(id)
+        }
+        
+        // 实现Equatable协议
+        static func == (lhs: SearchHistoryItem, rhs: SearchHistoryItem) -> Bool {
+            lhs.id == rhs.id
+        }
+    }
     // 存储搜索历史记录
-    @State var searchHistory: [String] = []
+    @State var searchHistory: [SearchHistoryItem] = []
     // 标记是否显示搜索历史
     @State var showSearchHistory = false
     // 当前的排序选项
@@ -131,7 +157,7 @@ struct SearchView: View {
     // 当前的视图模式
     @State private var viewMode: ViewMode = .grid
     
-    // 定义搜索分类枚举
+    // 搜索分类枚举
     enum SearchCategory: String, CaseIterable {
         case all = "全部"
         case apps = "应用"
@@ -162,7 +188,7 @@ struct SearchView: View {
         }
     }
     
-    // 定义视图模式枚举
+    // 视图模式枚举
     enum ViewMode: String, CaseIterable {
         case grid = "网格"
         case list = "列表"
@@ -176,7 +202,7 @@ struct SearchView: View {
         }
     }
     
-    // 定义排序选项枚举
+    // 排序选项枚举
     enum SortOption: String, CaseIterable {
         case relevance = "Relevance"
         case name = "Name"
@@ -207,7 +233,7 @@ struct SearchView: View {
         }
     }
 
-    // 计算属性，获取可能的地区代码集合
+    // 获取地区代码集合
     var possibleReigon: Set<String> {
         Set(vm.accounts.map(\.countryCode))
     }
@@ -271,12 +297,12 @@ struct SearchView: View {
             // 标题和操作按钮
             HStack {
                 VStack(alignment: .leading, spacing: Spacing.xs) {
-                    Text("发现精彩")
+                    Text("降级APP版本")
                         .font(.displaySmall)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
                     
-                    Text("探索无限")
+                    Text("搜索...")
                         .font(.bodyLarge)
                         .foregroundColor(.secondary)
                 }
@@ -490,19 +516,24 @@ struct SearchView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: Spacing.sm) {
-                    ForEach(searchHistory.prefix(8), id: \.self) { history in
+                    ForEach(searchHistory.prefix(8)) { item in
                         Button {
-                            searchKey = history
+                            searchKey = item.query
+                            searchType = item.searchType
+                            searchRegion = item.region
                             showSearchHistory = false
                             Task {
                                 await performSearch()
                             }
                         } label: {
                             HStack(spacing: Spacing.xs) {
-                                Image(systemName: "magnifyingglass")
+                                Image(systemName: item.searchType.systemImage)
                                     .font(.system(size: 12))
-                                Text(history)
+                                Text(item.query)
                                     .font(.labelMedium)
+                                Text(item.formattedDate)
+                                    .font(.caption2)
+                                    .foregroundColor(.secondary)
                             }
                             .foregroundColor(.primary)
                             .padding(.horizontal, Spacing.sm)
@@ -723,14 +754,16 @@ struct SearchView: View {
                         .foregroundColor(.secondary)
                     
                     HStack(spacing: Spacing.sm) {
-                        ForEach(searchHistory.prefix(3), id: \.self) { history in
+                        ForEach(searchHistory.prefix(3)) { item in
                             Button {
-                                searchKey = history
+                                searchKey = item.query
+                                searchType = item.searchType
+                                searchRegion = item.region
                                 Task {
                                     await performSearch()
                                 }
                             } label: {
-                                Text(history)
+                                Text(item.query)
                                     .font(.labelMedium)
                                     .foregroundColor(.primaryAccent)
                                     .padding(.horizontal, Spacing.sm)
@@ -990,6 +1023,96 @@ struct SearchView: View {
         }
     }
     
+    // MARK: - 排序选项子视图
+    struct SortOptionsView: View {
+        @Binding var sortOption: SortOption
+        let sortResults: () -> Void
+        
+        var body: some View {
+            VStack(alignment: .leading, spacing: Spacing.md) {
+                Label("排序方式", systemImage: "arrow.up.arrow.down")
+                    .font(.titleMedium)
+                    .foregroundColor(.primaryAccent)
+                
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: Spacing.sm) {
+                    ForEach(SortOption.allCases, id: \.self) { option in
+                        Button {
+                            sortOption = option
+                            sortResults()
+                        } label: {
+                            HStack(spacing: Spacing.sm) {
+                                Image(systemName: option.systemImage)
+                                    .font(.system(size: 16, weight: .medium))
+                                Text(option.localizedName)
+                                    .font(.labelLarge)
+                                Spacer()
+                                if sortOption == option {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundColor(.primaryAccent)
+                                }
+                            }
+                            .foregroundColor(sortOption == option ? .primaryAccent : .primary)
+                            .padding(Spacing.sm)
+                            .background(
+                                RoundedRectangle(cornerRadius: CornerRadius.sm)
+                                    .fill(
+                                        sortOption == option
+                                            ? Color.primaryAccent.opacity(0.1)
+                                            : Color.clear
+                                    )
+                            )
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+            }
+        }
+    }
+    
+    // MARK: - 视图选项子视图
+    struct ViewOptionsView: View {
+        @Binding var viewMode: ViewMode
+        
+        var body: some View {
+            VStack(alignment: .leading, spacing: Spacing.md) {
+                Label("显示方式", systemImage: "rectangle.grid.2x2")
+                    .font(.titleMedium)
+                    .foregroundColor(.secondaryAccent)
+                
+                HStack(spacing: Spacing.md) {
+                    ForEach(ViewMode.allCases, id: \.self) { mode in
+                        Button {
+                            viewMode = mode
+                        } label: {
+                            HStack(spacing: Spacing.sm) {
+                                Image(systemName: mode.icon)
+                                    .font(.system(size: 16, weight: .medium))
+                                Text(mode.rawValue)
+                                    .font(.labelLarge)
+                                Spacer()
+                                if viewMode == mode {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundColor(.secondaryAccent)
+                                }
+                            }
+                            .foregroundColor(viewMode == mode ? .secondaryAccent : .primary)
+                            .padding(Spacing.sm)
+                            .background(
+                                RoundedRectangle(cornerRadius: CornerRadius.sm)
+                                    .fill(
+                                        viewMode == mode
+                                            ? Color.secondaryAccent.opacity(0.1)
+                                            : Color.clear
+                                    )
+                            )
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+            }
+        }
+    }
+    
     // MARK: - 高级筛选面板
     // 高级筛选面板视图
     var advancedFiltersSheet: some View {
@@ -998,82 +1121,13 @@ struct SearchView: View {
                 VStack(spacing: Spacing.lg) {
                     // 排序选项
                     ModernCard(style: .filled, padding: Spacing.lg) {
-                        VStack(alignment: .leading, spacing: Spacing.md) {
-                            Label("排序方式", systemImage: "arrow.up.arrow.down")
-                                .font(.titleMedium)
-                                .foregroundColor(.primaryAccent)
-                            
-                            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: Spacing.sm) {
-                                ForEach(SortOption.allCases, id: \.self) { option in
-                                    Button {
-                                        sortOption = option
-                                        sortResults()
-                                    } label: {
-                                        HStack(spacing: Spacing.sm) {
-                                            Image(systemName: option.systemImage)
-                                                .font(.system(size: 16, weight: .medium))
-                                            Text(option.localizedName)
-                                                .font(.labelLarge)
-                                            Spacer()
-                                            if sortOption == option {
-                                                Image(systemName: "checkmark.circle.fill")
-                                                    .foregroundColor(.primaryAccent)
-                                            }
-                                        }
-                                        .foregroundColor(sortOption == option ? .primaryAccent : .primary)
-                                        .padding(Spacing.sm)
-                                        .background(
-                                            RoundedRectangle(cornerRadius: CornerRadius.sm)
-                                                .fill(
-                                                    sortOption == option
-                                                        ? Color.primaryAccent.opacity(0.1)
-                                                        : Color.clear
-                                                )
-                                        )
-                                    }
-                                    .buttonStyle(.plain)
-                                }
-                            }
-                        }
+                        SortOptionsView(sortOption: $sortOption, sortResults: sortResults)
                     }
                     
                     // 视图选项
                     ModernCard(style: .filled, padding: Spacing.lg) {
                         VStack(alignment: .leading, spacing: Spacing.md) {
-                            Label("显示方式", systemImage: "rectangle.grid.2x2")
-                                .font(.titleMedium)
-                                .foregroundColor(.secondaryAccent)
-                            
-                            HStack(spacing: Spacing.md) {
-                                ForEach(ViewMode.allCases, id: \.self) { mode in
-                                    Button {
-                                        viewMode = mode
-                                    } label: {
-                                        HStack(spacing: Spacing.sm) {
-                                            Image(systemName: mode.icon)
-                                                .font(.system(size: 16, weight: .medium))
-                                            Text(mode.rawValue)
-                                                .font(.labelLarge)
-                                            Spacer()
-                                            if viewMode == mode {
-                                                Image(systemName: "checkmark.circle.fill")
-                                                    .foregroundColor(.secondaryAccent)
-                                            }
-                                        }
-                                        .foregroundColor(viewMode == mode ? .secondaryAccent : .primary)
-                                        .padding(Spacing.sm)
-                                        .background(
-                                            RoundedRectangle(cornerRadius: CornerRadius.sm)
-                                                .fill(
-                                                    viewMode == mode
-                                                        ? Color.secondaryAccent.opacity(0.1)
-                                                        : Color.clear
-                                                )
-                                        )
-                                    }
-                                    .buttonStyle(.plain)
-                                }
-                            }
+                            ViewOptionsView(viewMode: $viewMode)
                             
                             if viewMode == .grid {
                                 VStack(alignment: .leading, spacing: Spacing.sm) {
@@ -1110,10 +1164,12 @@ struct SearchView: View {
                                 }
                                 
                                 LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: Spacing.xs) {
-                                    ForEach(searchHistory.prefix(10), id: \.self) { history in
+                                    ForEach(searchHistory.prefix(10)) { item in
                                         HStack {
                                             Button {
-                                                searchKey = history
+                                                searchKey = item.query
+                                                searchType = item.searchType
+                                                searchRegion = item.region
                                                 showAdvancedFilters = false
                                                 Task {
                                                     await performSearch()
@@ -1122,7 +1178,7 @@ struct SearchView: View {
                                                 HStack(spacing: Spacing.xs) {
                                                     Image(systemName: "clock")
                                                         .font(.system(size: 12))
-                                                    Text(history)
+                                                    Text(item.query)
                                                         .font(.labelMedium)
                                                     Spacer()
                                                 }
@@ -1130,7 +1186,7 @@ struct SearchView: View {
                                             .buttonStyle(.plain)
                                             
                                             Button {
-                                                removeFromHistory(history)
+                                                removeFromHistory(item)
                                             } label: {
                                                 Image(systemName: "xmark.circle.fill")
                                                     .font(.system(size: 14))
@@ -1224,7 +1280,7 @@ struct SearchView: View {
     
     // 加载搜索历史记录
     func loadSearchHistory() {
-        if let data = try? JSONDecoder().decode([String].self, from: searchHistoryData) {
+        if let data = try? JSONDecoder().decode([SearchHistoryItem].self, from: searchHistoryData) {
             searchHistory = data
         }
     }
@@ -1242,9 +1298,16 @@ struct SearchView: View {
         guard !trimmedQuery.isEmpty else { return }
         
         // 移除重复项
-        searchHistory.removeAll { $0 == trimmedQuery }
+        searchHistory.removeAll { $0.query == trimmedQuery }
         // 添加到开头
-        searchHistory.insert(trimmedQuery, at: 0)
+        let newItem = SearchHistoryItem(
+            id: UUID(),
+            query: trimmedQuery,
+            timestamp: Date(),
+            searchType: searchType,
+            region: searchRegion
+        )
+        searchHistory.insert(newItem, at: 0)
         // 限制历史记录数量
         if searchHistory.count > 20 {
             searchHistory = Array(searchHistory.prefix(20))
@@ -1254,8 +1317,8 @@ struct SearchView: View {
     }
     
     // 从搜索历史记录中移除指定的搜索词
-    func removeFromHistory(_ query: String) {
-        searchHistory.removeAll { $0 == query }
+    func removeFromHistory(_ item: SearchHistoryItem) {
+        searchHistory.removeAll { $0.id == item.id }
         saveSearchHistory()
     }
     

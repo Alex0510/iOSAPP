@@ -1,0 +1,9 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "a0ad34bac9dd66a9487e9524ca5a29e706c0cf475326463aa7403e35fa9e4275"
+build_start_time: [1755694545, 327564000]
+build_end_time: [1755694557, 786121000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-service-context/Sources/ServiceContextModule/ServiceContext.swift"
+  : [1755694537, 796691683]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-service-context/Sources/ServiceContextModule/ServiceContextKey.swift"
+  : [1755694537, 796749742]

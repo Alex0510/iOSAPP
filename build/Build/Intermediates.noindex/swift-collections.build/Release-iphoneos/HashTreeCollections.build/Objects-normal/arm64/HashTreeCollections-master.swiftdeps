@@ -1,0 +1,175 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "43e085c5435c1e82b44a57b448e07aba26454c1fc6a792708ff63d23a659181d"
+build_start_time: [1755694556, 610321000]
+build_end_time: [1755694559, 692630000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_AncestorHashSlots.swift"
+  : [1755694538, 272962659]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_Bitmap.swift"
+  : [1755694538, 273005437]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_Bucket.swift"
+  : [1755694538, 273046671]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_Hash.swift"
+  : [1755694538, 273088155]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashLevel.swift"
+  : [1755694538, 273126510]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Builder.swift"
+  : [1755694538, 273173086]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Debugging.swift"
+  : [1755694538, 273214111]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Initializers.swift"
+  : [1755694538, 273260061]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Invariants.swift"
+  : [1755694538, 273299876]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Lookups.swift"
+  : [1755694538, 273346369]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Primitive Insertions.swift"
+  : [1755694538, 273392277]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Primitive Removals.swift"
+  : [1755694538, 273432008]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Primitive Replacement.swift"
+  : [1755694538, 273471615]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Storage.swift"
+  : [1755694538, 273517565]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Structural compactMapValues.swift"
+  : [1755694538, 273557964]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Structural filter.swift"
+  : [1755694538, 273604957]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Structural intersection.swift"
+  : [1755694538, 273655540]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Structural isDisjoint.swift"
+  : [1755694538, 273704704]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Structural isEqualSet.swift"
+  : [1755694538, 273747398]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Structural isSubset.swift"
+  : [1755694538, 273795143]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Structural mapValues.swift"
+  : [1755694538, 273839173]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Structural merge.swift"
+  : [1755694538, 273887085]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Structural subtracting.swift"
+  : [1755694538, 273936958]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Structural symmetricDifference.swift"
+  : [1755694538, 274000436]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Structural union.swift"
+  : [1755694538, 274038832]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Subtree Insertions.swift"
+  : [1755694538, 274091460]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Subtree Modify.swift"
+  : [1755694538, 274151558]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+Subtree Removals.swift"
+  : [1755694538, 274204812]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode+UnsafeHandle.swift"
+  : [1755694538, 274253516]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNode.swift"
+  : [1755694538, 274303348]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashNodeHeader.swift"
+  : [1755694538, 274347962]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashSlot.swift"
+  : [1755694538, 274388821]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashStack.swift"
+  : [1755694538, 274439862]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashTreeIterator.swift"
+  : [1755694538, 274488316]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_HashTreeStatistics.swift"
+  : [1755694538, 274536186]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_RawHashNode+UnsafeHandle.swift"
+  : [1755694538, 274590191]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_RawHashNode.swift"
+  : [1755694538, 274641358]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_UnmanagedHashNode.swift"
+  : [1755694538, 274824114]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/HashNode/_UnsafePath.swift"
+  : [1755694538, 274901783]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Codable.swift"
+  : [1755694538, 275198601]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Collection.swift"
+  : [1755694538, 275245219]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+CustomReflectable.swift"
+  : [1755694538, 275291252]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Debugging.swift"
+  : [1755694538, 275343796]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Descriptions.swift"
+  : [1755694538, 275390414]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Equatable.swift"
+  : [1755694538, 275440037]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+ExpressibleByDictionaryLiteral.swift"
+  : [1755694538, 275484818]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Filter.swift"
+  : [1755694538, 275724626]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Hashable.swift"
+  : [1755694538, 275776294]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Initializers.swift"
+  : [1755694538, 275847869]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Keys.swift"
+  : [1755694538, 275893527]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+MapValues.swift"
+  : [1755694538, 275939310]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Merge.swift"
+  : [1755694538, 275986262]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Sendable.swift"
+  : [1755694538, 276030125]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Sequence.swift"
+  : [1755694538, 276106959]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary+Values.swift"
+  : [1755694538, 276158668]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeDictionary/TreeDictionary.swift"
+  : [1755694538, 276231537]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+Codable.swift"
+  : [1755694538, 276341008]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+Collection.swift"
+  : [1755694538, 276383786]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+CustomReflectable.swift"
+  : [1755694538, 276428275]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+Debugging.swift"
+  : [1755694538, 276473975]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+Descriptions.swift"
+  : [1755694538, 276518047]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+Equatable.swift"
+  : [1755694538, 276567503]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+ExpressibleByArrayLiteral.swift"
+  : [1755694538, 276608027]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+Extras.swift"
+  : [1755694538, 276657191]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+Filter.swift"
+  : [1755694538, 276709985]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+Hashable.swift"
+  : [1755694538, 276758731]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+Sendable.swift"
+  : [1755694538, 276812903]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+Sequence.swift"
+  : [1755694538, 276867910]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra Initializers.swift"
+  : [1755694538, 276926839]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra basics.swift"
+  : [1755694538, 276977714]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra formIntersection.swift"
+  : [1755694538, 277033722]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra formSymmetricDifference.swift"
+  : [1755694538, 277091441]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra formUnion.swift"
+  : [1755694538, 277148284]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra intersection.swift"
+  : [1755694538, 277213098]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra isDisjoint.swift"
+  : [1755694538, 277270275]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra isEqualSet.swift"
+  : [1755694538, 277325532]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra isStrictSubset.swift"
+  : [1755694538, 277395312]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra isStrictSuperset.swift"
+  : [1755694538, 277442222]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra isSubset.swift"
+  : [1755694538, 277498689]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra isSuperset.swift"
+  : [1755694538, 277549606]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra subtract.swift"
+  : [1755694538, 277601608]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra subtracting.swift"
+  : [1755694538, 277655362]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra symmetricDifference.swift"
+  : [1755694538, 277701228]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet+SetAlgebra union.swift"
+  : [1755694538, 277744174]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-collections/Sources/HashTreeCollections/TreeSet/TreeSet.swift"
+  : [1755694538, 277795006]

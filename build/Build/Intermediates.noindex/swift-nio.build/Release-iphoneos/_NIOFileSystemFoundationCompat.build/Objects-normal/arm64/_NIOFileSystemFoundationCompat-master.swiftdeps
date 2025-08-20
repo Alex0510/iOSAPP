@@ -1,0 +1,9 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "ff172d6cb1fc64cbd146654aafb4dcf7780ba7d31af6c3bb78533a1703c7510b"
+build_start_time: [1755694574, 935472000]
+build_end_time: [1755694575, 161351000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystemFoundationCompat/Data+FileSystem.swift"
+  : [1755694538, 670173449]
+  ? "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystemFoundationCompat/Date+FileInfo.swift"
+  : [1755694538, 670238430]

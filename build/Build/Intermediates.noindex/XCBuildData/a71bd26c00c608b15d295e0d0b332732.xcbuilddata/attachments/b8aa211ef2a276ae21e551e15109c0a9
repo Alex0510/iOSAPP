@@ -1,0 +1,85 @@
+{
+  "" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/ColorfulX-master.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/ColorfulX-master.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/ColorfulX-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/ColorfulX-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/ColorfulX-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/ColorfulX-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/AnimatedMulticolorGradientView+Speckle.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/AnimatedMulticolorGradientView+Speckle.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/AnimatedMulticolorGradientView+Speckle.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/AnimatedMulticolorGradientView+Speckle.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/AnimatedMulticolorGradientView+SwiftUI.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/AnimatedMulticolorGradientView+SwiftUI.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/AnimatedMulticolorGradientView+SwiftUI.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/AnimatedMulticolorGradientView+SwiftUI.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/AnimatedMulticolorGradientView+Update.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/AnimatedMulticolorGradientView+Update.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/AnimatedMulticolorGradientView+Update.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/AnimatedMulticolorGradientView+Update.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/AnimatedMulticolorGradientView.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/AnimatedMulticolorGradientView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/AnimatedMulticolorGradientView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/AnimatedMulticolorGradientView.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/Color.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/Color.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/Color.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/Color.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/ColorfulPreset.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/ColorfulPreset.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/ColorfulPreset.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/ColorfulPreset.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/ColorfulView.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/ColorfulView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/ColorfulView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/ColorfulView.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/Lerpable.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/Lerpable.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/Lerpable.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/Lerpable.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/MetalProgram.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MetalProgram.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MetalProgram.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MetalProgram.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/MetalView.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MetalView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MetalView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MetalView.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/MulticolorGradientView+Lerpable.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MulticolorGradientView+Lerpable.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MulticolorGradientView+Lerpable.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MulticolorGradientView+Lerpable.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/MulticolorGradientView+Parameters.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MulticolorGradientView+Parameters.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MulticolorGradientView+Parameters.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MulticolorGradientView+Parameters.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/MulticolorGradientView+SwiftUI.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MulticolorGradientView+SwiftUI.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MulticolorGradientView+SwiftUI.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MulticolorGradientView+SwiftUI.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/MulticolorGradientView.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MulticolorGradientView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MulticolorGradientView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/MulticolorGradientView.o"
+  },
+  "/Users/pxx917144686/Downloads/APP123/build/SourcePackages/checkouts/ColorfulX/Sources/ColorfulX/Uniforms.swift" : {
+    "index-unit-output-path" : "/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/Uniforms.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/Uniforms.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/build/Build/Intermediates.noindex/ColorfulX.build/Release-iphoneos/ColorfulX.build/Objects-normal/arm64/Uniforms.o"
+  }
+}

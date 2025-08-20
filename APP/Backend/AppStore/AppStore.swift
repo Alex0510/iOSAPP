@@ -39,15 +39,24 @@ class AppStore: ObservableObject {
     /// - Returns: 生成的12位大写十六进制字符串
     static func createSeed() -> String {
         // 生成格式如00:00:00:00:00:00的MAC地址，然后转换为大写十六进制字符串
+        // 1. 从一个样例MAC地址字符串开始
         "00:00:00:00:00:00"
+            // 2. 按冒号分割字符串，得到6个部分
             .components(separatedBy: ":")
+            // 3. 将每个部分替换为随机生成的0-255之间的十六进制值
             .map { _ in
+                // 生成0-255之间的随机数，并转换为十六进制字符串
                 let randomHex = String(Int.random(in: 0 ... 255), radix: 16)
+                // 确保生成的十六进制值是两位数，不足前面补0
                 return randomHex.count == 1 ? "0\(randomHex)" : randomHex
             }
+            // 4. 用冒号连接所有部分，形成MAC地址格式
             .joined(separator: ":")
+            // 5. 去除首尾的空白字符
             .trimmingCharacters(in: .whitespacesAndNewlines)
+            // 6. 移除所有冒号，得到纯十六进制字符串
             .replacingOccurrences(of: ":", with: "")
+            // 7. 转换为大写
             .uppercased()
     }
 
@@ -63,9 +72,12 @@ class AppStore: ObservableObject {
     @PublishedPersist(key: "DemoMode", defaultValue: false)
     var demoMode: Bool
 
-    /// 单例实例：全局访问点
+    /// 单例实例
+    /// 提供全局访问点，确保整个应用中只有一个AppStore实例
     static let this = AppStore()
-    /// 私有初始化方法：设置订阅
+    /// 私有初始化方法
+    /// 防止外部创建新的实例
+    /// 设置设备种子地址变化的订阅
     private init() {
         // 监听deviceSeedAddress变化，并更新ApplePackage的overrideGUID
         $deviceSeedAddress

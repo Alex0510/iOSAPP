@@ -1,9 +1,11 @@
 // 导入必要的框架
-import ApplePackage
-import Combine
-import Foundation
+import ApplePackage  // 自定义的Apple包处理库
+import Combine       // 响应式编程框架
+import Foundation    // 基础框架
 
-/// AppStore类：管理应用商店相关功能，遵循ObservableObject协议以便于UI响应式更新
+/// AppStore类
+/// 管理应用商店相关功能，包括账户管理、设备种子生成等
+/// 遵循ObservableObject协议以便于UI响应式更新
 class AppStore: ObservableObject {
     /// 账户结构体：存储账户信息，支持编码、解码、唯一标识和哈希
     struct Account: Codable, Identifiable, Hashable {

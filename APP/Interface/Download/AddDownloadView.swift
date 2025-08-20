@@ -1,6 +1,12 @@
 import ApplePackage
 import SwiftUI
 
+// 版本选择相关错误
+enum VersionError: Error {
+    case versionSelectionRequired
+    case versionNotFound
+}
+
 // 添加下载视图，用于直接下载App Store中不再可用的应用
 struct AddDownloadView: View {
     // 应用包ID
@@ -31,13 +37,17 @@ struct AddDownloadView: View {
     }
 
     var body: some View {
+        // 使用List布局展示界面元素
         List {
+            // 应用包ID相关输入区域
             Section {
+                // 应用包ID输入框
                 TextField("应用包ID", text: $bundleID)
                     .autocorrectionDisabled()
                     .textInputAutocapitalization(.none)
                     .focused($searchKeyFocused)
                     .onSubmit { startDownload() }
+                // 实体类型选择器
                 Picker("实体类型", selection: $searchType) {
                     ForEach(EntityType.allCases, id: \.self) { type in
                         Text(type.rawValue)
@@ -51,11 +61,14 @@ struct AddDownloadView: View {
                 Text("告诉我们应用的包ID以启动直接下载。适用于下载App Store中不再可用的应用。")
             }
 
+            // 账户选择区域
             Section {
                 if avm.demoMode {
+                    // 演示模式下显示隐藏内容
                     Text("演示模式已隐藏")
                         .redacted(reason: .placeholder)
                 } else {
+                    // 账户选择器
                     Picker("账户", selection: $selection) {
                         ForEach(avm.accounts) { account in
                             Text(account.email)
@@ -71,7 +84,9 @@ struct AddDownloadView: View {
                 Text("选择一个账户来下载此应用")
             }
 
+            // 请求下载按钮区域
             Section {
+                // 请求下载按钮，根据状态显示不同文本
                 Button(obtainDownloadURL ? "正在与Apple通信..." : "请求下载") {
                     startDownload()
                 }
@@ -82,6 +97,7 @@ struct AddDownloadView: View {
                 if hint.isEmpty {
                     Text("软件包可稍后在下载页面中安装。")
                 } else {
+                    // 显示错误提示信息
                     Text(hint)
                         .foregroundStyle(.red)
                 }
@@ -90,16 +106,95 @@ struct AddDownloadView: View {
         .navigationTitle("直接下载")
     }
 
+    // 显示版本选择视图
+    private func showVersionSelector(app: iTunesResponse.iTunesArchive, account: AppStore.Account, item: StoreResponse.Item) {
+        // 创建版本管理器实例
+        let versionManager = VersionManager(appleId: account.email, password: account.password)
+        
+        // 获取应用版本ID
+        versionManager.getVersionIDs(appId: String(app.identifier))
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                if case .failure(let error) = completion {
+                    // 获取版本失败，更新提示信息并重置状态
+                    hint = "获取版本失败: \(error.localizedDescription)"
+                    obtainDownloadURL = false
+                }
+            } receiveValue: { versions in
+                // 创建版本选择器视图
+                let versionSelector = VersionSelectorView(
+                    appInfo: AppInfo(
+                        name: app.name,
+                        developer: app.artistName,
+                        iconURL: app.artworkUrl512
+                    ),
+                    versions: versions,
+                    onVersionSelected: { version in
+                        do {
+                            // 添加下载请求并恢复下载
+                            let id = try Downloads.this.add(
+                                request: .init(
+                                    account: account,
+                                    package: app,
+                                    item: item
+                                ),
+                                version: version
+                            )
+                            Downloads.this.resume(requestID: id)
+                            DispatchQueue.main.async {
+                                // 更新提示信息
+                                hint = NSLocalizedString("Download Requested", comment: "")
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                // 关闭当前视图
+                                dismiss()
+                            }
+                        } catch {
+                            DispatchQueue.main.async {
+                                // 版本选择失败，更新提示信息并重置状态
+                                hint = "版本选择失败: \(error.localizedDescription)"
+                                obtainDownloadURL = false
+                            }
+                        }
+                    },
+                    onCancel: {
+                        // 取消选择，重置状态
+                        obtainDownloadURL = false
+                    }
+                )
+                
+                // 显示版本选择视图
+                if let window = UIApplication.shared.windows.first {
+                    window.rootViewController?.present(
+                        UIHostingController(rootView: versionSelector),
+                        animated: true
+                    )
+                }
+            }
+            .store(in: &cancellables)
+    }
+    
+    // 用于存储异步操作的取消令牌
+    private var cancellables = Set<AnyCancellable>()
+    
     // 开始下载的方法
     func startDownload() {
+        // 检查账户是否存在
         guard let account else { return }
+        // 取消搜索框焦点
         searchKeyFocused = false
+        // 标记正在获取下载URL
         obtainDownloadURL = true
+        // 在全局队列中执行网络请求
         DispatchQueue.global().async {
+            // 创建HTTP客户端
             let httpClient = HTTPClient(urlSession: URLSession.shared)
+            // 创建iTunes客户端
             let itunesClient = iTunesClient(httpClient: httpClient)
+            // 创建商店客户端
             let storeClient = StoreClient(httpClient: httpClient)
 
+            // 根据应用包ID查找应用信息
             itunesClient.lookup(
                 type: searchType,
                 bundleIdentifier: bundleID,
@@ -108,24 +203,19 @@ struct AddDownloadView: View {
                 switch result {
                 case .success(let app):
                     do {
+                        // 获取应用商品信息
                         let item = try storeClient.item(
                             identifier: String(app.identifier),
                             directoryServicesIdentifier: account.storeResponse.directoryServicesIdentifier
                         )
-                        let id = Downloads.this.add(request: .init(
-                            account: account,
-                            package: app,
-                            item: item
-                        ))
-                        Downloads.this.resume(requestID: id)
+                        
+                        // 在主线程显示版本选择器
                         DispatchQueue.main.async {
-                            hint = NSLocalizedString("Download Requested", comment: "")
-                        }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                            dismiss()
+                            self.showVersionSelector(app: app, account: account, item: item)
                         }
                     } catch {
                         DispatchQueue.main.async {
+                            // 请求失败，重置状态并显示错误信息
                             obtainDownloadURL = false
                             if (error as NSError).code == 9610 {
                                 hint = NSLocalizedString("License Not Found, please acquire license first.", comment: "")
@@ -140,6 +230,7 @@ struct AddDownloadView: View {
                     }
                 case .failure(let error):
                     DispatchQueue.main.async {
+                        // 请求失败，重置状态并显示错误信息
                         obtainDownloadURL = false
                         if (error as NSError).code == 9610 {
                             hint = NSLocalizedString("License Not Found, please acquire license first.", comment: "")

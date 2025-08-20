@@ -7,25 +7,35 @@ import Foundation    // 基础框架
 /// 管理应用商店相关功能，包括账户管理、设备种子生成等
 /// 遵循ObservableObject协议以便于UI响应式更新
 class AppStore: ObservableObject {
-    /// 账户结构体：存储账户信息，支持编码、解码、唯一标识和哈希
+    /// 账户结构体
+    /// 存储App Store账户信息
+    /// 遵循Codable协议支持序列化和反序列化
+    /// 遵循Identifiable协议提供唯一标识符
+    /// 遵循Hashable协议支持哈希操作
     struct Account: Codable, Identifiable, Hashable {
-        /// 使用邮箱作为唯一标识符
+        /// 唯一标识符
+        /// 使用邮箱作为唯一标识符，确保每个账户的唯一性
         var id: String { email }
 
-        var email: String          // 账户邮箱
-        var password: String       // 账户密码
-        var countryCode: String    // 国家代码
-        var storeResponse: StoreResponse.Account  // 商店响应的账户信息
+        var email: String          // 账户邮箱，用于登录和识别
+        var password: String       // 账户密码，用于登录验证
+        var countryCode: String    // 国家代码，如CN、US等，表示账户所属地区
+        var storeResponse: StoreResponse.Account  // 商店响应的账户信息，包含账户的详细数据
     }
 
-    /// 存储订阅者集合，用于管理Combine框架的订阅关系
+    /// 存储Combine订阅者集合
+    /// 用于管理Combine框架的订阅关系，确保订阅正确取消以避免内存泄漏
     var cancellables: Set<AnyCancellable> = .init()
 
-    /// 设备种子地址：使用PublishedPersist属性包装器持久化存储
+    /// 设备种子地址
+    /// 使用PublishedPersist属性包装器持久化存储到用户 defaults
+    /// 用于生成唯一的设备标识符
     @PublishedPersist(key: "DeviceSeedAddress", defaultValue: "")
     var deviceSeedAddress: String
 
-    /// 创建随机设备种子
+    /// 创建随机设备标识符
+    /// 生成一个12位大写十六进制字符串，用于唯一标识设备
+    /// 模拟MAC地址格式，然后转换为纯十六进制字符串
     /// - Returns: 生成的12位大写十六进制字符串
     static func createSeed() -> String {
         // 生成格式如00:00:00:00:00:00的MAC地址，然后转换为大写十六进制字符串
@@ -41,11 +51,15 @@ class AppStore: ObservableObject {
             .uppercased()
     }
 
-    /// 账户列表：使用PublishedPersist属性包装器持久化存储
+    /// 账户列表
+    /// 使用PublishedPersist属性包装器持久化存储到用户 defaults
+    /// 包含所有已保存的App Store账户信息
     @PublishedPersist(key: "Accounts", defaultValue: [])
     var accounts: [Account]
 
-    /// 演示模式：使用PublishedPersist属性包装器持久化存储
+    /// 演示模式
+    /// 使用PublishedPersist属性包装器持久化存储到用户 defaults
+    /// 启用时提供演示功能，不进行实际网络请求
     @PublishedPersist(key: "DemoMode", defaultValue: false)
     var demoMode: Bool
 

@@ -51,6 +51,7 @@ extension Downloads {
         }
     }
 
+    /// 报告下载速度
     func report(speed: String, reqId: Request.ID) {
         alter(reqID: reqId) { req in
             req.runtime.speed = speed

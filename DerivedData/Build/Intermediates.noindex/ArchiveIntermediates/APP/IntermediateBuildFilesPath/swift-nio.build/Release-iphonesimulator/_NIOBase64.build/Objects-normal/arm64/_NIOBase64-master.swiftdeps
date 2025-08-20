@@ -1,6 +1,0 @@
-version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
-options: "f4bd0cd9fa5137646f2b8ab473906626985ae843b934a500e4a10cd6fc1f7f72"
-build_start_time: [1755617310, 230150000]
-build_end_time: [1755617322, 145653000]
-inputs:
-  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/_NIOBase64/Base64.swift": [1755617296, 222925679]

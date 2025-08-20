@@ -1,7 +1,5 @@
 //
 //  ProductView.swift
-//  APP
-//
 //  Created by pxx917144686 on 2025/08/19.
 //
 

@@ -1,10 +1,3 @@
-//
-//  ArchivePreviewView.swift
-//  APP
-//
-//  Created by 秋星桥 on 2024/7/11.
-//
-
 import ApplePackage
 import Kingfisher
 import SwiftUI

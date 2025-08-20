@@ -42,16 +42,19 @@ struct ProductView: View {
     // 卡片动画状态
     @State var animateCards = false
 
+    // 视图主体，定义界面布局
     var body: some View {
+        // 垂直滚动视图
         ScrollView(.vertical, showsIndicators: false) {
+            // 垂直排列视图
             VStack(spacing: Spacing.lg) {
-                // 应用头部卡片
+                // 应用头部卡片，添加动画效果
                 packageHeaderCard
                     .scaleEffect(animateCards ? 1 : 0.9)
                     .opacity(animateCards ? 1 : 0)
                     .animation(.spring().delay(0.1), value: animateCards)
                 
-                // 错误卡片（如果需要）
+                // 错误卡片（如果需要），添加动画效果
                 if account == nil {
                     errorCard
                         .scaleEffect(animateCards ? 1 : 0.9)
@@ -59,25 +62,25 @@ struct ProductView: View {
                         .animation(.spring().delay(0.2), value: animateCards)
                 }
                 
-                // 价格卡片
+                // 价格卡片，添加动画效果
                 pricingCard
                     .scaleEffect(animateCards ? 1 : 0.9)
                     .opacity(animateCards ? 1 : 0)
                     .animation(.spring().delay(0.3), value: animateCards)
                 
-                // 账户选择卡片
+                // 账户选择卡片，添加动画效果
                 accountSelectorCard
                     .scaleEffect(animateCards ? 1 : 0.9)
                     .opacity(animateCards ? 1 : 0)
                     .animation(.spring().delay(0.4), value: animateCards)
                 
-                // 下载按钮卡片
+                // 下载按钮卡片，添加动画效果
                 downloadButtonCard
                     .scaleEffect(animateCards ? 1 : 0.9)
                     .opacity(animateCards ? 1 : 0)
                     .animation(.spring().delay(0.5), value: animateCards)
                 
-                // 描述卡片
+                // 描述卡片，添加动画效果
                 descriptionCard
                     .scaleEffect(animateCards ? 1 : 0.9)
                     .opacity(animateCards ? 1 : 0)
@@ -88,8 +91,11 @@ struct ProductView: View {
         }
         .navigationTitle("应用详情")
         .navigationBarTitleDisplayMode(.large)
+        // 视图出现时的操作
         .onAppear {
+            // 设置默认选中的账户ID
             selection = eligibleAccounts.first?.id ?? .init()
+            // 延迟0.1秒后启动卡片动画
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 animateCards = true
             }
@@ -98,8 +104,11 @@ struct ProductView: View {
 
     // 应用头部卡片视图
     var packageHeaderCard: some View {
+        // 现代卡片样式容器
         ModernCard(style: .elevated, padding: Spacing.lg) {
+            // 垂直排列视图
             VStack(alignment: .leading, spacing: Spacing.md) {
+                // 水平排列视图
                 HStack(alignment: .top, spacing: Spacing.md) {
                     // 应用图标
                     KFImage(URL(string: archive.artworkUrl512 ?? ""))
@@ -110,11 +119,14 @@ struct ProductView: View {
                         .cornerRadius(16)
                         .modernCardStyle()
                     
+                    // 垂直排列应用基本信息
                     VStack(alignment: .leading, spacing: Spacing.xs) {
+                        // 应用名称
                         Text(archive.name)
                             .font(.title2)
                             .foregroundColor(.primary)
                         
+                        // 应用Bundle标识符
                         Label {
                             Text(archive.bundleIdentifier)
                                 .font(.footnote)
@@ -124,6 +136,7 @@ struct ProductView: View {
                                 .foregroundColor(Color.secondaryAccent)
                         }
                         
+                        // 应用版本和大小信息
                         Label {
                             Text("\(archive.version) • \(archive.byteCountDescription)")
                                 .font(.footnote)
@@ -134,9 +147,11 @@ struct ProductView: View {
                         }
                     }
                     
+                    // 占位符，使内容靠左对齐
                     Spacer()
                 }
                 
+                // 如果有更新内容，则显示更新信息
                 if let releaseNote = archive.releaseNotes {
                     Divider()
                     
@@ -157,8 +172,11 @@ struct ProductView: View {
 
     // 错误卡片视图
     var errorCard: some View {
+        // 现代卡片样式容器
         ModernCard(style: .filled, padding: Spacing.md) {
+            // 垂直排列视图
             VStack(spacing: Spacing.sm) {
+                // 水平排列错误提示标题
                 HStack {
                     Image(systemName: "exclamationmark.triangle.fill")
                         .foregroundColor(.orange)
@@ -167,12 +185,14 @@ struct ProductView: View {
                     Spacer()
                 }
                 
+                // 错误提示详情
                 Text("此地区没有可用账户。请在账户页面添加账户。")
                     .font(.footnote)
                     .foregroundColor(.secondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
+        // 添加橙色边框
         .overlay(
             RoundedRectangle(cornerRadius: 12)
                 .stroke(.orange, lineWidth: 1)
@@ -181,8 +201,11 @@ struct ProductView: View {
 
     // 价格卡片视图
     var pricingCard: some View {
+        // 现代卡片样式容器
         ModernCard(style: .elevated, padding: Spacing.lg) {
+            // 垂直排列视图
             VStack(alignment: .leading, spacing: Spacing.md) {
+                // 水平排列价格标题和货币信息
                 HStack {
                     Label("价格", systemImage: "creditcard")
                         .font(.headline)
@@ -199,10 +222,12 @@ struct ProductView: View {
                         .cornerRadius(6)
                 }
                 
+                // 显示应用格式化后的价格
                 Text(archive.formattedPrice ?? "未知")
                     .font(.title2)
                     .foregroundColor(.primary)
                 
+                // 如果应用免费，则显示获取许可证按钮
                 if let price = archive.price, price.isZero {
                     ModernButton(
                         style: .secondary,
@@ -223,6 +248,7 @@ struct ProductView: View {
                     }
                 }
                 
+                // 如果有许可证提示信息，则显示提示，否则显示默认说明
                 if !licenseHint.isEmpty {
                     Text(licenseHint)
                         .font(.caption)
@@ -237,9 +263,13 @@ struct ProductView: View {
         }
     }
 
+    // 账户选择卡片视图
     var accountSelectorCard: some View {
+        // 现代卡片样式容器
         ModernCard(style: .elevated, padding: Spacing.lg) {
+            // 垂直排列视图
             VStack(alignment: .leading, spacing: Spacing.md) {
+                // 水平排列账户选择标题和地区信息
                 HStack {
                     Label("账户选择", systemImage: "person.circle")
                         .font(.headline)
@@ -256,6 +286,7 @@ struct ProductView: View {
                         .cornerRadius(6)
                 }
                 
+                // 根据不同状态显示不同内容
                 if vm.demoMode {
                     Text("demo@example.com")
                         .font(.body)
@@ -265,7 +296,9 @@ struct ProductView: View {
                         .font(.body)
                         .foregroundColor(.secondary)
                 } else {
+                    // 账户选择菜单
                     Menu {
+                        // 遍历符合条件的账户
                         ForEach(eligibleAccounts) { account in
                             Button(action: {
                                 withAnimation(.easeInOut) {
@@ -303,13 +336,18 @@ struct ProductView: View {
         }
     }
 
+    // 下载按钮卡片视图
     var downloadButtonCard: some View {
+        // 现代卡片样式容器
         ModernCard(style: .elevated, padding: Spacing.lg) {
+            // 垂直排列视图
             VStack(alignment: .leading, spacing: Spacing.md) {
+                // 下载标题
                 Label("下载", systemImage: "arrow.down.circle")
                     .font(.headline)
                     .foregroundColor(Color.primaryAccent)
                 
+                // 如果已有下载请求，则显示跳转链接，否则显示下载按钮
                 if let req = dvm.downloadRequest(forArchive: archive) {
                     NavigationLink(destination: PackageView(request: req)) {
                         HStack {
@@ -344,6 +382,7 @@ struct ProductView: View {
                     }
                 }
                 
+                // 如果有提示信息，则显示提示，否则显示默认说明
                 if !hint.isEmpty {
                     Text(hint)
                         .font(.caption)
@@ -358,13 +397,18 @@ struct ProductView: View {
         }
     }
 
+    // 描述卡片视图
     var descriptionCard: some View {
+        // 现代卡片样式容器
         ModernCard(style: .elevated, padding: Spacing.lg) {
+            // 垂直排列视图
             VStack(alignment: .leading, spacing: Spacing.md) {
+                // 描述标题
                 Label("描述", systemImage: "doc.text")
                     .font(.headline)
                     .foregroundColor(Color.primaryAccent)
                 
+                // 显示应用描述
                 Text(archive.description ?? "未提供描述")
                     .font(.body)
                     .foregroundColor(.secondary)
@@ -373,14 +417,19 @@ struct ProductView: View {
         }
     }
 
+    // 开始下载操作
     func startDownload() {
+        // 检查账户是否存在
         guard let account else { return }
+        // 标记正在获取下载URL
         obtainDownloadURL = true
+        // 在全局队列异步执行网络请求
         DispatchQueue.global().async {
             let httpClient = HTTPClient(urlSession: URLSession.shared)
             let itunesClient = iTunesClient(httpClient: httpClient)
             let storeClient = StoreClient(httpClient: httpClient)
 
+            // 查找应用信息
             itunesClient.lookup(
                 type: archive.entityType ?? .iPhone,
                 bundleIdentifier: archive.bundleIdentifier,
@@ -389,21 +438,26 @@ struct ProductView: View {
                 switch result {
                 case .success(let app):
                     do {
+                        // 获取应用项目信息
                         let item = try storeClient.item(
                             identifier: String(app.identifier),
                             directoryServicesIdentifier: account.storeResponse.directoryServicesIdentifier
                         )
+                        // 添加下载请求
                         let id = Downloads.this.add(request: .init(
                             account: account,
                             package: archive,
                             item: item
                         ))
+                        // 恢复下载
                         Downloads.this.resume(requestID: id)
+                        // 在主线程更新UI
                         DispatchQueue.main.async {
                             obtainDownloadURL = false
                             hint = NSLocalizedString("Download Requested", comment: "")
                         }
                     } catch {
+                        // 在主线程更新UI，处理错误
                         DispatchQueue.main.async {
                             obtainDownloadURL = false
                             if (error as NSError).code == 9610 {
@@ -418,6 +472,7 @@ struct ProductView: View {
                         }
                     }
                 case .failure(let error):
+                    // 在主线程更新UI，处理错误
                     DispatchQueue.main.async {
                         obtainDownloadURL = false
                         if (error as NSError).code == 9610 {
@@ -435,11 +490,16 @@ struct ProductView: View {
         }
     }
 
+    // 获取许可证操作
     func acquireLicense() {
+        // 检查账户是否存在
         guard let account else { return }
+        // 标记正在获取许可证
         acquiringLicense = true
+        // 在全局队列异步执行网络请求
         DispatchQueue.global().async {
             do {
+                // 轮换密码令牌
                 guard let account = try AppStore.this.rotate(id: account.id) else {
                     throw NSError(domain: "AppStore", code: 401, userInfo: [
                         NSLocalizedDescriptionKey: NSLocalizedString(
@@ -448,17 +508,20 @@ struct ProductView: View {
                         ),
                     ])
                 }
+                // 尝试购买应用以获取许可证
                 try ApplePackage.purchase(
                     token: account.storeResponse.passwordToken,
                     directoryServicesIdentifier: account.storeResponse.directoryServicesIdentifier,
                     trackID: archive.identifier,
                     countryCode: account.countryCode
                 )
+                // 在主线程更新UI
                 DispatchQueue.main.async {
                     acquiringLicense = false
                     licenseHint = NSLocalizedString("Request Successes", comment: "")
                 }
             } catch {
+                // 在主线程更新UI，处理错误
                 DispatchQueue.main.async {
                     acquiringLicense = false
                     licenseHint = error.localizedDescription
@@ -468,10 +531,12 @@ struct ProductView: View {
     }
 }
 
+// 扩展iTunesResponse.iTunesArchive，添加显示支持设备图标的计算属性
 extension iTunesResponse.iTunesArchive {
     var displaySupportedDevicesIcon: String {
         var supports_iPhone = false
         var supports_iPad = false
+        // 遍历支持的设备列表
         for device in supportedDevices ?? [] {
             if device.lowercased().contains("iphone") {
                 supports_iPhone = true
@@ -480,6 +545,7 @@ extension iTunesResponse.iTunesArchive {
                 supports_iPad = true
             }
         }
+        // 根据支持的设备类型返回对应的图标名称
         if supports_iPhone, supports_iPad {
             return "ipad.and.iphone"
         } else if supports_iPhone {

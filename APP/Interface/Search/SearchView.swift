@@ -3,11 +3,11 @@
 //  Created by pxx917144686 on 2025/08/19.
 //
 
-// 导入 Apple 相关包
+// Apple 相关包
 import ApplePackage
-// 导入 Kingfisher 库，用于图片加载
+// Kingfisher 库，用于图片加载
 import Kingfisher
-// 导入 SwiftUI 框架
+// SwiftUI 框架
 import SwiftUI
 
 // 定义搜索视图结构体，遵循 View 协议

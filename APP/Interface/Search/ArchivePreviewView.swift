@@ -2,15 +2,15 @@ import ApplePackage
 import Kingfisher
 import SwiftUI
 
-// 归档预览视图，显示应用的基本信息
+// APP预览视图，显示APP的基本信息
 struct ArchivePreviewView: View {
-    // 要显示的应用归档信息
+    // 要显示的APP归档信息
     let archive: iTunesResponse.iTunesArchive
 
     var body: some View {
         // 水平排列视图，间距为 8
         HStack(spacing: 8) {
-            // 使用 Kingfisher 加载应用图标
+            // 使用 Kingfisher 加载APP图标
             KFImage(URL(string: archive.artworkUrl512 ?? ""))
                 .antialiased(true)  // 开启抗锯齿
                 .resizable()        // 允许图像调整大小
@@ -18,13 +18,13 @@ struct ArchivePreviewView: View {
                 .frame(width: 32, height: 32, alignment: .center)  // 设置图像大小为 32x32
             // 垂直排列文本信息，左对齐，间距为 2
             VStack(alignment: .leading, spacing: 2) {
-                // 显示应用名称
+                // 显示APP名称
                 Text(archive.name)
                     .font(.system(.body, design: .rounded))  // 设置字体样式为圆角正文大小
                     .bold()                                 // 字体加粗
                 // 将文本内容分组，方便统一设置样式
                 Group {
-                    // 显示应用包标识符、版本号和字节数描述
+                    // 显示APP包标识符、版本号和字节数描述
                     Text("\(archive.bundleIdentifier) \(archive.version) \(archive.byteCountDescription)")
                 }
                 .font(.system(.footnote, design: .rounded))  // 设置字体样式为圆角脚注大小

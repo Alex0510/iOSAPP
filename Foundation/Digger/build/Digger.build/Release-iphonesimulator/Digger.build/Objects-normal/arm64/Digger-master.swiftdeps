@@ -1,0 +1,12 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "c2cab26846a5750d17dbae7b85da1a1f053ef7e7fccf2799556a94807b361056"
+build_start_time: [1755610249, 922606000]
+build_end_time: [1755610264, 244249000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP/Foundation/Digger/Sources/Digger/Digger.swift": [1755598396, 558624548]
+  "/Users/pxx917144686/Downloads/APP/Foundation/Digger/Sources/Digger/DiggerCache.swift": [1755598396, 559839881]
+  "/Users/pxx917144686/Downloads/APP/Foundation/Digger/Sources/Digger/DiggerDelegate.swift": [1755598396, 559238964]
+  "/Users/pxx917144686/Downloads/APP/Foundation/Digger/Sources/Digger/DiggerHelper.swift": [1755598396, 558809465]
+  "/Users/pxx917144686/Downloads/APP/Foundation/Digger/Sources/Digger/DiggerManager.swift": [1755598396, 558456506]
+  "/Users/pxx917144686/Downloads/APP/Foundation/Digger/Sources/Digger/DiggerSeed.swift": [1755598396, 559580673]
+  "/Users/pxx917144686/Downloads/APP/Foundation/Digger/Sources/Digger/DiggerThread.swift": [1755598396, 558238881]

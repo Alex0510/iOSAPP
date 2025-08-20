@@ -1,0 +1,66 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "0126872e8c59e128e687983f417485e7f1281cb707860da969a57413bda42840"
+build_start_time: [1755617335, 62960000]
+build_end_time: [1755617339, 242015000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/APP/IntermediateBuildFilesPath/swift-nio.build/Release-iphonesimulator/_NIOFileSystem.build/DerivedSources/resource_bundle_accessor.swift"
+  : [1755617309, 974612402]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Array+FileSystem.swift": [1755617296, 206721766]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/ArraySlice+FileSystem.swift"
+  : [1755617296, 206771558]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/BufferedReader.swift": [1755617296, 206847350]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/BufferedWriter.swift": [1755617296, 206917517]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/ByteBuffer+FileSystem.swift"
+  : [1755617296, 206999517]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/ByteCount.swift": [1755617296, 207049808]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Convenience.swift": [1755617296, 207116642]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/DirectoryEntries.swift": [1755617296, 207174476]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/DirectoryEntry.swift": [1755617296, 207239642]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Exports.swift": [1755617296, 207681768]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileChunks.swift": [1755617296, 207760477]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileHandle.swift": [1755617296, 207887311]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileHandleProtocol.swift": [1755617296, 207985227]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileInfo.swift": [1755617296, 208076603]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystem.swift": [1755617296, 208227395]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystemError+Syscall.swift"
+  : [1755617296, 208325520]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystemError.swift": [1755617296, 208417187]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystemProtocol.swift": [1755617296, 208515395]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileType.swift": [1755617296, 208611396]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/IOStrategy.swift": [1755617296, 208687229]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/BufferedOrAnyStream.swift"
+  : [1755617296, 208772896]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/BufferedStream.swift"
+  : [1755617296, 208899896]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/Cancellation.swift"
+  : [1755617296, 208973896]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/Concurrency Primitives/TokenBucket.swift"
+  : [1755617296, 209066397]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/Concurrency Primitives/UnsafeTransfer.swift"
+  : [1755617296, 209125480]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/ParallelDirCopy.swift"
+  : [1755617296, 209201105]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/ParallelRemoval.swift"
+  : [1755617296, 209258480]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/String+UnsafeUnititializedCapacity.swift"
+  : [1755617296, 209319397]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System Calls/CInterop.swift"
+  : [1755617296, 209423106]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System Calls/Errno.swift"
+  : [1755617296, 209496648]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System Calls/FileDescriptor+Syscalls.swift"
+  : [1755617296, 209579440]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System Calls/Mocking.swift"
+  : [1755617296, 209658148]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System Calls/Syscall.swift"
+  : [1755617296, 209736231]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System Calls/Syscalls.swift"
+  : [1755617296, 209807440]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/SystemFileHandle.swift"
+  : [1755617296, 209884315]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/Utilities.swift": [1755617296, 209958690]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/NIOFilePath.swift": [1755617296, 210062107]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/NIOFileSystemSendableMetatype.swift"
+  : [1755617296, 210125524]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/OpenOptions.swift": [1755617296, 210196649]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/String+FileSystem.swift": [1755617296, 210307066]

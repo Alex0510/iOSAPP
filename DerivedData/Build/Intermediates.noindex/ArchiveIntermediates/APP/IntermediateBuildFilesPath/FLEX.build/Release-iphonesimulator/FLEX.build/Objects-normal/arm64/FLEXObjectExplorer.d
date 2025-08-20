@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/ObjectExplorers/FLEXObjectExplorer.m \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/ObjectExplorers/FLEXObjectExplorer.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXRuntime+UIKitHelpers.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/UIKit.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/os_availability.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/ObjectiveC.modulemap \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXProperty.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXRuntimeConstants.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXIvar.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXMethod.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXMethodBase.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXProtocol.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableViewSection.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/NSArray+FLEX.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXUtility.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTypeEncodingParser.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXAlert.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/UIFont+FLEX.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXMacros.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Utility/Runtime/FLEXRuntimeUtility.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/NSObject+FLEX_Reflection.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXRuntime+Compare.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXPropertyAttributes.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXMetadataSection.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXObjectExplorer.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/NSUserDefaults+FLEX.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXMirror.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXSwiftInternal.h

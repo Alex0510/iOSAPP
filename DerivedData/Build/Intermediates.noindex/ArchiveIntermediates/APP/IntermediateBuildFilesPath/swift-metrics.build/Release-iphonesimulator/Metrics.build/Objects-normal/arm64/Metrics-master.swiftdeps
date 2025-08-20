@@ -1,0 +1,6 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "3e5a68939028d87557c9d5bc53e07038fb68367ed6189619a6316aad0c1919e9"
+build_start_time: [1755617319, 549397000]
+build_end_time: [1755617322, 588488000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-metrics/Sources/Metrics/Metrics.swift": [1755617295, 751175897]

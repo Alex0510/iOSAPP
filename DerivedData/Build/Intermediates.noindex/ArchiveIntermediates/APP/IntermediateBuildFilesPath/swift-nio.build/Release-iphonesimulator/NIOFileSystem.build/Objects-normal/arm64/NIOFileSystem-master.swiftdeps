@@ -1,0 +1,6 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "87513e7c9ad998ed602525bd295d9f97968bc63ad7967a1067d9071b08665346"
+build_start_time: [1755617339, 67244000]
+build_end_time: [1755617339, 332531000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/_NIOFileSystemExported/Exports.swift": [1755617296, 223431639]

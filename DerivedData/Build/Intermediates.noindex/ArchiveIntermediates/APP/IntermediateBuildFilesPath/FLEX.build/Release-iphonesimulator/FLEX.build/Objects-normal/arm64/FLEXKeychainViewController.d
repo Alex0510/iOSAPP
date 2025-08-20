@@ -1,0 +1,27 @@
+dependencies: \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/Keychain/FLEXKeychainViewController.m \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/Keychain/FLEXKeychain.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/os_availability.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/ObjectiveC.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/Security.framework/Modules/module.modulemap \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/Keychain/FLEXKeychainQuery.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/Keychain/FLEXKeychainViewController.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXGlobalsEntry.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/UIKit.framework/Modules/module.modulemap \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXFilteringTableViewController.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableViewController.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableView.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableViewCell.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXMutableListSection.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXCollectionContentSection.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableViewSection.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/NSArray+FLEX.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXObjectInfoSection.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXUtility.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTypeEncodingParser.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXAlert.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/UIFont+FLEX.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXMacros.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/UIPasteboard+FLEX.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/UIBarButtonItem+FLEX.h

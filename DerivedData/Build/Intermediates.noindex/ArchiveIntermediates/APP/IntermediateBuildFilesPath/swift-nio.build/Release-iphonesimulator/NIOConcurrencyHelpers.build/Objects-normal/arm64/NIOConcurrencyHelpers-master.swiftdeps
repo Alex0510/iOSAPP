@@ -1,0 +1,11 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "aae1873121f5160e238eab6664579456196bdff58376c1ebbee9078963c34b49"
+build_start_time: [1755617310, 464606000]
+build_end_time: [1755617322, 614506000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/NIOAtomic.swift": [1755617296, 195691365]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/NIOLock.swift": [1755617296, 195795615]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/NIOLockedValueBox.swift"
+  : [1755617296, 195842532]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/atomics.swift": [1755617296, 195929282]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/lock.swift": [1755617296, 196009907]

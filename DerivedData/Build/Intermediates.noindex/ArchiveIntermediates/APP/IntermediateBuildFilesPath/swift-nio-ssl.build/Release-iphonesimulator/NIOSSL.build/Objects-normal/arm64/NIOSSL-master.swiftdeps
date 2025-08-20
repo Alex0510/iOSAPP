@@ -1,0 +1,48 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "56da001d8d30bc1eec7c58d9fa9cba86105c7f5d356107e0ba4a5f001c61b244"
+build_start_time: [1755617335, 844132000]
+build_end_time: [1755617339, 610897000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/APP/IntermediateBuildFilesPath/swift-nio-ssl.build/Release-iphonesimulator/NIOSSL.build/DerivedSources/resource_bundle_accessor.swift"
+  : [1755617309, 996547412]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/AndroidCABundle.swift": [1755617294, 897628546]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/ByteBufferBIO.swift": [1755617294, 897816963]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/CustomPrivateKey.swift": [1755617294, 897908297]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/IdentityVerification.swift": [1755617294, 898226422]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/LinuxCABundle.swift": [1755617294, 898268464]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/NIOSSLClientHandler.swift": [1755617294, 898356339]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/NIOSSLHandler+Configuration.swift"
+  : [1755617294, 898434173]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/NIOSSLHandler.swift": [1755617294, 898641423]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/NIOSSLServerHandler.swift": [1755617294, 898736382]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/ObjectIdentifier.swift": [1755617294, 898950799]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/PosixPort.swift": [1755617294, 899037799]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SSLCallbacks.swift": [1755617294, 899297300]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SSLCertificate.swift": [1755617294, 899414384]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SSLCertificateExtensions.swift"
+  : [1755617294, 899629259]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SSLCertificateName.swift": [1755617294, 899694009]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SSLConnection.swift": [1755617294, 901052137]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SSLContext.swift": [1755617294, 901400430]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SSLErrors.swift": [1755617294, 901507555]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SSLInit.swift": [1755617294, 901694555]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SSLPKCS12Bundle.swift": [1755617294, 901778097]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SSLPrivateKey.swift": [1755617294, 901867973]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SSLPublicKey.swift": [1755617294, 901946598]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SecurityFrameworkCertificateVerification.swift"
+  : [1755617294, 902027806]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/String+unsafeUninitializedCapacity.swift"
+  : [1755617294, 902079223]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SubjectAlternativeName.swift": [1755617294, 902147765]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SwiftCrypto/NIOSSLSecureBytes.swift"
+  : [1755617294, 902243057]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SwiftCrypto/RNG.swift": [1755617294, 902335557]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SwiftCrypto/SafeCompare.swift"
+  : [1755617294, 902402432]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/SwiftCrypto/Zeroization.swift"
+  : [1755617294, 902452432]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/TLSConfiguration.swift": [1755617294, 902621266]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/UniversalBootstrapSupport.swift"
+  : [1755617294, 902719683]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/NIOSSL/UnsafeKeyAndChainTarget.swift"
+  : [1755617294, 902966225]

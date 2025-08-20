@@ -1,0 +1,17 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "b1df7a622d513a9ac2ce96047797d8fd8d43fc9bc4b68ed2400fd091dad6de7f"
+build_start_time: [1755617338, 570660000]
+build_end_time: [1755617339, 747920000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPCompression.swift"
+  : [1755617294, 390996348]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPDecompression.swift"
+  : [1755617294, 391069348]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPRequestCompressor.swift"
+  : [1755617294, 391134515]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPRequestDecompressor.swift"
+  : [1755617294, 391253765]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPResponseCompressor.swift"
+  : [1755617294, 391340932]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPResponseDecompressor.swift"
+  : [1755617294, 391430557]

@@ -1,0 +1,4 @@
+module Digger {
+    header "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/Digger-Swift.h"
+    requires objc
+}

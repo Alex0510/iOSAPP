@@ -1,0 +1,50 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "1ecc292fd55592af129a7d51d3e2ebbc296f69ce76e32b249ddc8ceb23860e03"
+build_start_time: [1755617335, 62839000]
+build_end_time: [1755617340, 703424000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/ConnectionPoolError.swift"
+  : [1755617295, 155540947]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/ConnectionPoolItem.swift"
+  : [1755617295, 155593156]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/ConnectionPoolSource.swift"
+  : [1755617295, 155640323]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/EventLoopConnectionPool.swift"
+  : [1755617295, 155724864]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/EventLoopGroupConnectionPool.swift"
+  : [1755617295, 155806406]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoop+Concurrency.swift"
+  : [1755617295, 156118865]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoop+Flatten.swift"
+  : [1755617295, 156166574]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoop+Future.swift"
+  : [1755617295, 156217116]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoopGroup+Concurrency.swift"
+  : [1755617295, 156265199]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoopGroup+Throwing.swift"
+  : [1755617295, 156322033]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Collection+Flatten.swift"
+  : [1755617295, 156400199]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/EventLoopFutureQueue+Sequence.swift"
+  : [1755617295, 156447075]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/EventLoopFutureQueue.swift"
+  : [1755617295, 156510950]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Collection.swift"
+  : [1755617295, 156586033]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Conjunctions.swift"
+  : [1755617295, 156674492]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Miscellaneous.swift"
+  : [1755617295, 156744950]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Nonempty.swift"
+  : [1755617295, 156804284]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Optional.swift"
+  : [1755617295, 156849450]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Transform.swift"
+  : [1755617295, 156898284]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Try.swift"
+  : [1755617295, 156943409]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/FutureOperators.swift"
+  : [1755617295, 157014409]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Optional+StrictMap.swift"
+  : [1755617295, 157080201]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-kit/Sources/AsyncKit/Exports.swift": [1755617295, 157123326]

@@ -1,0 +1,31 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "5b562a68214db143a1e1eb95d2e84f8d8e25a56cc31e7d7715c65a064dbe2421"
+build_start_time: [1755617319, 587665000]
+build_end_time: [1755617322, 515290000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Codable.swift": [1755617295, 363981273]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Collection.swift"
+  : [1755617295, 364062149]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+CustomReflectable.swift"
+  : [1755617295, 364125024]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Descriptions.swift"
+  : [1755617295, 364161524]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Equatable.swift"
+  : [1755617295, 364203066]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+ExpressibleByArrayLiteral.swift"
+  : [1755617295, 364241732]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Extras.swift": [1755617295, 364307899]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Hashable.swift"
+  : [1755617295, 364347608]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Testing.swift": [1755617295, 364395441]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque._Storage.swift"
+  : [1755617295, 364461983]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque._UnsafeHandle.swift"
+  : [1755617295, 364543400]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque.swift": [1755617295, 364629650]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/_DequeBuffer.swift": [1755617295, 364917234]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/_DequeBufferHeader.swift"
+  : [1755617295, 364960609]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/_DequeSlot.swift": [1755617295, 365007984]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/DequeModule/_UnsafeWrappedBuffer.swift"
+  : [1755617295, 365072818]

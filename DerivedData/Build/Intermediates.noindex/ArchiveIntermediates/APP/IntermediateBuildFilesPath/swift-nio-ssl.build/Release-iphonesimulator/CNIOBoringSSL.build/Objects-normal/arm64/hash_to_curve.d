@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/ec/hash_to_curve.cc \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_ec.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_base.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_is_boringssl.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_opensslconf.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_target.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_boringssl_prefix_symbols.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_ec_key.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_engine.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_ex_data.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_stack.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_digest.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_err.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_nid.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/ec/../fipsmodule/bn/internal.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_bn.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_thread.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/ec/../fipsmodule/bn/../../internal.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_arm_arch.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_crypto.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_sha.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_bcm_public.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL_mem.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/ec/../fipsmodule/ec/internal.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/ec/../fipsmodule/ec/../bn/internal.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/ec/../internal.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/crypto/ec/internal.h

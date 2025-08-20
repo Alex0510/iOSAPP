@@ -1,0 +1,35 @@
+{
+  "" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation-master.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation-master.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/Sources/SpringInterpolation/SpringInterpolation+Configuration.swift" : {
+    "index-unit-output-path" : "/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation+Configuration.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation+Configuration.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation+Configuration.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/Sources/SpringInterpolation/SpringInterpolation+Context.swift" : {
+    "index-unit-output-path" : "/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation+Context.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation+Context.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation+Context.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/Sources/SpringInterpolation/SpringInterpolation+Parameters.swift" : {
+    "index-unit-output-path" : "/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation+Parameters.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation+Parameters.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation+Parameters.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/Sources/SpringInterpolation/SpringInterpolation.swift" : {
+    "index-unit-output-path" : "/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/Sources/SpringInterpolation/SpringInterpolation2D.swift" : {
+    "index-unit-output-path" : "/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation2D.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation2D.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/SpringInterpolation/build/SpringInterpolation.build/Release-iphonesimulator/SpringInterpolation.build/Objects-normal/x86_64/SpringInterpolation2D.o"
+  }
+}

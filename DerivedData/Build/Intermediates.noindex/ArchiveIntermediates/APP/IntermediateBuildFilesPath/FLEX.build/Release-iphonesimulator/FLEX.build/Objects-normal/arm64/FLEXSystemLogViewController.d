@@ -1,0 +1,36 @@
+dependencies: \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/Darwin.modulemap \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogViewController.m \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogViewController.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXFilteringTableViewController.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableViewController.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/UIKit.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/os_availability.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/ObjectiveC.modulemap \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableView.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXGlobalsEntry.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/SystemLog/FLEXASLLogController.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/SystemLog/FLEXLogController.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogMessage.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/asl.modulemap \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/SystemLog/ActivityStreamAPI.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/SystemLog/FLEXOSLogController.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogCell.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableViewCell.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXMutableListSection.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXCollectionContentSection.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTableViewSection.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/NSArray+FLEX.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXObjectInfoSection.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXUtility.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTypeEncodingParser.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXAlert.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/UIFont+FLEX.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXMacros.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Utility/FLEXColor.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXResources.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/UIBarButtonItem+FLEX.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/NSUserDefaults+FLEX.h \
+  /Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/FLEX/Classes/Utility/Runtime/flex_fishhook.h

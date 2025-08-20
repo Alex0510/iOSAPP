@@ -1,0 +1,123 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "afd807147d2dfbcb2331a31f4b3a9d904fd1e13699c228547598f5ad63339702"
+build_start_time: [1755617319, 674543000]
+build_end_time: [1755617323, 527131000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+BitwiseOperations.swift"
+  : [1755617295, 358444302]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+ChunkedBitsIterators.swift"
+  : [1755617295, 358515177]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+Codable.swift"
+  : [1755617295, 358637136]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+Collection.swift"
+  : [1755617295, 358770470]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+Copy.swift"
+  : [1755617295, 358851095]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+CustomReflectable.swift"
+  : [1755617295, 358947845]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+Descriptions.swift"
+  : [1755617295, 359005137]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+Equatable.swift"
+  : [1755617295, 359067012]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+ExpressibleByArrayLiteral.swift"
+  : [1755617295, 359122470]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+ExpressibleByStringLiteral.swift"
+  : [1755617295, 359167221]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+Extras.swift"
+  : [1755617295, 359214179]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+Fill.swift"
+  : [1755617295, 359263137]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+Hashable.swift"
+  : [1755617295, 359318262]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+Initializers.swift"
+  : [1755617295, 359388013]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+Invariants.swift"
+  : [1755617295, 359452055]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+LosslessStringConvertible.swift"
+  : [1755617295, 359517055]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+RandomBits.swift"
+  : [1755617295, 359563430]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+RangeReplaceableCollection.swift"
+  : [1755617295, 359622138]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+Shifts.swift"
+  : [1755617295, 359711722]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray+Testing.swift"
+  : [1755617295, 359766389]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray._UnsafeHandle.swift"
+  : [1755617295, 359844805]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitArray/BitArray.swift"
+  : [1755617295, 359902889]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+BidirectionalCollection.swift"
+  : [1755617295, 360614641]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+Codable.swift"
+  : [1755617295, 360676807]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+CustomDebugStringConvertible.swift"
+  : [1755617295, 360736224]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+CustomReflectable.swift"
+  : [1755617295, 360833766]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+CustomStringConvertible.swift"
+  : [1755617295, 360937600]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+Equatable.swift"
+  : [1755617295, 361019767]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+ExpressibleByArrayLiteral.swift"
+  : [1755617295, 361061350]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+Extras.swift"
+  : [1755617295, 361129683]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+Hashable.swift"
+  : [1755617295, 361171142]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+Initializers.swift"
+  : [1755617295, 361240267]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+Invariants.swift"
+  : [1755617295, 361282809]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+Random.swift"
+  : [1755617295, 361333309]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra basics.swift"
+  : [1755617295, 361404101]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra conformance.swift"
+  : [1755617295, 361446809]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra formIntersection.swift"
+  : [1755617295, 361502226]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra formSymmetricDifference.swift"
+  : [1755617295, 361585726]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra formUnion.swift"
+  : [1755617295, 361637143]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra intersection.swift"
+  : [1755617295, 361688351]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra isDisjoint.swift"
+  : [1755617295, 361737477]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra isEqualSet.swift"
+  : [1755617295, 361785143]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra isStrictSubset.swift"
+  : [1755617295, 361857894]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra isStrictSuperset.swift"
+  : [1755617295, 361914185]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra isSubset.swift"
+  : [1755617295, 361976644]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra isSuperset.swift"
+  : [1755617295, 362034686]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra subtract.swift"
+  : [1755617295, 362079394]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra subtracting.swift"
+  : [1755617295, 362132644]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra symmetricDifference.swift"
+  : [1755617295, 362181519]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+SetAlgebra union.swift"
+  : [1755617295, 362225811]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet+Sorted Collection APIs.swift"
+  : [1755617295, 362268019]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet.Counted.swift"
+  : [1755617295, 362324895]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet.Index.swift"
+  : [1755617295, 362398020]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet._UnsafeHandle.swift"
+  : [1755617295, 362452770]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet.swift"
+  : [1755617295, 362503603]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/Shared/Range+Utilities.swift"
+  : [1755617295, 362618187]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/Shared/Slice+Utilities.swift"
+  : [1755617295, 362660687]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/Shared/UInt+Tricks.swift"
+  : [1755617295, 362710354]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/Shared/_Word.swift"
+  : [1755617295, 362765479]

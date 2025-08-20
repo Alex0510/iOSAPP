@@ -1,0 +1,16 @@
+{
+  "source": "/Users/pxx917144686/Downloads/APP/APP/Interface/Download/InstallerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "To install app, you need to grant local area network permission in order to communicate with system services.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 76
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,145 @@
+{
+  "" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Algorithms-master.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Algorithms-master.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Algorithms-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Algorithms-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Algorithms-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Algorithms-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/AdjacentPairs.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/AdjacentPairs.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/AdjacentPairs.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/AdjacentPairs.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Chain.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Chain.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Chain.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Chain.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Chunked.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Chunked.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Chunked.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Chunked.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Combinations.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Combinations.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Combinations.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Combinations.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Compacted.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Compacted.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Compacted.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Compacted.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Cycle.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Cycle.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Cycle.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Cycle.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/EitherSequence.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/EitherSequence.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/EitherSequence.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/EitherSequence.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/FirstNonNil.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/FirstNonNil.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/FirstNonNil.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/FirstNonNil.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/FlattenCollection.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/FlattenCollection.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/FlattenCollection.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/FlattenCollection.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Grouped.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Grouped.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Grouped.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Grouped.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Indexed.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Indexed.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Indexed.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Indexed.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Intersperse.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Intersperse.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Intersperse.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Intersperse.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Joined.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Joined.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Joined.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Joined.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Keyed.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Keyed.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Keyed.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Keyed.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/MinMax.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/MinMax.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/MinMax.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/MinMax.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Partition.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Partition.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Partition.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Partition.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Permutations.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Permutations.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Permutations.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Permutations.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Product.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Product.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Product.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Product.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/RandomSample.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/RandomSample.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/RandomSample.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/RandomSample.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Reductions.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Reductions.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Reductions.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Reductions.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Rotate.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Rotate.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Rotate.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Rotate.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Split.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Split.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Split.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Split.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Stride.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Stride.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Stride.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Stride.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Suffix.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Suffix.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Suffix.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Suffix.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Trim.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Trim.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Trim.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Trim.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Unique.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Unique.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Unique.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Unique.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/Sources/Algorithms/Windows.swift" : {
+    "index-unit-output-path" : "/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Windows.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Windows.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-algorithms/build/swift-algorithms.build/Release-iphonesimulator/Algorithms.build/Objects-normal/x86_64/Windows.o"
+  }
+}

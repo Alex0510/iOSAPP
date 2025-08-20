@@ -1,0 +1,18 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "84da2a26bf5526842aa878c76aaa1fd2ddba798502f7bacd09ec3870b4f9e98d"
+build_start_time: [1755617322, 201014000]
+build_end_time: [1755617323, 847375000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-distributed-tracing/Sources/Tracing/InstrumentationSystem+Tracing.swift"
+  : [1755617295, 115986312]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-distributed-tracing/Sources/Tracing/NoOpTracer.swift"
+  : [1755617295, 116073271]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-distributed-tracing/Sources/Tracing/SpanProtocol.swift"
+  : [1755617295, 116312438]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-distributed-tracing/Sources/Tracing/Tracer.swift": [1755617295, 116418563]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-distributed-tracing/Sources/Tracing/TracerProtocol+Legacy.swift"
+  : [1755617295, 116500272]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-distributed-tracing/Sources/Tracing/TracerProtocol.swift"
+  : [1755617295, 116697356]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-distributed-tracing/Sources/Tracing/TracingTime.swift"
+  : [1755617295, 116785356]

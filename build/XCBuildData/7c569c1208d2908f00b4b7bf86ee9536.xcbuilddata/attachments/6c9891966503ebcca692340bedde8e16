@@ -1,0 +1,25 @@
+{
+  "" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyCodable-master.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyCodable-master.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyCodable-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyCodable-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyCodable-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyCodable-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/Sources/AnyCodable/AnyCodable.swift" : {
+    "index-unit-output-path" : "/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyCodable.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyCodable.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyCodable.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/Sources/AnyCodable/AnyDecodable.swift" : {
+    "index-unit-output-path" : "/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyDecodable.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyDecodable.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyDecodable.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/Sources/AnyCodable/AnyEncodable.swift" : {
+    "index-unit-output-path" : "/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyEncodable.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyEncodable.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Release-iphonesimulator/AnyCodable.build/Objects-normal/x86_64/AnyEncodable.o"
+  }
+}

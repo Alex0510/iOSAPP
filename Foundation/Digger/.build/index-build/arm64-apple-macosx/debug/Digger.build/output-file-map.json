@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/master.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/Sources/Digger/Digger.swift": {
+    "dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/Digger.d",
+    "object": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/Digger.swift.o",
+    "swiftmodule": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/Digger~partial.swiftmodule",
+    "swift-dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/Digger.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/Sources/Digger/DiggerCache.swift": {
+    "dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerCache.d",
+    "object": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerCache.swift.o",
+    "swiftmodule": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerCache~partial.swiftmodule",
+    "swift-dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerCache.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/Sources/Digger/DiggerDelegate.swift": {
+    "dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerDelegate.d",
+    "object": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerDelegate.swift.o",
+    "swiftmodule": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerDelegate.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/Sources/Digger/DiggerHelper.swift": {
+    "dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerHelper.d",
+    "object": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerHelper.swift.o",
+    "swiftmodule": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerHelper~partial.swiftmodule",
+    "swift-dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerHelper.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/Sources/Digger/DiggerManager.swift": {
+    "dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerManager.d",
+    "object": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerManager.swift.o",
+    "swiftmodule": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerManager.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/Sources/Digger/DiggerSeed.swift": {
+    "dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerSeed.d",
+    "object": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerSeed.swift.o",
+    "swiftmodule": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerSeed~partial.swiftmodule",
+    "swift-dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerSeed.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/Sources/Digger/DiggerThread.swift": {
+    "dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerThread.d",
+    "object": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerThread.swift.o",
+    "swiftmodule": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerThread~partial.swiftmodule",
+    "swift-dependencies": "/Users/pxx917144686/Downloads/Asspp/Foundation/Digger/.build/index-build/arm64-apple-macosx/debug/Digger.build/DiggerThread.swiftdeps"
+  }
+}

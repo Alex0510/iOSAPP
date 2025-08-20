@@ -1,0 +1,10 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "f75d08cfe8bfbc52c702874a4fdfbaa0960422a972e2943abe699cb2d78f8f8f"
+build_start_time: [1755617319, 570696000]
+build_end_time: [1755617322, 497680000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/routing-kit/Sources/RoutingKit/AnyRouter.swift": [1755617295, 922620928]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/routing-kit/Sources/RoutingKit/Parameters.swift": [1755617295, 922933928]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/routing-kit/Sources/RoutingKit/PathComponent.swift": [1755617295, 922993512]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/routing-kit/Sources/RoutingKit/Router.swift": [1755617295, 923043387]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/routing-kit/Sources/RoutingKit/TrieRouter.swift": [1755617295, 923129596]

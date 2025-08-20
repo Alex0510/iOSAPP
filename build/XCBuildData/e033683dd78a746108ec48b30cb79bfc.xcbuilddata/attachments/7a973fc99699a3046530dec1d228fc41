@@ -1,0 +1,4 @@
+module SpringInterpolation {
+header "SpringInterpolation-Swift.h"
+export *
+}

@@ -1,0 +1,6 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "7ece6b5f62e842a4970ee6e179f3c652deaa73cc87d474ca57083eb10210d693"
+build_start_time: [1755617326, 799570000]
+build_end_time: [1755617326, 985863000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/console-kit/Sources/ConsoleKit/Exports.swift": [1755617295, 26294017]

@@ -1,0 +1,39 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "dab2e40cf51d7eabbb8305e291a522a786cc4ac0d981f6027b74063f2ba6ed96"
+build_start_time: [1755617310, 234112000]
+build_end_time: [1755617322, 281449000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/APP/IntermediateBuildFilesPath/ZIPFoundation.build/Release-iphonesimulator/ZIPFoundation.build/DerivedSources/resource_bundle_accessor.swift"
+  : [1755617309, 979637497]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Archive+BackingConfiguration.swift"
+  : [1755617295, 670119664]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Archive+Deprecated.swift"
+  : [1755617295, 670173206]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Archive+Helpers.swift": [1755617295, 670244081]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Archive+MemoryFile.swift"
+  : [1755617295, 670345915]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Archive+Progress.swift"
+  : [1755617295, 670388248]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Archive+Reading.swift": [1755617295, 670456248]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Archive+ReadingDeprecated.swift"
+  : [1755617295, 670497623]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Archive+Writing.swift": [1755617295, 670578540]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Archive+WritingDeprecated.swift"
+  : [1755617295, 670651124]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Archive+ZIP64.swift": [1755617295, 670739874]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Archive.swift": [1755617295, 670785957]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Data+Compression.swift"
+  : [1755617295, 670877791]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Data+CompressionDeprecated.swift"
+  : [1755617295, 670935666]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Data+Serialization.swift"
+  : [1755617295, 670988958]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Date+ZIP.swift": [1755617295, 671034541]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Entry+Serialization.swift"
+  : [1755617295, 671103666]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Entry+ZIP64.swift": [1755617295, 671169958]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/Entry.swift": [1755617295, 671253708]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/FileManager+ZIP.swift": [1755617295, 671327542]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/FileManager+ZIPDeprecated.swift"
+  : [1755617295, 671426375]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/ZIPFoundation/Sources/ZIPFoundation/URL+ZIP.swift": [1755617295, 671560334]

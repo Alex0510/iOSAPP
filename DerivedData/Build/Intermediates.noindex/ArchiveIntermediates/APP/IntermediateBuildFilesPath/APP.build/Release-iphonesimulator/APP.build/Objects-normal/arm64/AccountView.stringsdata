@@ -1,0 +1,72 @@
+{
+  "source": "/Users/pxx917144686/Downloads/APP/APP/Interface/Account/AccountView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "账户",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "添加账户",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "您的账户信息未在磁盘上加密。",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 110
+        }
+      },
+      {
+        "comment": "",
+        "key": "账户",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "已关联 %lld 个",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "无账户",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 73
+        }
+      },
+      {
+        "comment": "",
+        "key": "点击添加账户",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "88888888888",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 90
+        }
+      }
+    ]
+  },
+  "version": 1
+}

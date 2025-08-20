@@ -1,0 +1,18 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "cacb26e0f39517b8d5845882d5fbf06132f0c42c305cf6ec39a181635e40c58e"
+build_start_time: [1755617310, 462500000]
+build_end_time: [1755617322, 465424000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-numerics/Sources/RealModule/AlgebraicField.swift": [1755617296, 59952627]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-numerics/Sources/RealModule/ApproximateEquality.swift"
+  : [1755617296, 60023752]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-numerics/Sources/RealModule/AugmentedArithmetic.swift"
+  : [1755617296, 60090044]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-numerics/Sources/RealModule/Double+Real.swift": [1755617296, 60426670]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-numerics/Sources/RealModule/ElementaryFunctions.swift"
+  : [1755617296, 60511004]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-numerics/Sources/RealModule/Float+Real.swift": [1755617296, 60586254]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-numerics/Sources/RealModule/Float16+Real.swift": [1755617296, 60659671]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-numerics/Sources/RealModule/Float80+Real.swift": [1755617296, 60712588]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-numerics/Sources/RealModule/Real.swift": [1755617296, 60869754]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-numerics/Sources/RealModule/RealFunctions.swift": [1755617296, 60938380]

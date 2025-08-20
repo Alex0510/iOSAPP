@@ -1,0 +1,9 @@
+"/Users/pxx917144686/Downloads/APP/Foundation/ApplePackage/Sources/ApplePackage/ApplePackage.swift":
+  dependencies: "/Users/pxx917144686/Downloads/APP/Foundation/ApplePackage/build/ApplePackage.build/Release-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage-master.d"
+  abi-baseline-json: "/Users/pxx917144686/Downloads/APP/Foundation/ApplePackage/build/ApplePackage.build/Release-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage.abi.json"
+  swiftdoc: "/Users/pxx917144686/Downloads/APP/Foundation/ApplePackage/build/ApplePackage.build/Release-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage.swiftdoc"
+  const-values: "/Users/pxx917144686/Downloads/APP/Foundation/ApplePackage/build/ApplePackage.build/Release-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage-master.swiftconstvalues"
+  swiftmodule: "/Users/pxx917144686/Downloads/APP/Foundation/ApplePackage/build/ApplePackage.build/Release-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage.swiftmodule"
+  objc-header: "/Users/pxx917144686/Downloads/APP/Foundation/ApplePackage/build/ApplePackage.build/Release-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage-Swift.h"
+  diagnostics: "/Users/pxx917144686/Downloads/APP/Foundation/ApplePackage/build/ApplePackage.build/Release-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage-master.dia"
+  swiftsourceinfo: "/Users/pxx917144686/Downloads/APP/Foundation/ApplePackage/build/ApplePackage.build/Release-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage.swiftsourceinfo"

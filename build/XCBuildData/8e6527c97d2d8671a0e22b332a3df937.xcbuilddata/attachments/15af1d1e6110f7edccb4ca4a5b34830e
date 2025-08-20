@@ -1,0 +1,4 @@
+module Digger {
+header "Digger-Swift.h"
+export *
+}

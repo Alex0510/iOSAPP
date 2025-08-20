@@ -1,0 +1,133 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "6be630c2db01ead0c1aac89e3bc0128c428d06d45ad117dadf802bc2c2a89599"
+build_start_time: [1755617347, 50486000]
+build_end_time: [1755617353, 247160000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/AnyAsyncSequence.swift"
+  : [1755617295, 964401776]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/AnyAsyncSequenceProucerDelete.swift"
+  : [1755617295, 964548652]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/AsyncLazySequence.swift"
+  : [1755617295, 964853402]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClient+execute.swift"
+  : [1755617295, 964951569]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClient+shutdown.swift"
+  : [1755617295, 965278112]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClientRequest+Prepared.swift"
+  : [1755617295, 965383321]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClientRequest+auth.swift"
+  : [1755617295, 965493946]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClientRequest.swift"
+  : [1755617295, 965579863]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClientResponse.swift"
+  : [1755617295, 965683363]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/SingleIteratorPrecondition.swift"
+  : [1755617295, 965736113]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/Transaction+StateMachine.swift"
+  : [1755617295, 965829655]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/Transaction.swift"
+  : [1755617295, 965919863]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/Base64.swift": [1755617295, 966001613]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/BasicAuth.swift": [1755617295, 966193322]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/BestEffortHashableTLSConfiguration.swift"
+  : [1755617295, 966282531]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/Configuration+BrowserLike.swift"
+  : [1755617295, 966348364]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool.swift"
+  : [1755617295, 966425073]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/ChannelHandler/HTTP1ProxyConnectHandler.swift"
+  : [1755617295, 966560740]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/ChannelHandler/SOCKSEventsHandler.swift"
+  : [1755617295, 966634490]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/ChannelHandler/TLSEventsHandler.swift"
+  : [1755617295, 966697699]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTP1/HTTP1ClientChannelHandler.swift"
+  : [1755617295, 966859241]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTP1/HTTP1Connection.swift"
+  : [1755617295, 966980574]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTP1/HTTP1ConnectionStateMachine.swift"
+  : [1755617295, 967085533]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTP2/HTTP2ClientRequestHandler.swift"
+  : [1755617295, 967186241]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTP2/HTTP2Connection.swift"
+  : [1755617295, 967270492]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTP2/HTTP2IdleHandler.swift"
+  : [1755617295, 967344825]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPConnectionEvent.swift"
+  : [1755617295, 967428534]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPConnectionPool+Factory.swift"
+  : [1755617295, 967503867]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPConnectionPool+Manager.swift"
+  : [1755617295, 967596826]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPConnectionPool.swift"
+  : [1755617295, 967670368]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPExecutableRequest.swift"
+  : [1755617295, 967847951]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPRequestStateMachine+Demand.swift"
+  : [1755617295, 967920660]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPRequestStateMachine.swift"
+  : [1755617295, 967986077]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/RequestBodyLength.swift"
+  : [1755617295, 968042743]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/RequestFramingMetadata.swift"
+  : [1755617295, 968093910]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/RequestOptions.swift"
+  : [1755617295, 968143660]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+Backoff.swift"
+  : [1755617295, 968226827]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+HTTP1Connections.swift"
+  : [1755617295, 968346453]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+HTTP1StateMachine.swift"
+  : [1755617295, 968434078]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+HTTP2Connections.swift"
+  : [1755617295, 968543703]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+HTTP2StateMachine.swift"
+  : [1755617295, 968653495]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+RequestQueue.swift"
+  : [1755617295, 968750828]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+StateMachine.swift"
+  : [1755617295, 968813870]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionTarget.swift"
+  : [1755617295, 968881620]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/DeconstructedURL.swift"
+  : [1755617295, 968937871]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/FileDownloadDelegate.swift"
+  : [1755617295, 969135163]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/FoundationExtensions.swift"
+  : [1755617295, 969217954]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/HTTPClient+HTTPCookie.swift"
+  : [1755617295, 969299038]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/HTTPClient+Proxy.swift"
+  : [1755617295, 969354871]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/HTTPClient+StructuredConcurrency.swift"
+  : [1755617295, 969400830]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/HTTPClient.swift"
+  : [1755617295, 969507039]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/HTTPHandler.swift"
+  : [1755617295, 969616914]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/LRUCache.swift": [1755617295, 969681497]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/NIOLoopBound+Execute.swift"
+  : [1755617295, 969722289]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/NIOTransportServices/NWErrorHandler.swift"
+  : [1755617295, 969795164]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/NIOTransportServices/NWWaitingHandler.swift"
+  : [1755617295, 969854289]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/NIOTransportServices/TLSConfiguration.swift"
+  : [1755617295, 969918665]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/RedirectState.swift"
+  : [1755617295, 969981790]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/RequestBag+StateMachine.swift"
+  : [1755617295, 970058290]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/RequestBag.swift"
+  : [1755617295, 970131540]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/RequestValidation.swift"
+  : [1755617295, 970224624]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/SSLContextCache.swift"
+  : [1755617295, 970260707]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/Scheme.swift": [1755617295, 970302749]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/Singleton.swift": [1755617295, 970344166]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/StringConvertibleInstances.swift"
+  : [1755617295, 970382916]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/StructuredConcurrencyHelpers.swift"
+  : [1755617295, 970423832]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/Utils.swift": [1755617295, 970465457]

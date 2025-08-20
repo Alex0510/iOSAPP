@@ -1,0 +1,15 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "08c36deedc0e65b6e932486842c75b1f3633c270d72a8742e5edf4b794356b26"
+build_start_time: [1755617319, 573950000]
+build_end_time: [1755617322, 491311000]
+inputs:
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-distributed-tracing/Sources/Instrumentation/Instrument.swift"
+  : [1755617295, 110299257]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-distributed-tracing/Sources/Instrumentation/InstrumentationSystem.swift"
+  : [1755617295, 110389049]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-distributed-tracing/Sources/Instrumentation/Locks.swift"
+  : [1755617295, 110466924]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-distributed-tracing/Sources/Instrumentation/MultiplexInstrument.swift"
+  : [1755617295, 110520174]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-distributed-tracing/Sources/Instrumentation/NoOpInstrument.swift"
+  : [1755617295, 110571049]

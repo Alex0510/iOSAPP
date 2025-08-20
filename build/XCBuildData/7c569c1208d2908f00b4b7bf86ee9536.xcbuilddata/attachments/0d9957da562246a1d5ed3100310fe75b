@@ -1,0 +1,40 @@
+{
+  "" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/NIOHTTPCompression-master.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/NIOHTTPCompression-master.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/NIOHTTPCompression-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/NIOHTTPCompression-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/NIOHTTPCompression-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/NIOHTTPCompression-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPCompression.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPCompression.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPCompression.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPCompression.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPDecompression.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPDecompression.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPDecompression.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPDecompression.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPRequestCompressor.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPRequestCompressor.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPRequestCompressor.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPRequestCompressor.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPRequestDecompressor.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPRequestDecompressor.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPRequestDecompressor.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPRequestDecompressor.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPResponseCompressor.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPResponseCompressor.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPResponseCompressor.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPResponseCompressor.o"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPResponseDecompressor.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPResponseDecompressor.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPResponseDecompressor.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphonesimulator/NIOHTTPCompression.build/Objects-normal/x86_64/HTTPResponseDecompressor.o"
+  }
+}

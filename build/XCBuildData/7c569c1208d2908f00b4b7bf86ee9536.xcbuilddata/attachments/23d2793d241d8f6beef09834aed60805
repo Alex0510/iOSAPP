@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release-iphonesimulator/Collections.build/Objects-normal/x86_64/Collections-master.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release-iphonesimulator/Collections.build/Objects-normal/x86_64/Collections-master.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release-iphonesimulator/Collections.build/Objects-normal/x86_64/Collections-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release-iphonesimulator/Collections.build/Objects-normal/x86_64/Collections-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release-iphonesimulator/Collections.build/Objects-normal/x86_64/Collections-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release-iphonesimulator/Collections.build/Objects-normal/x86_64/Collections-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-collections/Sources/Collections/Collections.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release-iphonesimulator/Collections.build/Objects-normal/x86_64/Collections-9ecc680df285fcdfd55f9f4e7fea3d6c.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release-iphonesimulator/Collections.build/Objects-normal/x86_64/Collections-9ecc680df285fcdfd55f9f4e7fea3d6c.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-elgqlncbjfybppepcmsezovricjg/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release-iphonesimulator/Collections.build/Objects-normal/x86_64/Collections-9ecc680df285fcdfd55f9f4e7fea3d6c.o"
+  }
+}

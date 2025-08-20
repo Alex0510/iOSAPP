@@ -1,0 +1,40 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "b9cd8e78d584957d58d6dbee599065ace4e0fba084181cdf2a58534adc9e7509"
+build_start_time: [1755617338, 580210000]
+build_end_time: [1755617340, 567317000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/BasicCodingKey.swift": [1755617295, 70233371]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/Deprecated/MultipartError.swift"
+  : [1755617295, 70300329]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/Exports.swift": [1755617295, 70512538]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataDecoder/FormDataDecoder.Decoder.swift"
+  : [1755617295, 70590288]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataDecoder/FormDataDecoder.KeyedContainer.swift"
+  : [1755617295, 70681205]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataDecoder/FormDataDecoder.SingleValueContainer.swift"
+  : [1755617295, 70766122]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataDecoder/FormDataDecoder.UnkeyedContainer.swift"
+  : [1755617295, 70823414]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataDecoder/FormDataDecoder.swift"
+  : [1755617295, 70886497]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataEncoder/FormDataEncoder.Encoder.swift"
+  : [1755617295, 70963456]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataEncoder/FormDataEncoder.KeyedContainer.swift"
+  : [1755617295, 71013789]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataEncoder/FormDataEncoder.SingleValueContainer.swift"
+  : [1755617295, 71057914]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataEncoder/FormDataEncoder.UnkeyedContainer.swift"
+  : [1755617295, 71101956]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataEncoder/FormDataEncoder.swift"
+  : [1755617295, 71159498]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataEncoder/Storage.swift"
+  : [1755617295, 71205165]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/MultipartFormData.swift"
+  : [1755617295, 71264873]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/MultipartParser.swift": [1755617295, 71336123]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/MultipartPart.swift": [1755617295, 71382498]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/MultipartPartConvertible.swift"
+  : [1755617295, 71428415]
+  ? "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/MultipartSerializer.swift"
+  : [1755617295, 71512457]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/Utilities.swift": [1755617295, 71556374]

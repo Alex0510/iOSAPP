@@ -1,0 +1,8 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "55ce1909d611452ca59a50b4d3eaa7ceb416c5a190765bff9bae3c7723deccf7"
+build_start_time: [1755617310, 226213000]
+build_end_time: [1755617322, 142036000]
+inputs:
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/_NIODataStructures/Heap.swift": [1755617296, 223205472]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/_NIODataStructures/PriorityQueue.swift": [1755617296, 223273722]
+  "/Users/pxx917144686/Downloads/APP/DerivedData/SourcePackages/checkouts/swift-nio/Sources/_NIODataStructures/_TinyArray.swift": [1755617296, 223347014]

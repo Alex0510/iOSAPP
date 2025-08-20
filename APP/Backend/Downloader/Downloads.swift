@@ -1,9 +1,10 @@
-import AnyCodable
-import ApplePackage
-import Combine
-import Digger
-import Foundation
+import AnyCodable  // 支持任何类型的Codable
+import ApplePackage  // Apple包处理库
+import Combine       // 响应式编程框架
+import Digger        // 下载管理器库
+import Foundation    // 基础框架
 
+/// 字节格式化器，用于格式化文件大小显示
 private let byteFormatter: ByteCountFormatter = {
     let formatter = ByteCountFormatter()
     formatter.allowedUnits = [.useAll]
@@ -11,16 +12,23 @@ private let byteFormatter: ByteCountFormatter = {
     return formatter
 }()
 
+/// 下载管理器类，管理应用中的所有下载任务
+/// 遵循ObservableObject协议，支持UI响应式更新
 class Downloads: ObservableObject {
-    static let this = Downloads()
+    /// 单例实例，全局访问点
+      static let this = Downloads()
 
+    /// 下载请求列表，持久化存储
     @PublishedPersist(key: "DownloadRequests", defaultValue: [])
     var requests: [Request]
 
+    /// 正在运行的任务数量
     var runningTaskCount: Int {
         requests.filter { $0.runtime.status == .downloading }.count
     }
 
+    /// 初始化方法
+    /// 设置下载管理器的配置和状态
     init() {
         let copy = requests
         for req in copy where !isCompleted(for: req) {

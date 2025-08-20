@@ -1,42 +1,36 @@
 // 导入必要的框架
-import ApplePackage  // 自定义的Apple包处理库
+import ApplePackage  // Apple包处理库
 import Combine       // 响应式编程框架
 import Foundation    // 基础框架
 
-/// AppStore类
-/// 管理应用商店相关功能，包括账户管理、设备种子生成等
-/// 遵循ObservableObject协议以便于UI响应式更新
+/// AppStore类，管理应用商店相关功能
+/// 遵循ObservableObject协议，支持UI响应式更新
 class AppStore: ObservableObject {
-    /// 账户结构体
-    /// 存储App Store账户信息
-    /// 遵循Codable协议支持序列化和反序列化
-    /// 遵循Identifiable协议提供唯一标识符
-    /// 遵循Hashable协议支持哈希操作
+    /// 账户结构体，存储App Store账户信息
+    /// 遵循Codable、Identifiable和Hashable协议
     struct Account: Codable, Identifiable, Hashable {
-        /// 唯一标识符
-        /// 使用邮箱作为唯一标识符，确保每个账户的唯一性
+        /// 唯一标识符，使用邮箱确保唯一性
         var id: String { email }
-
-        var email: String          // 账户邮箱，用于登录和识别
-        var password: String       // 账户密码，用于登录验证
-        var countryCode: String    // 国家代码，如CN、US等，表示账户所属地区
-        var storeResponse: StoreResponse.Account  // 商店响应的账户信息，包含账户的详细数据
+        /// 账户邮箱，用于登录和识别
+        var email: String
+        /// 账户密码，用于登录验证
+        var password: String
+        /// 国家代码（如CN、US）
+        var countryCode: String
+        /// 商店响应的账户信息
+        var storeResponse: StoreResponse.Account
     }
 
-    /// 存储Combine订阅者集合
-    /// 用于管理Combine框架的订阅关系，确保订阅正确取消以避免内存泄漏
+    /// Combine订阅者集合，管理订阅关系避免内存泄漏
     var cancellables: Set<AnyCancellable> = .init()
 
-    /// 设备种子地址
-    /// 使用PublishedPersist属性包装器持久化存储到用户 defaults
+    /// 设备种子地址，持久化存储
     /// 用于生成唯一的设备标识符
     @PublishedPersist(key: "DeviceSeedAddress", defaultValue: "")
     var deviceSeedAddress: String
 
     /// 创建随机设备标识符
-    /// 生成一个12位大写十六进制字符串，用于唯一标识设备
-    /// 模拟MAC地址格式，然后转换为纯十六进制字符串
-    /// - Returns: 生成的12位大写十六进制字符串
+    /// 生成12位大写十六进制字符串
     static func createSeed() -> String {
         // 生成格式如00:00:00:00:00:00的MAC地址，然后转换为大写十六进制字符串
         // 1. 从一个样例MAC地址字符串开始
@@ -60,24 +54,18 @@ class AppStore: ObservableObject {
             .uppercased()
     }
 
-    /// 账户列表
-    /// 使用PublishedPersist属性包装器持久化存储到用户 defaults
-    /// 包含所有已保存的App Store账户信息
+    /// 账户列表，持久化存储
     @PublishedPersist(key: "Accounts", defaultValue: [])
     var accounts: [Account]
 
-    /// 演示模式
-    /// 使用PublishedPersist属性包装器持久化存储到用户 defaults
     /// 启用时提供演示功能，不进行实际网络请求
     @PublishedPersist(key: "DemoMode", defaultValue: false)
     var demoMode: Bool
 
-    /// 单例实例
-    /// 提供全局访问点，确保整个应用中只有一个AppStore实例
+    /// 单例实例，全局访问点
     static let this = AppStore()
     /// 私有初始化方法
-    /// 防止外部创建新的实例
-    /// 设置设备种子地址变化的订阅
+    /// 防止外部创建新实例，设置设备种子地址订阅
     private init() {
         // 监听deviceSeedAddress变化，并更新ApplePackage的overrideGUID
         $deviceSeedAddress
@@ -89,7 +77,7 @@ class AppStore: ObservableObject {
             .store(in: &cancellables)
     }
 
-    /// 设置GUID：如果deviceSeedAddress为空，则创建新种子
+    /// 设置GUID，如为空则创建新种子
     func setupGUID() {
         // 如果设备种子地址为空，则创建一个新的
         if deviceSeedAddress.isEmpty { deviceSeedAddress = Self.createSeed() }
@@ -100,11 +88,6 @@ class AppStore: ObservableObject {
     }
 
     /// 保存账户信息
-    /// - Parameters:
-    ///   - email: 账户邮箱
-    ///   - password: 账户密码
-    ///   - account: 商店响应的账户信息
-    /// - Returns: 保存的账户对象
     @discardableResult
     func save(email: String, password: String, account: StoreResponse.Account) -> Account {
         // 创建账户对象
@@ -122,17 +105,13 @@ class AppStore: ObservableObject {
         return account
     }
 
-    /// 删除AppleID
-    /// - Parameter id: 要删除的AppleID
+    /// 删除AppleID账户
     func delete(id: Account.ID) {
         // 过滤掉指定ID的账户
         accounts = accounts.filter { $0.id != id }
     }
 
     /// 更新账户信息
-    /// - Parameter id: 要更新的账户ID
-    /// - Returns: 更新后的账户对象，若未找到则返回nil
-    /// - Throws: 认证过程中可能抛出的错误
     @discardableResult
     func rotate(id: Account.ID) throws -> Account? {
         // 查找指定ID的账户

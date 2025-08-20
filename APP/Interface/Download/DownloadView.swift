@@ -96,7 +96,7 @@ struct DownloadView: View {
                         Button {
                             vm.suspend(requestID: req.id)
                         } label: {
-                            Label("Puase", systemImage: "stop.fill")
+                            Label("Pause", systemImage: "stop.fill")
                         }
                     default: 
                         // 默认情况不做任何操作

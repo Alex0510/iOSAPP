@@ -1,5 +1,8 @@
 import ApplePackage
+import Combine
 import SwiftUI
+import VersionManager
+import VersionSelectorView
 
 // 版本选择相关错误
 enum VersionError: Error {
@@ -8,6 +11,14 @@ enum VersionError: Error {
 }
 
 // 添加下载视图，用于直接下载App Store中不再可用的应用
+// 应用基本信息模型
+struct AppInfo: Identifiable {
+    let id = UUID()
+    var name: String
+    var developer: String
+    var iconURL: URL?
+}
+
 struct AddDownloadView: View {
     // 应用包ID
     @State var bundleID: String = ""
@@ -174,9 +185,6 @@ struct AddDownloadView: View {
             .store(in: &cancellables)
     }
     
-    // 用于存储异步操作的取消令牌
-    private var cancellables = Set<AnyCancellable>()
-    
     // 开始下载的方法
     func startDownload() {
         // 检查账户是否存在
@@ -247,3 +255,4 @@ struct AddDownloadView: View {
         }
     }
 }
+@State private var cancellables = Set<AnyCancellable>()

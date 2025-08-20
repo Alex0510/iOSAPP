@@ -1,10 +1,8 @@
-// 导入 Foundation 框架，提供基本的核心功能
 import Foundation
-// 导入 Combine 框架，用于处理异步事件流
 import Combine
 
 // 版本管理类，负责获取应用的版本 ID
-class VersionManager {
+public class VersionManager {
     // 私有属性，存储 StoreClient 实例
     private let storeClient: StoreClient
     
@@ -16,7 +14,7 @@ class VersionManager {
     // 获取指定应用 ID 的版本 ID 列表
     // 参数: appId - 应用的 ID
     // 返回: 一个 Future，异步返回版本 ID 数组或错误
-    func getVersionIDs(appId: String) -> Future<[String], Error> {
+    public func getVersionIDs(appId: String) -> Future<[String], Error> {
         return Future { promise in
             // 在全局队列中异步执行任务
             DispatchQueue.global().async {

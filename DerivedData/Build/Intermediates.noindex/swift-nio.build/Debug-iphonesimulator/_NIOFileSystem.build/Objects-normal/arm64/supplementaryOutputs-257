@@ -1,0 +1,18 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/ArraySlice+FileSystem.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/ArraySlice+FileSystem.swiftconstvalues"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/ArraySlice+FileSystem.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/ArraySlice+FileSystem.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/ArraySlice+FileSystem.dia"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/ArraySlice+FileSystem.d"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/DerivedSources/resource_bundle_accessor.swift":
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/resource_bundle_accessor.o"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/resource_bundle_accessor.dia"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/resource_bundle_accessor.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/resource_bundle_accessor.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/resource_bundle_accessor.swiftdeps"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Array+FileSystem.swift":
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/Array+FileSystem.d"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/Array+FileSystem.swiftconstvalues"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/Array+FileSystem.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/Array+FileSystem.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/Array+FileSystem.dia"

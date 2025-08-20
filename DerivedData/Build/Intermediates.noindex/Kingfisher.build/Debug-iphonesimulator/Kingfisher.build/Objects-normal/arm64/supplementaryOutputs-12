@@ -1,0 +1,24 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/Kingfisher/Sources/SwiftUI/ImageBinder.swift":
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/ImageBinder.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/ImageBinder.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/ImageBinder.swiftdeps"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/ImageBinder.d"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/ImageBinder.swiftconstvalues"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/Kingfisher/Sources/Networking/SessionDelegate.swift":
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/SessionDelegate.dia"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/SessionDelegate.d"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/SessionDelegate.swiftconstvalues"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/SessionDelegate.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/SessionDelegate.swiftdeps"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/Kingfisher/Sources/Networking/SessionDataTask.swift":
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/SessionDataTask.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/SessionDataTask.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/SessionDataTask.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/SessionDataTask.o"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/SessionDataTask.swiftconstvalues"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/Kingfisher/Sources/SwiftUI/ImageContext.swift":
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/ImageContext.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/ImageContext.swiftdeps"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/ImageContext.o"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/ImageContext.swiftconstvalues"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Kingfisher.build/Debug-iphonesimulator/Kingfisher.build/Objects-normal/arm64/ImageContext.dia"

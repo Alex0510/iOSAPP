@@ -1,0 +1,18 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOPosix/ThreadWindows.swift":
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/ThreadWindows.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/ThreadWindows.dia"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/ThreadWindows.swiftconstvalues"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/ThreadWindows.o"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/ThreadWindows.d"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOPosix/ThreadPosix.swift":
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/ThreadPosix.d"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/ThreadPosix.swiftconstvalues"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/ThreadPosix.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/ThreadPosix.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/ThreadPosix.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOPosix/UnsafeTransfer.swift":
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/UnsafeTransfer.d"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/UnsafeTransfer.swiftconstvalues"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/UnsafeTransfer.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/UnsafeTransfer.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/NIOPosix.build/Objects-normal/arm64/UnsafeTransfer.o"

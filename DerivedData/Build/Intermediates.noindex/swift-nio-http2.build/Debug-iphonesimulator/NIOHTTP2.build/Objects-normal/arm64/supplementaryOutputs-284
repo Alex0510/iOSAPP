@@ -1,0 +1,24 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/HPACKHeaders+Validation.swift":
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HPACKHeaders+Validation.o"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HPACKHeaders+Validation.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HPACKHeaders+Validation.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HPACKHeaders+Validation.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HPACKHeaders+Validation.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/Frame Buffers/OutboundFrameBuffer.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/OutboundFrameBuffer.swiftconstvalues"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/OutboundFrameBuffer.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/OutboundFrameBuffer.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/OutboundFrameBuffer.o"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/OutboundFrameBuffer.d"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/Frame Buffers/OutboundFlowControlBuffer.swift":
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/OutboundFlowControlBuffer.o"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/OutboundFlowControlBuffer.swiftconstvalues"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/OutboundFlowControlBuffer.swiftdeps"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/OutboundFlowControlBuffer.d"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/OutboundFlowControlBuffer.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/GlitchesMonitor.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/GlitchesMonitor.swiftconstvalues"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/GlitchesMonitor.swiftdeps"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/GlitchesMonitor.d"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/GlitchesMonitor.o"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/GlitchesMonitor.dia"

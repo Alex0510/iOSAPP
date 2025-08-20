@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/RuntimeBrowser/DataSources/FLEXRuntimeExporter.m \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/RuntimeBrowser/DataSources/FLEXRuntimeExporter.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/ObjectiveC.modulemap \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/DatabaseBrowser/FLEXSQLiteDatabaseManager.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/DatabaseBrowser/FLEXDatabaseManager.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/DatabaseBrowser/FLEXSQLResult.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/NSObject+FLEX_Reflection.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/RuntimeBrowser/DataSources/FLEXRuntimeController.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/RuntimeBrowser/FLEXRuntimeKeyPath.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/RuntimeBrowser/FLEXSearchToken.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/GlobalStateExplorers/RuntimeBrowser/DataSources/FLEXRuntimeClient.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/NSArray+FLEX.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXTypeEncodingParser.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/SQLite3.modulemap \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXProtocol.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXRuntimeConstants.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXProperty.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXIvar.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXMethodBase.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXMethod.h \
+  /Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/FLEX/Classes/Headers/FLEXPropertyAttributes.h

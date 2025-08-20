@@ -1,0 +1,18 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileType.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/FileType.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/FileType.d"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/FileType.dia"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/FileType.swiftdeps"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/FileType.o"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystemProtocol.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/FileSystemProtocol.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/FileSystemProtocol.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/FileSystemProtocol.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/FileSystemProtocol.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/FileSystemProtocol.o"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/IOStrategy.swift":
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/IOStrategy.d"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/IOStrategy.o"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/IOStrategy.dia"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/IOStrategy.swiftconstvalues"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio.build/Debug-iphonesimulator/_NIOFileSystem.build/Objects-normal/arm64/IOStrategy.swiftdeps"

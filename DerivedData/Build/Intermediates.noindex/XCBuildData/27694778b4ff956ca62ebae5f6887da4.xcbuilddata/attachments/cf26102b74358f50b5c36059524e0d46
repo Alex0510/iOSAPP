@@ -1,0 +1,128 @@
+{
+  "" : {
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion+LAB_LCH.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_LCH.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_LCH.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_LCH.dia",
+    "index-unit-output-path" : "/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_LCH.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_LCH.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_LCH.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_LCH.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_LCH~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion+LAB_XYZ.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_XYZ.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_XYZ.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_XYZ.dia",
+    "index-unit-output-path" : "/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_XYZ.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_XYZ.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_XYZ.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_XYZ.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LAB_XYZ~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion+LCH_LAB.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LCH_LAB.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LCH_LAB.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LCH_LAB.dia",
+    "index-unit-output-path" : "/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LCH_LAB.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LCH_LAB.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LCH_LAB.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LCH_LAB.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+LCH_LAB~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion+RGB_XYZ.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+RGB_XYZ.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+RGB_XYZ.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+RGB_XYZ.dia",
+    "index-unit-output-path" : "/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+RGB_XYZ.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+RGB_XYZ.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+RGB_XYZ.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+RGB_XYZ.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+RGB_XYZ~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion+XYZ_LAB.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_LAB.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_LAB.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_LAB.dia",
+    "index-unit-output-path" : "/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_LAB.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_LAB.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_LAB.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_LAB.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_LAB~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion+XYZ_RGB.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_RGB.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_RGB.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_RGB.dia",
+    "index-unit-output-path" : "/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_RGB.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_RGB.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_RGB.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_RGB.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion+XYZ_RGB~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorConversion/ColorConversion.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion.dia",
+    "index-unit-output-path" : "/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorConversion~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorVector+LAB.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LAB.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LAB.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LAB.dia",
+    "index-unit-output-path" : "/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LAB.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LAB.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LAB.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LAB.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LAB~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorVector+LCH.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LCH.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LCH.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LCH.dia",
+    "index-unit-output-path" : "/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LCH.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LCH.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LCH.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LCH.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+LCH~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorVector+RGB.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+RGB.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+RGB.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+RGB.dia",
+    "index-unit-output-path" : "/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+RGB.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+RGB.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+RGB.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+RGB.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+RGB~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorVector+XYZ.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+XYZ.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+XYZ.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+XYZ.dia",
+    "index-unit-output-path" : "/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+XYZ.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+XYZ.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+XYZ.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+XYZ.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector+XYZ~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/ColorVector/Sources/ColorVector/ColorVector.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector.dia",
+    "index-unit-output-path" : "/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/ColorVector.build/Debug-iphonesimulator/ColorVector.build/Objects-normal/arm64/ColorVector~partial.swiftmodule"
+  }
+}

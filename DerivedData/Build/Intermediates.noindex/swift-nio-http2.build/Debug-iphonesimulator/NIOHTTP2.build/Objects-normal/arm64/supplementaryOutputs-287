@@ -1,0 +1,24 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/HTTP2FrameEncoder.swift":
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2FrameEncoder.d"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2FrameEncoder.swiftconstvalues"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2FrameEncoder.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2FrameEncoder.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2FrameEncoder.swiftdeps"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/HTTP2FrameParser.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2FrameParser.swiftconstvalues"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2FrameParser.swiftdeps"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2FrameParser.o"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2FrameParser.dia"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2FrameParser.d"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/HTTP2Frame.swift":
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2Frame.dia"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2Frame.d"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2Frame.o"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2Frame.swiftconstvalues"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2Frame.swiftdeps"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/HTTP2PingData.swift":
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2PingData.swiftdeps"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2PingData.swiftconstvalues"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2PingData.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2PingData.o"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/HTTP2PingData.d"

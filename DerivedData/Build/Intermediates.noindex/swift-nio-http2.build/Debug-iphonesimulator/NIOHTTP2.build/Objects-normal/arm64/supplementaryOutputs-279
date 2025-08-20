@@ -1,0 +1,30 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/ConnectionStateMachine/FrameSendingStates/SendingRstStreamState.swift":
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingRstStreamState.swiftdeps"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingRstStreamState.d"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingRstStreamState.swiftconstvalues"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingRstStreamState.o"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingRstStreamState.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/ConnectionStateMachine/FrameSendingStates/SendingHeadersState.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingHeadersState.swiftconstvalues"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingHeadersState.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingHeadersState.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingHeadersState.dia"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingHeadersState.d"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/ConnectionStateMachine/FrameSendingStates/SendingDataState.swift":
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingDataState.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingDataState.swiftdeps"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingDataState.d"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingDataState.swiftconstvalues"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingDataState.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/ConnectionStateMachine/FrameSendingStates/SendingGoawayState.swift":
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingGoawayState.o"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingGoawayState.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingGoawayState.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingGoawayState.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingGoawayState.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/ConnectionStateMachine/FrameSendingStates/SendingPushPromiseState.swift":
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingPushPromiseState.dia"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingPushPromiseState.d"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingPushPromiseState.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingPushPromiseState.swiftdeps"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendingPushPromiseState.swiftconstvalues"

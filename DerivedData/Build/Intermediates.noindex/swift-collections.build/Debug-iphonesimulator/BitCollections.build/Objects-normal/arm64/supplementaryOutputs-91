@@ -1,0 +1,18 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/BitSet.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/BitSet.d"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/BitSet.o"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/BitSet.dia"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/BitSet.swiftdeps"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/BitSet/BitSet._UnsafeHandle.swift":
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/BitSet._UnsafeHandle.swiftdeps"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/BitSet._UnsafeHandle.o"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/BitSet._UnsafeHandle.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/BitSet._UnsafeHandle.d"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/BitSet._UnsafeHandle.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-collections/Sources/BitCollections/Shared/Range+Utilities.swift":
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/Range+Utilities.swiftdeps"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/Range+Utilities.d"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/Range+Utilities.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/Range+Utilities.o"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/BitCollections.build/Objects-normal/arm64/Range+Utilities.swiftconstvalues"

@@ -1,0 +1,30 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope+Builder.swift":
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Builder.dia"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Builder.swiftdeps"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Builder.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Builder.d"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Builder.o"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope+Debugging.swift":
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Debugging.d"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Debugging.swiftconstvalues"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Debugging.swiftdeps"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Debugging.o"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Debugging.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope+_Node.swift":
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+_Node.o"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+_Node.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+_Node.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+_Node.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+_Node.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope+_Storage.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+_Storage.swiftconstvalues"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+_Storage.swiftdeps"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+_Storage.d"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+_Storage.o"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+_Storage.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-collections/Sources/RopeModule/Rope/Basics/Rope+Invariants.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Invariants.swiftconstvalues"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Invariants.swiftdeps"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Invariants.o"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Invariants.dia"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-collections.build/Debug-iphonesimulator/_RopeModule.build/Objects-normal/arm64/Rope+Invariants.d"

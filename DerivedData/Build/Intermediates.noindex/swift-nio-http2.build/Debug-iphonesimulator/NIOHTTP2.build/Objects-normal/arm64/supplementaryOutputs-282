@@ -1,0 +1,24 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/ConnectionStateMachine/StateMachineResult.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/StateMachineResult.swiftconstvalues"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/StateMachineResult.dia"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/StateMachineResult.d"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/StateMachineResult.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/StateMachineResult.swiftdeps"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/ContentLengthVerifier.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/ContentLengthVerifier.swiftconstvalues"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/ContentLengthVerifier.o"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/ContentLengthVerifier.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/ContentLengthVerifier.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/ContentLengthVerifier.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/ConnectionStateMachine/SendAndReceiveGoawayState.swift":
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendAndReceiveGoawayState.dia"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendAndReceiveGoawayState.swiftconstvalues"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendAndReceiveGoawayState.o"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendAndReceiveGoawayState.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/SendAndReceiveGoawayState.swiftdeps"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/swift-nio-http2/Sources/NIOHTTP2/ConnectionStateMachine/RemotelyQuiescingState.swift":
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/RemotelyQuiescingState.d"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/RemotelyQuiescingState.dia"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/RemotelyQuiescingState.swiftconstvalues"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/RemotelyQuiescingState.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/swift-nio-http2.build/Debug-iphonesimulator/NIOHTTP2.build/Objects-normal/arm64/RemotelyQuiescingState.swiftdeps"

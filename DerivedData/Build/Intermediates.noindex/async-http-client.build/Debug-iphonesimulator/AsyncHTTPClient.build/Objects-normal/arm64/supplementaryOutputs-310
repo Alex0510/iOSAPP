@@ -1,0 +1,30 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClientResponse.swift":
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientResponse.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientResponse.o"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientResponse.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientResponse.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientResponse.swiftdeps"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClientRequest+Prepared.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+Prepared.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+Prepared.d"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+Prepared.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+Prepared.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+Prepared.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/SingleIteratorPrecondition.swift":
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/SingleIteratorPrecondition.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/SingleIteratorPrecondition.o"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/SingleIteratorPrecondition.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/SingleIteratorPrecondition.swiftdeps"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/SingleIteratorPrecondition.swiftconstvalues"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClientRequest.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest.swiftconstvalues"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest.o"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClientRequest+auth.swift":
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+auth.swiftdeps"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+auth.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+auth.d"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+auth.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+auth.o"

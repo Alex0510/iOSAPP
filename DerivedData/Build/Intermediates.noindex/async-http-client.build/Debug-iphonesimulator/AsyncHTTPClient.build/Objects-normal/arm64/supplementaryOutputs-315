@@ -1,0 +1,24 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPExecutableRequest.swift":
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPExecutableRequest.swiftdeps"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPExecutableRequest.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPExecutableRequest.o"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPExecutableRequest.swiftconstvalues"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPExecutableRequest.d"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPConnectionPool+Factory.swift":
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Factory.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Factory.swiftdeps"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Factory.swiftconstvalues"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Factory.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Factory.o"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPConnectionPool+Manager.swift":
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Manager.swiftdeps"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Manager.o"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Manager.d"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Manager.swiftconstvalues"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Manager.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPConnectionPool.swift":
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool.dia"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool.d"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool.o"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool.swiftconstvalues"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool.swiftdeps"

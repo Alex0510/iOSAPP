@@ -1,0 +1,24 @@
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionTarget.swift":
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/ConnectionTarget.o"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/ConnectionTarget.d"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/ConnectionTarget.swiftdeps"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/ConnectionTarget.swiftconstvalues"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/ConnectionTarget.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/FoundationExtensions.swift":
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/FoundationExtensions.swiftconstvalues"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/FoundationExtensions.swiftdeps"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/FoundationExtensions.d"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/FoundationExtensions.o"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/FoundationExtensions.dia"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/DeconstructedURL.swift":
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/DeconstructedURL.d"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/DeconstructedURL.swiftconstvalues"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/DeconstructedURL.dia"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/DeconstructedURL.o"
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/DeconstructedURL.swiftdeps"
+"/Users/pxx917144686/Downloads/APP123/DerivedData/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/FileDownloadDelegate.swift":
+  swift-dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/FileDownloadDelegate.swiftdeps"
+  const-values: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/FileDownloadDelegate.swiftconstvalues"
+  diagnostics: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/FileDownloadDelegate.dia"
+  dependencies: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/FileDownloadDelegate.d"
+  object: "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/async-http-client.build/Debug-iphonesimulator/AsyncHTTPClient.build/Objects-normal/arm64/FileDownloadDelegate.o"

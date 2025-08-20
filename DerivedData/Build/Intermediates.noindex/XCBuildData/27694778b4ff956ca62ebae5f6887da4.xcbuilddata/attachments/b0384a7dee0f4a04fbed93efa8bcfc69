@@ -1,0 +1,268 @@
+{
+  "" : {
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/APP-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/APP-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/APP-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/APP-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/App/APP.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/APP.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/APP.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/APP.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/APP.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/APP.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/APP.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/APP.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/APP~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Backend/AppStore/AppStore.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AppStore.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AppStore.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AppStore.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AppStore.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AppStore.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AppStore.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AppStore.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AppStore~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Backend/Downloader/Downloads+Report.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Report.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Report.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Report.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Report.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Report.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Report.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Report.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Report~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Backend/Downloader/Downloads+Request.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Request.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Request.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Request.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Request.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Request.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Request.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Request.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads+Request~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Backend/Downloader/Downloads.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Downloads~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Backend/Installer/Installer+App.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+App.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+App.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+App.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+App.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+App.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+App.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+App.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+App~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Backend/Installer/Installer+Compute.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Compute.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Compute.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Compute.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Compute.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Compute.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Compute.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Compute.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Compute~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Backend/Installer/Installer+Pic.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Pic.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Pic.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Pic.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Pic.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Pic.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Pic.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Pic.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+Pic~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Backend/Installer/Installer+TLS.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+TLS.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+TLS.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+TLS.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+TLS.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+TLS.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+TLS.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+TLS.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer+TLS~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Backend/Installer/Installer.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/Installer~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Backend/MD5/MD5.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MD5.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MD5.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MD5.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MD5.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MD5.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MD5.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MD5.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MD5~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Design/ModernDesignSystem.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ModernDesignSystem.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ModernDesignSystem.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ModernDesignSystem.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ModernDesignSystem.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ModernDesignSystem.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ModernDesignSystem.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ModernDesignSystem.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ModernDesignSystem~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Extension/PublishedPersist.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PublishedPersist.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PublishedPersist.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PublishedPersist.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PublishedPersist.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PublishedPersist.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PublishedPersist.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PublishedPersist.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PublishedPersist~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Interface/Account/AccountDetailView.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountDetailView.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountDetailView.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountDetailView.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountDetailView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountDetailView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountDetailView.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountDetailView.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountDetailView~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Interface/Account/AccountView.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountView.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountView.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountView.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountView.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountView.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AccountView~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Interface/Account/AddAccountView.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddAccountView.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddAccountView.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddAccountView.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddAccountView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddAccountView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddAccountView.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddAccountView.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddAccountView~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Interface/Download/AddDownloadView.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddDownloadView.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddDownloadView.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddDownloadView.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddDownloadView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddDownloadView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddDownloadView.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddDownloadView.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/AddDownloadView~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Interface/Download/DownloadView.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/DownloadView.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/DownloadView.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/DownloadView.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/DownloadView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/DownloadView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/DownloadView.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/DownloadView.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/DownloadView~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Interface/Download/InstallerView.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/InstallerView.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/InstallerView.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/InstallerView.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/InstallerView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/InstallerView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/InstallerView.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/InstallerView.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/InstallerView~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Interface/Download/PackageView.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PackageView.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PackageView.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PackageView.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PackageView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PackageView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PackageView.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PackageView.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/PackageView~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Interface/Download/SimpleProgress.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SimpleProgress.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SimpleProgress.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SimpleProgress.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SimpleProgress.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SimpleProgress.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SimpleProgress.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SimpleProgress.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SimpleProgress~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Interface/Search/ArchivePreviewView.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ArchivePreviewView.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ArchivePreviewView.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ArchivePreviewView.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ArchivePreviewView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ArchivePreviewView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ArchivePreviewView.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ArchivePreviewView.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ArchivePreviewView~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Interface/Search/ProductView.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ProductView.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ProductView.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ProductView.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ProductView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ProductView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ProductView.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ProductView.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/ProductView~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Interface/Search/SearchView.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SearchView.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SearchView.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SearchView.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SearchView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SearchView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SearchView.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SearchView.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/SearchView~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/APP/Interface/Welcome/MainView.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MainView.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MainView.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MainView.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MainView.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MainView.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MainView.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MainView.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/MainView~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/APP.build/Debug-iphonesimulator/APP.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

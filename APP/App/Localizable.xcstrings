@@ -200,6 +200,9 @@
         }
       }
     },
+    "APP详情" : {
+
+    },
     "Authenticate" : {
       "localizations" : {
         "en" : {
@@ -396,6 +399,7 @@
       }
     },
     "Download Requested" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -444,6 +448,7 @@
       }
     },
     "Failed to rotate password token, please re-authenticate within account page." : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -699,6 +704,9 @@
         }
       }
     },
+    "Pause" : {
+
+    },
     "Pending..." : {
       "localizations" : {
         "en" : {
@@ -716,6 +724,7 @@
       }
     },
     "Puase" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -748,6 +757,7 @@
       }
     },
     "Request Successes" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1054,6 +1064,9 @@
         }
       }
     },
+    "Version mismatch" : {
+
+    },
     "We will store your account and password on disk without encryption. Please do not connect your device to untrusted hardware or use this app on a open system like macOS." : {
       "localizations" : {
         "en" : {
@@ -1089,10 +1102,13 @@
     "下载" : {
 
     },
+    "下载最新版本" : {
+
+    },
     "为您寻找最佳结果" : {
 
     },
-    "付费应用无法获取许可证。如需要请先从App Store购买。" : {
+    "付费APP无法获取许可证。如需要请先从App Store购买。" : {
 
     },
     "价格" : {
@@ -1101,10 +1117,22 @@
     "关于 \"%@\"" : {
 
     },
+    "兼容性: iOS 13.0 或更高版本" : {
+
+    },
     "最近搜索" : {
 
     },
     "加载更多..." : {
+
+    },
+    "加载版本中..." : {
+
+    },
+    "发布日期: 未知" : {
+
+    },
+    "取消" : {
 
     },
     "告诉我们应用的包ID以启动直接下载。适用于下载App Store中不再可用的应用。" : {
@@ -1123,9 +1151,6 @@
 
     },
     "应用包ID" : {
-
-    },
-    "应用详情" : {
 
     },
     "开始您的探索之旅" : {
@@ -1167,10 +1192,13 @@
     "正在与Apple通信..." : {
 
     },
+    "正在加载版本信息..." : {
+
+    },
     "正在搜索..." : {
 
     },
-    "此地区没有可用账户。请在账户页面添加账户。" : {
+    "此地区没有可用账户。请在账户页面账户。" : {
 
     },
     "清除全部" : {
@@ -1207,6 +1235,12 @@
 
     },
     "选择一个账户来下载此应用" : {
+
+    },
+    "选择历史版本 (%lld)" : {
+
+    },
+    "选择版本" : {
 
     },
     "选择的账户" : {

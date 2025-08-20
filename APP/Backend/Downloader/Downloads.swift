@@ -80,7 +80,7 @@ class Downloads: ObservableObject {
     func add(request: Request, version: String?) throws -> Request.ID {
         // 检查版本是否为空，若为空则抛出需要选择版本的错误
         guard let version = version else {
-            throw VersionError.versionSelectionRequired
+            fatalError("Version selection is required for download")
         }
         
         var modifiedRequest = request

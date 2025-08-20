@@ -1,0 +1,78 @@
+{
+  "" : {
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/Digger-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/Digger-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/Digger-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/Digger-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/Digger/Sources/Digger/Digger.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/Digger.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/Digger.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/Digger.dia",
+    "index-unit-output-path" : "/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/Digger.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/Digger.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/Digger.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/Digger.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/Digger~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/Digger/Sources/Digger/DiggerCache.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerCache.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerCache.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerCache.dia",
+    "index-unit-output-path" : "/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerCache.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerCache.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerCache.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerCache.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerCache~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/Digger/Sources/Digger/DiggerDelegate.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerDelegate.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerDelegate.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerDelegate.dia",
+    "index-unit-output-path" : "/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerDelegate.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerDelegate.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerDelegate.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerDelegate.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerDelegate~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/Digger/Sources/Digger/DiggerHelper.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerHelper.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerHelper.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerHelper.dia",
+    "index-unit-output-path" : "/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerHelper.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerHelper.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerHelper.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerHelper.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerHelper~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/Digger/Sources/Digger/DiggerManager.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerManager.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerManager.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerManager.dia",
+    "index-unit-output-path" : "/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerManager.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerManager.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerManager.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerManager.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerManager~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/Digger/Sources/Digger/DiggerSeed.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerSeed.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerSeed.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerSeed.dia",
+    "index-unit-output-path" : "/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerSeed.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerSeed.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerSeed.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerSeed.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerSeed~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/Digger/Sources/Digger/DiggerThread.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerThread.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerThread.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerThread.dia",
+    "index-unit-output-path" : "/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerThread.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerThread.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerThread.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerThread.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/DerivedData/Build/Intermediates.noindex/Digger.build/Debug-iphonesimulator/Digger.build/Objects-normal/arm64/DiggerThread~partial.swiftmodule"
+  }
+}

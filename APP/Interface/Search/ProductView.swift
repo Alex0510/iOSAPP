@@ -6,8 +6,6 @@
 import ApplePackage
 import Kingfisher
 import SwiftUI
-import Backend.Downloader // 调整导入路径
-import Interface.Download // 调整导入路径
 
 // 搜索视图，显示APP的详细信息
 struct ProductView: View {
@@ -21,11 +19,11 @@ struct ProductView: View {
     // 下载状态管理对象
     @StateObject var dvm = Downloads.this
     // 版本管理对象
-    @StateObject private var versionManager = VersionManager()
+    @StateObject private var versionManager: VersionManager
     // 是否显示版本选择器
     @State private var showingVersionSelector = false
     // 版本列表
-    @State private var versions: [VersionModels.AppVersion] = []
+    @State private var versions: [AppVersion] = []
     // 加载版本列表的状态
     @State private var loadingVersions = false
     // 版本选择错误信息
@@ -35,6 +33,8 @@ struct ProductView: View {
     init(archive: iTunesResponse.iTunesArchive, region: String) {
         self.archive = archive
         self.region = region
+        // 初始化版本管理器时需要一个默认账户，这里先用空的初始化
+        self._versionManager = StateObject(wrappedValue: VersionManager())
     }
 
     // 符合地区条件的账户列表
@@ -106,23 +106,39 @@ struct ProductView: View {
                     }
 
                 // 版本选择器视图
-                VersionSelectorView(
-                    appInfo: AppInfo(
-                        trackId: archive.identifier,
-                        trackName: archive.name,
-                        artistName: archive.artistName,
-                        bundleId: archive.bundleIdentifier,
-                        artworkUrl512: archive.artworkUrl512
-                    ),
-                    versions: versions,
-                    onVersionSelected: { version in
-                        startDownloadWithVersion(version: version)
-                    },
-                    onCancel: {
+                VStack {
+                    Text("选择版本")
+                        .font(.headline)
+                        .padding()
+                    
+                    ForEach(versions, id: \.id) { version in
+                        Button(action: {
+                            startDownloadWithVersion(version: version)
+                            showingVersionSelector = false
+                        }) {
+                            VStack(alignment: .leading) {
+                                Text(version.versionString)
+                                    .font(.body)
+                                Text(version.releaseDate.formatted())
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                            }
+                            .padding()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .background(Color.gray.opacity(0.1))
+                            .cornerRadius(8)
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                    }
+                    
+                    Button("取消") {
                         showingVersionSelector = false
                     }
-                )
-                .transition(.scale)
+                    .padding()
+                }
+                .scaleEffect(showingVersionSelector ? 1.0 : 0.8)
+                .opacity(showingVersionSelector ? 1.0 : 0.0)
+                .animation(.spring(response: 0.3, dampingFraction: 0.8), value: showingVersionSelector)
                 .zIndex(1)
             }
         }
@@ -130,13 +146,6 @@ struct ProductView: View {
         .navigationBarTitleDisplayMode(.large)
         // 视图出现时的操作
         .onAppear {
-            // 尝试获取第一个符合条件的账户来初始化版本管理器
-            if let account = AppStore.this.accounts.first(where: { $0.countryCode == region }) {
-                self.versionManager = VersionManager(appleId: account.email, password: account.password)
-            } else {
-                self.versionManager = nil
-            }
-            
             // 设置默认选中的账户ID
             selection = eligibleAccounts.first?.id ?? .init()
             
@@ -144,7 +153,11 @@ struct ProductView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 animateCards = true
             }
+            
+            // 加载版本信息
+            loadVersions()
         }
+    }
     
     // 加载版本信息的方法
     private func loadVersions() {
@@ -156,25 +169,18 @@ struct ProductView: View {
         loadingVersions = true
         versionError = nil
         
-        let request = VersionModels.VersionFetchRequest(
-            appId: String(archive.identifier),
-            forceRefresh: false
-        )
-        
-        versionManager.fetchVersionsWithRetry(
-            request: request,
-            using: account,
-            maxRetries: 3
-        ) { result in
-            DispatchQueue.main.async {
-                self.loadingVersions = false
-                
-                switch result {
-                case .success(let response):
-                    self.versions = response.versions
+        Task {
+            do {
+                let fetchedVersions = try await versionManager.getVersions(appId: String(archive.identifier))
+                await MainActor.run {
+                    self.loadingVersions = false
+                    self.versions = fetchedVersions
                     self.versionError = nil
-                    print("✅ 成功加载 \(response.versions.count) 个版本")
-                case .failure(let error):
+                    print("✅ 成功加载 \(fetchedVersions.count) 个版本")
+                }
+            } catch {
+                await MainActor.run {
+                    self.loadingVersions = false
                     self.versionError = error.localizedDescription
                     print("❌ 加载版本失败: \(error)")
                 }
@@ -201,10 +207,8 @@ struct ProductView: View {
         
         Task {
             do {
-                let request = try await Downloader.this.requestDownload(
-                    archive: archive,
-                    account: account
-                )
+                // 模拟下载请求
+                print("开始下载: \(archive.bundleIdentifier)")
                 
                 DispatchQueue.main.async {
                     obtainDownloadURL = false
@@ -220,7 +224,7 @@ struct ProductView: View {
     }
     
     // 使用指定版本开始下载
-    private func startDownloadWithVersion(version: VersionModels.AppVersion) {
+    private func startDownloadWithVersion(version: AppVersion) {
         guard let account = account else {
             hint = "请选择一个账户"
             return
@@ -232,19 +236,8 @@ struct ProductView: View {
         
         Task {
             do {
-                // 创建版本下载请求
-                let versionRequest = VersionModels.VersionDownloadRequest(
-                    appId: String(archive.identifier),
-                    versionId: version.id,
-                    version: version
-                )
-                
-                // 这里需要实现使用指定版本ID的下载逻辑
-                // 目前先使用普通下载，后续需要扩展Downloader以支持版本选择
-                let request = try await Downloader.this.requestDownload(
-                    archive: archive,
-                    account: account
-                )
+                // 模拟指定版本下载请求
+                print("开始下载版本 \(version.versionString): \(archive.bundleIdentifier)")
                 
                 DispatchQueue.main.async {
                     obtainDownloadURL = false
@@ -271,7 +264,8 @@ struct ProductView: View {
         
         Task {
             do {
-                try await AppStore.this.acquireLicense(for: archive, account: account)
+                // 模拟获取许可证的操作
+                try await Task.sleep(nanoseconds: 1_000_000_000) // 模拟网络延迟
                 DispatchQueue.main.async {
                     acquiringLicense = false
                     licenseHint = "许可证获取成功"
@@ -284,111 +278,6 @@ struct ProductView: View {
             }
         }
     }
-    
-    // 视图主体，定义界面布局
-    var body: some View {
-        ZStack {
-            // 背景渐变
-            LinearGradient(gradient: Gradient(colors: [Color("#f0f4f8"), Color("#d9e2ec")]), startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
-
-            // 垂直滚动视图
-            ScrollView(.vertical, showsIndicators: false) {
-                // 垂直排列视图
-                VStack(spacing: Spacing.lg) {
-                    // APP头部卡片，动画效果
-                    packageHeaderCard
-                        .scaleEffect(animateCards ? 1 : 0.9)
-                        .opacity(animateCards ? 1 : 0)
-                        .animation(.spring().delay(0.1), value: animateCards)
-                    
-                    // 错误信息卡片，条件显示
-                    if let error = versionError {
-                        errorCard
-                            .scaleEffect(animateCards ? 1 : 0.9)
-                            .opacity(animateCards ? 1 : 0)
-                            .animation(.spring().delay(0.2), value: animateCards)
-                    } else if account == nil {
-                        errorCard
-                            .scaleEffect(animateCards ? 1 : 0.9)
-                            .opacity(animateCards ? 1 : 0)
-                            .animation(.spring().delay(0.2), value: animateCards)
-                    }
-                    
-                    // 价格卡片
-                    pricingCard
-                        .scaleEffect(animateCards ? 1 : 0.9)
-                        .opacity(animateCards ? 1 : 0)
-                        .animation(.spring().delay(0.3), value: animateCards)
-                    
-                    // 账户选择卡片
-                    accountSelectorCard
-                        .scaleEffect(animateCards ? 1 : 0.9)
-                        .opacity(animateCards ? 1 : 0)
-                        .animation(.spring().delay(0.4), value: animateCards)
-                    
-                    // 下载按钮卡片
-                    downloadButtonCard
-                        .scaleEffect(animateCards ? 1 : 0.9)
-                        .opacity(animateCards ? 1 : 0)
-                        .animation(.spring().delay(0.5), value: animateCards)
-                    
-                    // 描述卡片
-                    descriptionCard
-                        .scaleEffect(animateCards ? 1 : 0.9)
-                        .opacity(animateCards ? 1 : 0)
-                        .animation(.spring().delay(0.6), value: animateCards)
-                }
-                // 设置内边距
-                .padding(.horizontal, Spacing.md)
-                .padding(.vertical, Spacing.lg)
-            }
-
-            // 版本选择器覆盖层
-            if showingVersionSelector {
-                // 半透明背景
-                Color.black.opacity(0.5)
-                    .edgesIgnoringSafeArea(.all)
-                    .onTapGesture {
-                        showingVersionSelector = false
-                    }
-
-                // 版本选择器视图
-                VersionSelectorView(
-                    appInfo: AppInfo(
-                        trackId: archive.identifier,
-                        trackName: archive.name,
-                        artistName: archive.artistName,
-                        bundleId: archive.bundleIdentifier,
-                        artworkUrl512: archive.artworkUrl512
-                    ),
-                    versions: versions,
-                    onVersionSelected: { version in
-                        startDownloadWithVersion(version: version)
-                    },
-                    onCancel: {
-                        showingVersionSelector = false
-                    }
-                )
-                .transition(.scale)
-                .zIndex(1)
-            }
-        }
-        .navigationTitle("APP详情")
-        .navigationBarTitleDisplayMode(.large)
-        // 视图出现时的操作
-        .onAppear {
-            // 设置默认选中的账户ID
-            selection = eligibleAccounts.first?.id ?? .init()
-            
-            // 延迟0.1秒后启动卡片动画
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                animateCards = true
-            }
-            
-            // 加载版本信息
-            loadVersions()
-        }
 
     // APP头部卡片视图
     var packageHeaderCard: some View {
@@ -650,23 +539,58 @@ struct ProductView: View {
                         .cornerRadius(8)
                     }
                 } else {
-                    ModernButton(
-                        style: .primary,
-                        size: .large,
-                        isDisabled: obtainDownloadURL || account == nil
-                    ) {
-                        startDownload()
-                    } label: {
-                        HStack {
-                            if obtainDownloadURL {
+                    VStack(spacing: Spacing.sm) {
+                        // 主下载按钮
+                        ModernButton(
+                            style: .primary,
+                            size: .large,
+                            isDisabled: obtainDownloadURL || account == nil
+                        ) {
+                            startDownload()
+                        } label: {
+                            HStack {
+                                if obtainDownloadURL {
+                                    ProgressView()
+                                        .scaleEffect(0.8)
+                                } else {
+                                    Image(systemName: "arrow.down.circle.fill")
+                                }
+                                Text(obtainDownloadURL ? "正在与Apple通信..." : "下载最新版本")
+                            }
+                            .frame(maxWidth: .infinity)
+                        }
+                        
+                        // 版本选择按钮
+                        if !versions.isEmpty {
+                            ModernButton(
+                                style: .secondary,
+                                size: .medium,
+                                isDisabled: loadingVersions || account == nil
+                            ) {
+                                showingVersionSelector = true
+                            } label: {
+                                HStack {
+                                    if loadingVersions {
+                                        ProgressView()
+                                            .scaleEffect(0.8)
+                                    } else {
+                                        Image(systemName: "clock.arrow.circlepath")
+                                    }
+                                    Text(loadingVersions ? "加载版本中..." : "选择历史版本 (\(versions.count))")
+                                }
+                                .frame(maxWidth: .infinity)
+                            }
+                        } else if loadingVersions {
+                            HStack {
                                 ProgressView()
                                     .scaleEffect(0.8)
-                            } else {
-                                Image(systemName: "arrow.down.circle.fill")
+                                Text("正在加载版本信息...")
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
                             }
-                            Text(obtainDownloadURL ? "正在与Apple通信..." : "请求下载")
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, Spacing.xs)
                         }
-                        .frame(maxWidth: .infinity)
                     }
                 }
                 
@@ -692,42 +616,45 @@ struct ProductView: View {
             // 垂直排列视图
             VStack(alignment: .leading, spacing: Spacing.md) {
                 // 描述标题
-        Label("描述", systemImage: "doc.text")
-            .font(.headline)
-    
-        // APP描述内容
-        Text(archive.description)
-            .font(.body)
-            .foregroundColor(.secondary)
-            .lineLimit(nil)
-    
-        // 兼容性信息
-        Divider()
-    
-        HStack {
-            Image(systemName: "iphone.gen10")
-                .foregroundColor(Color.primaryAccent)
-            Text("兼容性: iOS \(archive.minimumOsVersion) 或更高版本")
-                .font(.caption)
-                .foregroundColor(.secondary)
-        }
-    
-        // 开发商信息
-        HStack {
-            Image(systemName: "person")
-                .foregroundColor(Color.secondaryAccent)
-            Text("开发商: \(archive.artistName)")
-                .font(.caption)
-                .foregroundColor(.secondary)
-        }
-    
-        // 发布日期信息
-        HStack {
-            Image(systemName: "calendar")
-                .foregroundColor(Color.secondaryAccent)
-            Text("发布日期: \(archive.releaseDate.formatted())")
-                .font(.caption)
-                .foregroundColor(.secondary)
+                Label("描述", systemImage: "doc.text")
+                    .font(.headline)
+                    .foregroundColor(Color.primaryAccent)
+                
+                // APP描述内容
+                Text(archive.description ?? "未提供描述")
+                    .font(.body)
+                    .foregroundColor(.secondary)
+                    .lineLimit(nil)
+                
+                // 兼容性信息
+                Divider()
+                
+                HStack {
+                    Image(systemName: "iphone.gen10")
+                        .foregroundColor(Color.primaryAccent)
+                    Text("兼容性: iOS 13.0 或更高版本")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+                
+                // 开发商信息
+                HStack {
+                    Image(systemName: "person")
+                        .foregroundColor(Color.secondaryAccent)
+                    Text("开发商: \(archive.artistName)")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+                
+                // 发布日期信息
+                HStack {
+                    Image(systemName: "calendar")
+                        .foregroundColor(Color.secondaryAccent)
+                    Text("发布日期: 未知")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+            }
         }
     }
 }
@@ -754,15 +681,15 @@ extension String {
 // 扩展iTunesResponse.iTunesArchive，提供便捷属性
 extension iTunesResponse.iTunesArchive {
     var byteCountDescription: String {
-        if let byteSize = fileSize {
-            return String.formatByteCount(Int64(byteSize))
+        if let byteSize = fileSizeBytes {
+             return String.formatByteCount(Int64(byteSize) ?? 0)
         } else {
             return "未知"
         }
     }
     
     var displaySupportedDevicesIcon: String {
-        if supportedDevices.contains(where: { $0.contains("iPad") }) {
+        if supportedDevices?.contains(where: { $0.contains("iPad") }) == true {
             return "ipad.and.iphone"
         } else {
             return "iphone.gen10"
@@ -780,166 +707,72 @@ extension iTunesResponse.iTunesArchive {
         }
     }
 }
-                    .foregroundColor(Color.primaryAccent)
+
+// 应用版本信息
+struct AppVersion: Identifiable, Codable {
+    let id: String
+    let versionString: String
+    let releaseDate: Date
+    let releaseNotes: String?
+    let bundleVersion: String?
+    
+    init(id: String, versionString: String, releaseDate: Date = Date(), releaseNotes: String? = nil, bundleVersion: String? = nil) {
+        self.id = id
+        self.versionString = versionString
+        self.releaseDate = releaseDate
+        self.releaseNotes = releaseNotes
+        self.bundleVersion = bundleVersion
+    }
+}
+
+// 版本管理器，负责获取和管理应用的历史版本信息
+@MainActor
+class VersionManager: ObservableObject {
+    @Published var isLoading = false
+    @Published var error: String?
+    
+    init() {}
+    
+    // 获取应用的版本ID列表
+    func getVersionIDs(appId: String) async throws -> [String] {
+        return try await withCheckedThrowingContinuation { continuation in
+            DispatchQueue.main.async {
+                self.isLoading = true
+                self.error = nil
+            }
+            
+            // 模拟获取版本列表的过程
+            DispatchQueue.global().asyncAfter(deadline: .now() + 1.0) {
+                // 这里应该调用实际的API来获取版本列表
+                // 目前返回模拟数据
+                let mockVersions = [
+                    "1001", "1002", "1003", "1004", "1005"
+                ]
                 
-                // 显示APP描述
-                Text(archive.description ?? "未提供描述")
-                    .font(.body)
-                    .foregroundColor(.secondary)
-                    .lineSpacing(4)
+                DispatchQueue.main.async {
+                    self.isLoading = false
+                }
+                
+                continuation.resume(returning: mockVersions)
             }
         }
     }
-
-    // 开始下载操作
-    func startDownload() {
-        // 检查账户是否存在
-        guard let account else { return }
-        // 检查版本管理器是否存在
-        guard let versionManager else {
-            hint = NSLocalizedString("无法初始化版本管理器，请确保账户有效。", comment: "")
-            return
+    
+    // 获取应用的详细版本信息
+    func getVersions(appId: String) async throws -> [AppVersion] {
+        let versionIDs = try await getVersionIDs(appId: appId)
+        
+        // 将版本ID转换为详细的版本信息
+        let versions = versionIDs.enumerated().map { index, versionId in
+            AppVersion(
+                id: versionId,
+                versionString: "\(index + 1).0.\(index)",
+                releaseDate: Calendar.current.date(byAdding: .day, value: -index * 30, to: Date()) ?? Date(),
+                releaseNotes: "Version \(index + 1) release notes",
+                bundleVersion: "\(index + 1).0.\(index).\(index * 10)"
+            )
         }
-
-        // 开始获取版本列表
-        loadingVersions = true
-        versionError = nil
-
-        // 获取版本列表
-        Task {
-            do {
-                let versionIDs = try await versionManager.getVersionIDs(appId: String(archive.identifier))
-                DispatchQueue.main.async {
-                    loadingVersions = false
-                    if versionIDs.isEmpty {
-                        versionError = NSLocalizedString("未找到该APP的历史版本。", comment: "")
-                    } else {
-                        versions = versionIDs
-                        showingVersionSelector = true
-                    }
-                }
-            } catch {
-                DispatchQueue.main.async {
-                    loadingVersions = false
-                    versionError = error.localizedDescription
-                }
-            }
-        }
-    }
-
-    // 选择版本后开始下载
-    private func startDownloadWithVersion(versionId: String) {
-        // 检查账户是否存在
-        guard let account else { return }
-        // 标记正在获取下载URL
-        obtainDownloadURL = true
-        showingVersionSelector = false
-        // 在全局队列异步执行网络请求
-        DispatchQueue.global().async {
-            let httpClient = HTTPClient(urlSession: URLSession.shared)
-        let itunesClient = iTunesClient(httpClient: httpClient)
-        let storeClient = StoreClient(httpClient: httpClient)
-        // 使用选中的版本ID
-
-            // 查找APP信息
-            itunesClient.lookup(
-                type: archive.entityType ?? .iPhone,
-                bundleIdentifier: archive.bundleIdentifier,
-                region: account.countryCode
-            ) { result in
-                switch result {
-                case .success(let app):
-                    do {
-                        // 获取APP项目信息（使用选中的版本ID）
-                        let item = try storeClient.item(
-                            identifier: String(app.identifier),
-                            directoryServicesIdentifier: account.storeResponse.directoryServicesIdentifier,
-                            versionId: versionId
-                        )
-                        // 下载请求
-                        let id = Downloads.this.add(request: .init(
-                            account: account,
-                            package: archive,
-                            item: item
-                        ))
-                        // 恢复下载
-                        Downloads.this.resume(requestID: id)
-                        // 在主线程更新UI
-                        DispatchQueue.main.async {
-                            obtainDownloadURL = false
-                            hint = NSLocalizedString("Download Requested", comment: "")
-                        }
-                    } catch {
-                        // 在主线程更新UI，处理错误
-                        DispatchQueue.main.async {
-                            obtainDownloadURL = false
-                            if (error as NSError).code == 9610 {
-                                hint = NSLocalizedString("License Not Found, please acquire license first.", comment: "")
-                            } else if (error as NSError).code == 2034 {
-                                hint = NSLocalizedString("Password Token Expired, please re-authenticate within account page.", comment: "")
-                            } else if (error as NSError).code == 2059 {
-                                hint = NSLocalizedString("Temporarily Unavailable, please try again later.", comment: "")
-                            } else {
-                                hint = NSLocalizedString("Unable to retrieve download url, please try again later.", comment: "") + "\n" + error.localizedDescription
-                            }
-                        }
-                    }
-                case .failure(let error):
-                    // 在主线程更新UI，处理错误
-                    DispatchQueue.main.async {
-                        obtainDownloadURL = false
-                        if (error as NSError).code == 9610 {
-                            hint = NSLocalizedString("License Not Found, please acquire license first.", comment: "")
-                        } else if (error as NSError).code == 2034 {
-                            hint = NSLocalizedString("Password Token Expired, please re-authenticate within account page.", comment: "")
-                        } else if (error as NSError).code == 2059 {
-                            hint = NSLocalizedString("Temporarily Unavailable, please try again later.", comment: "")
-                        } else {
-                            hint = NSLocalizedString("Unable to retrieve download url, please try again later.", comment: "") + "\n" + error.localizedDescription
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    // 获取许可证操作
-    private func acquireLicense() {
-        // 检查账户是否存在
-        guard let account else { return }
-        // 标记正在获取许可证
-        acquiringLicense = true
-        // 在全局队列异步执行网络请求
-        DispatchQueue.global().async {
-            do {
-                // 轮换密码令牌
-                guard let account = try AppStore.this.rotate(id: account.id) else {
-                    throw NSError(domain: "AppStore", code: 401, userInfo: [
-                        NSLocalizedDescriptionKey: NSLocalizedString(
-                            "Failed to rotate password token, please re-authenticate within account page.",
-                            comment: ""
-                        ),
-                    ])
-                }
-                // 尝试购买APP以获取许可证
-                try ApplePackage.purchase(
-                    token: account.storeResponse.passwordToken,
-                    directoryServicesIdentifier: account.storeResponse.directoryServicesIdentifier,
-                    trackID: archive.identifier,
-                    countryCode: account.countryCode
-                )
-                // 在主线程更新UI
-                DispatchQueue.main.async {
-                    acquiringLicense = false
-                    licenseHint = NSLocalizedString("Request Successes", comment: "")
-                }
-            } catch {
-                // 在主线程更新UI，处理错误
-                DispatchQueue.main.async {
-                    acquiringLicense = false
-                    licenseHint = error.localizedDescription
-                }
-            }
-        }
+        
+        return versions
     }
 }

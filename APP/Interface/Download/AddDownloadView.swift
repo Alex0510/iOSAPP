@@ -1,14 +1,6 @@
 import ApplePackage
 import Combine
 import SwiftUI
-import VersionManager
-import VersionSelectorView
-
-// 版本选择相关错误
-enum VersionError: Error {
-    case versionSelectionRequired
-    case versionNotFound
-}
 
 // 添加下载视图，用于直接下载App Store中不再可用的应用
 // 应用基本信息模型

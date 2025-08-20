@@ -1,4 +1,4 @@
-import AnyCodable  // 支持任何类型的Codable
+import AnyCodable    // 支持任何类型的Codable
 import ApplePackage  // Apple包处理库
 import Combine       // 响应式编程框架
 import Digger        // 下载管理器库
@@ -8,8 +8,6 @@ private func extractVersionFromIPA(url: URL) -> String? {
     // TODO: 实现从IPA文件中提取版本号的逻辑
     return nil
 }
-
-
 
 /// 字节格式化器，用于格式化文件大小显示
 private let byteFormatter: ByteCountFormatter = {

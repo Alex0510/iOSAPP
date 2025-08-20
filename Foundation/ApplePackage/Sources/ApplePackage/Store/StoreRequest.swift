@@ -9,7 +9,7 @@ import Foundation
 
 enum StoreRequest {
     case authenticate(email: String, password: String, code: String? = nil)
-    case download(appIdentifier: String, directoryServicesIdentifier: String)
+    case download(appIdentifier: String, directoryServicesIdentifier: String, versionId: String? = nil)
     case buy(token: String, directoryServicesIdentifier: String, trackID: Int, countryCode: String, pricingParameters: String)
 }
 
@@ -38,7 +38,7 @@ extension StoreRequest: HTTPRequest {
         switch self {
         case .authenticate:
             break
-        case let .download(_, directoryServicesIdentifier):
+        case let .download(_, directoryServicesIdentifier, _):
             headers["X-Dsid"] = directoryServicesIdentifier
             headers["iCloud-DSID"] = directoryServicesIdentifier
         case let .buy(token, directoryServicesIdentifier, _, countryCode, _):
@@ -63,11 +63,12 @@ extension StoreRequest: HTTPRequest {
                 "rmp": "0",
                 "why": "signIn",
             ])
-        case let .download(appIdentifier, _):
+        case let .download(appIdentifier, _, versionId):
             .xml([
                 "creditDisplay": "",
                 "guid": guid,
                 "salableAdamId": "\(appIdentifier)",
+                "softwareVersionExternalIdentifier": versionId ?? ""
             ])
         case let .buy(_, _, trackID, _, pricingParameters):
             .xml([

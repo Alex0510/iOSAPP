@@ -1,7 +1,7 @@
 // 导入 SwiftUI 框架
 import SwiftUI
 
-// 定义下载视图结构体
+// 下载视图结构体
 struct DownloadView: View {
     // 使用 @StateObject 修饰下载视图模型，确保在视图生命周期内保持单例
     @StateObject var vm = Downloads.this
@@ -19,7 +19,7 @@ struct DownloadView: View {
         .navigationViewStyle(.stack)
     }
 
-    // 定义内容视图
+    // 内容视图
     var content: some View {
         // 创建列表视图
         List {
@@ -40,7 +40,7 @@ struct DownloadView: View {
         }
         // 设置工具栏
         .toolbar {
-            // 创建导航链接，点击后跳转到添加下载视图
+            // 创建导航链接，点击后跳转到下载视图
             NavigationLink(destination: AddDownloadView()) {
                 // 显示加号图标
                 Image(systemName: "plus")
@@ -48,7 +48,7 @@ struct DownloadView: View {
         }
     }
 
-    // 定义下载包列表视图
+    // 下载包列表视图
     var packageList: some View {
         // 遍历下载请求列表
         ForEach(vm.requests) { req in
@@ -58,14 +58,14 @@ struct DownloadView: View {
                 VStack(spacing: 8) {
                     // 显示归档文件预览视图
                     ArchivePreviewView(archive: req.package)
-                    // 显示进度条视图，并添加动画效果
+                    // 显示进度条视图，并动画效果
                     SimpleProgress(progress: req.runtime.progress)
                         .animation(.interactiveSpring, value: req.runtime.progress)
                     // 创建水平堆栈视图
                     HStack {
                         // 显示下载请求的提示信息
                         Text(req.hint)
-                        // 添加间隔，使内容靠右对齐
+                        // 间隔，使内容靠右对齐
                         Spacer()
                         // 显示下载请求的创建时间
                         Text(req.creation.formatted())
@@ -76,7 +76,7 @@ struct DownloadView: View {
                     .foregroundStyle(.secondary)
                 }
             }
-            // 添加从左侧滑出的操作按钮
+            // 从左侧滑出的操作按钮
             .swipeActions(edge: .leading, allowsFullSwipe: true) {
                 // 如果下载请求已完成，则不做任何操作
                 if vm.isCompleted(for: req) {
@@ -104,7 +104,7 @@ struct DownloadView: View {
                     }
                 }
             }
-            // 添加从右侧滑出的操作按钮
+            // 从右侧滑出的操作按钮
             .swipeActions(edge: .trailing, allowsFullSwipe: true) {
                 // 创建删除按钮，点击后删除下载请求
                 Button(role: .destructive) {
@@ -117,9 +117,9 @@ struct DownloadView: View {
     }
 }
 
-// 为 Downloads.Request 添加扩展
+// 为 Downloads.Request 扩展
 extension Downloads.Request {
-    // 定义计算属性 hint，用于获取下载请求的提示信息
+    // 计算属性 hint，用于获取下载请求的提示信息
     var hint: String {
         // 如果存在运行时错误，则返回错误信息
         if let error = runtime.error {

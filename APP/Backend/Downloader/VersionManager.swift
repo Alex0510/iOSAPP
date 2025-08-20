@@ -13,29 +13,30 @@ public class VersionManager {
     
     // 获取指定应用 ID 的版本 ID 列表
     // 参数: appId - 应用的 ID
-    // 返回: 一个 Future，异步返回版本 ID 数组或错误
-    public func getVersionIDs(appId: String) -> Future<[String], Error> {
-        return Future { promise in
-            // 在全局队列中异步执行任务
+    // 返回: 版本 ID 数组
+    // Throws: 当获取失败时抛出错误
+    public func getVersionIDs(appId: String) async throws -> [String] {
+        // 在全局队列中异步执行任务
+        return try await withCheckedThrowingContinuation { continuation in
             DispatchQueue.global().async {
                 // 尝试进行身份验证
                 if !self.storeClient.authenticate() {
                     // 身份验证失败，返回认证失败错误
-                    promise(.failure(VersionError.authenticationFailed))
+                    continuation.resume(throwing: VersionError.authenticationFailed)
                     return
                 }
                 
                 // 尝试下载应用数据
                 guard let response = self.storeClient.download(appId: appId, isRedownload: true) else {
                     // 下载失败，返回请求失败错误
-                    promise(.failure(VersionError.requestFailed))
+                    continuation.resume(throwing: VersionError.requestFailed)
                     return
                 }
                 
                 // 解析下载的响应数据，获取版本 ID 列表
                 let versions = self.parseVersionResponse(response, appId: appId)
                 // 返回解析成功的版本 ID 列表
-                promise(.success(versions))
+                continuation.resume(returning: versions)
             }
         }
     }
@@ -68,4 +69,6 @@ enum VersionError: Error {
     case requestFailed
     // 解析失败
     case parsingFailed
+    // 需要选择版本
+    case versionSelectionRequired
 }

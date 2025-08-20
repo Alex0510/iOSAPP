@@ -3,7 +3,7 @@ import SwiftUI
 
 // 定义版本选择视图结构体
 struct VersionSelectorView: View {
-    // 应用信息
+    // APP信息
     let appInfo: AppInfo
     // 版本列表
     let versions: [String]
@@ -39,12 +39,12 @@ struct VersionSelectorView: View {
                 
                 // 垂直排列视图，左对齐
                 VStack(alignment: .leading) {
-                    // 显示应用名称，使用标题字体，最多显示两行
+                    // 显示APP名称，使用标题字体，最多显示两行
                     Text(appInfo.name)
                         .font(.headline)
                         .lineLimit(2)
                     
-                    // 显示应用开发者，使用子标题字体，次要颜色
+                    // 显示APP开发者，使用子标题字体，次要颜色
                     Text(appInfo.developer)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
@@ -156,12 +156,14 @@ struct VersionSelectorView: View {
     }
 }
 
-// 定义应用信息结构体
+// 定义APP信息结构体
 struct AppInfo {
-    // 应用名称
+    // APP名称
     let name: String
-    // 应用开发者
+    // APP开发者
     let developer: String
-    // 应用图标 URL
+    // APP图标 URL
     let iconURL: String
+    // APP标识符
+    let identifier: String
 }

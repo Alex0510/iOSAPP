@@ -291,8 +291,15 @@ public final class StoreClient: StoreClientInterface {
         }
     }
 
+    // 符合协议的方法实现
     public func item(identifier: String, directoryServicesIdentifier: String, completion: @escaping (Result<StoreResponse.Item, Swift.Error>) -> Void) {
-        let request = StoreRequest.download(appIdentifier: identifier, directoryServicesIdentifier: directoryServicesIdentifier)
+        // 调用带版本ID的内部实现，默认传入nil
+        item(identifier: identifier, directoryServicesIdentifier: directoryServicesIdentifier, versionId: nil, completion: completion)
+    }
+
+    // 带版本ID支持的内部实现
+    private func item(identifier: String, directoryServicesIdentifier: String, versionId: String? = nil, completion: @escaping (Result<StoreResponse.Item, Swift.Error>) -> Void) {
+        let request = StoreRequest.download(appIdentifier: identifier, directoryServicesIdentifier: directoryServicesIdentifier, versionId: versionId)
 
         httpClient.send(request) { result in
             switch result {

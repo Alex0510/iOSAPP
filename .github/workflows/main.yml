@@ -1,4 +1,4 @@
-name: Auto Build iOS IPA
+name: Build iOS IPA
 
 on:
   push:
@@ -11,40 +11,49 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      # 拉取源码
+      # 拉取仓库源码
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 检测项目类型 (.xcworkspace or .xcodeproj)
-      - name: Detect project type
+      # 检测项目类型 & 获取 Scheme 名称
+      - name: Detect project and scheme
         id: detect
         run: |
+          # 检测 .xcworkspace 或 .xcodeproj
           if ls *.xcworkspace 1> /dev/null 2>&1; then
             echo "type=workspace" >> $GITHUB_OUTPUT
-            echo "name=$(ls *.xcworkspace | head -n 1)" >> $GITHUB_OUTPUT
+            echo "file=$(ls *.xcworkspace | head -n 1)" >> $GITHUB_OUTPUT
           elif ls *.xcodeproj 1> /dev/null 2>&1; then
             echo "type=project" >> $GITHUB_OUTPUT
-            echo "name=$(ls *.xcodeproj | head -n 1)" >> $GITHUB_OUTPUT
+            echo "file=$(ls *.xcodeproj | head -n 1)" >> $GITHUB_OUTPUT
           else
-            echo "❌ 没找到 Xcode 项目文件 (.xcworkspace 或 .xcodeproj)"
+            echo "❌ 没找到 Xcode 工程文件"
             exit 1
           fi
 
-      # 使用 xcodebuild 编译源码
+          # 自动获取第一个 Scheme
+          scheme=$(xcodebuild -list -json | jq -r '.project.schemes[0]')
+          if [ "$scheme" = "null" ]; then
+            scheme=$(xcodebuild -list -json | jq -r '.workspace.schemes[0]')
+          fi
+          echo "scheme=$scheme" >> $GITHUB_OUTPUT
+          echo "✅ 检测到 Scheme: $scheme"
+
+      # 使用 Xcode 编译源码，输出 .app
       - name: Build .app
         run: |
           if [ "${{ steps.detect.outputs.type }}" = "workspace" ]; then
             xcodebuild \
-              -workspace "${{ steps.detect.outputs.name }}" \
-              -scheme YourApp \
+              -workspace "${{ steps.detect.outputs.file }}" \
+              -scheme "${{ steps.detect.outputs.scheme }}" \
               -sdk iphoneos \
               -configuration Release \
               clean build \
               CONFIGURATION_BUILD_DIR=$PWD/build/Release-iphoneos
           else
             xcodebuild \
-              -project "${{ steps.detect.outputs.name }}" \
-              -scheme YourApp \
+              -project "${{ steps.detect.outputs.file }}" \
+              -scheme "${{ steps.detect.outputs.scheme }}" \
               -sdk iphoneos \
               -configuration Release \
               clean build \
@@ -55,11 +64,12 @@ jobs:
       - name: Package IPA
         run: |
           mkdir Payload
-          cp -r build/Release-iphoneos/*.app Payload/
+          app_path=$(ls build/Release-iphoneos/*.app | head -n 1)
+          cp -r "$app_path" Payload/
           zip -r App.ipa Payload
           rm -rf Payload
 
-      # 上传 ipa
+      # 上传 ipa 作为 artifact
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:

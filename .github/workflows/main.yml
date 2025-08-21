@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: macos-14   # 支持 Xcode 15.x（iOS 17 SDK）
     steps:
-      # 拉取仓库源码
+      # 拉取仓库代码
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -36,7 +36,7 @@ jobs:
             exit 1
           fi
 
-      # 自动获取第一个 scheme
+      # 自动获取第一个可 build scheme
       - name: Detect Scheme
         id: scheme
         run: |
@@ -54,6 +54,15 @@ jobs:
           echo "scheme=$SCHEME" >> $GITHUB_ENV
           echo "✅ 检测到 Scheme: $SCHEME"
 
+      # 解析 SPM 依赖
+      - name: Resolve Swift Packages
+        run: |
+          if [ "${{ env.type }}" = "workspace" ]; then
+            xcodebuild -workspace "${{ env.file }}" -scheme "${{ env.scheme }}" -sdk iphoneos -resolvePackageDependencies
+          else
+            xcodebuild -project "${{ env.file }}" -scheme "${{ env.scheme }}" -sdk iphoneos -resolvePackageDependencies
+          fi
+
       # 编译 .app
       - name: Build .app
         run: |
@@ -63,6 +72,7 @@ jobs:
               -scheme "${{ env.scheme }}" \
               -sdk iphoneos \
               -configuration Release \
+              CODE_SIGNING_ALLOWED=NO \
               clean build \
               CONFIGURATION_BUILD_DIR=$PWD/build/Release-iphoneos
           else
@@ -71,6 +81,7 @@ jobs:
               -scheme "${{ env.scheme }}" \
               -sdk iphoneos \
               -configuration Release \
+              CODE_SIGNING_ALLOWED=NO \
               clean build \
               CONFIGURATION_BUILD_DIR=$PWD/build/Release-iphoneos
           fi

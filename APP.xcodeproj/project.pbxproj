@@ -397,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ModernDS001 /* ModernDesignSystem.swift in Sources */,
 				50D44D282C3F946600CF6A69 /* SearchView.swift in Sources */,
 				506367A92C423D2700634EEA /* Downloads+Report.swift in Sources */,
 				5095BD282C4233E7000EA1F6 /* AddDownloadView.swift in Sources */,
@@ -421,7 +422,6 @@
 				50D0C8BC2C401B3000538F49 /* Installer+App.swift in Sources */,
 				50D44D2A2C3F946C00CF6A69 /* DownloadView.swift in Sources */,
 				50D44D452C3FAC4900CF6A69 /* Downloads.swift in Sources */,
-				ModernDS001 /* ModernDesignSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

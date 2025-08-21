@@ -1,9 +1,26 @@
 import ApplePackage
 import Combine
 import SwiftUI
+import Foundation
 
-// 添加下载视图，用于直接下载App Store中不再可用的应用
 
+/// Muffin认证卡片视图
+struct MuffinAuthenticationCard: View {
+    var body: some View {
+        VStack {
+            Text("Muffin认证")
+                .font(.headline)
+            Text("请完成Muffin认证以继续")
+                .font(.caption)
+                .foregroundColor(.secondary)
+        }
+        .padding()
+        .background(Color.gray.opacity(0.1))
+        .cornerRadius(8)
+    }
+}
+
+// 下载视图，用于直接下载App Store中不再可用的应用
 struct AddDownloadView: View {
     // 应用包ID
     @State var bundleID: String = ""
@@ -15,6 +32,10 @@ struct AddDownloadView: View {
     @State var obtainDownloadURL = false
     // 提示信息
     @State var hint = ""
+    // 版本选择功能已移至SearchView.swift
+    // @State var showVersionSelector = false
+    // @State var currentApp: iTunesResponse.iTunesArchive?
+    // @State var currentAccount: AppStore.Account?
 
     // 搜索框焦点状态
     @FocusState var searchKeyFocused
@@ -23,6 +44,9 @@ struct AddDownloadView: View {
     @StateObject var avm = AppStore.this
     // 下载状态管理对象
     @StateObject var dvm = Downloads.this
+    // MuffinStore集成管理器
+    // MuffinIntegrationManager 已移至 SearchView.swift
+    // @StateObject var muffinManager = MuffinIntegrationManager.shared
 
     // 用于关闭当前视图的环境变量
     @Environment(\.dismiss) var dismiss
@@ -35,6 +59,15 @@ struct AddDownloadView: View {
     var body: some View {
         // 使用List布局展示界面元素
         List {
+            // MuffinStore集成状态卡片
+            Section {
+                MuffinAuthenticationCard()
+            } header: {
+                Text("MuffinStore 集成")
+            } footer: {
+                Text("登录后可下载应用的历史版本，获得更多下载选项。")
+            }
+            
             // 应用包ID相关输入区域
             Section {
                 // 应用包ID输入框
@@ -101,35 +134,52 @@ struct AddDownloadView: View {
         }
         .navigationTitle("直接下载")
     }
-
-    // 显示版本选择视图
-    private func showVersionSelector(app: iTunesResponse.iTunesArchive, account: AppStore.Account, item: StoreResponse.Item) {
-        // 创建版本管理器实例
-        let versionManager = VersionManager()
-        
-        // 使用Task异步获取版本信息
-        Task {
-            do {
-                let versions = try await versionManager.getVersions(appId: String(app.identifier))
-                await MainActor.run {
-                    if let firstVersion = versions.first {
-                        // 模拟下载请求
-                        print("开始下载应用: \(app.name)")
-                        hint = "下载请求已发送"
-                        obtainDownloadURL = false
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                            dismiss()
-                        }
-                    } else {
-                        hint = "没有可用版本"
-                        obtainDownloadURL = false
-                    }
+    
+    // 使用标准方法下载应用
+    private func downloadWithVersion(app: iTunesResponse.iTunesArchive, account: AppStore.Account, version: VersionModels.AppVersion?) async {
+        do {
+            // 使用Downloads直接下载最新版本
+            print("🔄 使用标准方法下载最新版本")
+            
+            // 使用ApplePackage.Downloader进行下载
+            let appleDownloader = ApplePackage.Downloader(
+                email: account.email,
+                directoryServicesIdentifier: account.storeResponse.directoryServicesIdentifier,
+                region: account.countryCode
+            )
+            
+            // 创建下载目录
+            let downloadsDirectory = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
+            let appDirectory = downloadsDirectory.appendingPathComponent("APP123")
+            try? FileManager.default.createDirectory(at: appDirectory, withIntermediateDirectories: true)
+            
+            // 生成文件名
+            let fileName = "\(app.name)_\(app.version).ipa"
+            
+            // 执行下载
+            let downloadedURL = try appleDownloader.download(
+                type: searchType,
+                bundleIdentifier: app.bundleIdentifier,
+                saveToDirectory: appDirectory,
+                withFileName: fileName
+            )
+            await MainActor.run {
+                hint = "✅ 下载已开始"
+            }
+            
+            print("✅ 下载完成，文件保存至: \(downloadedURL.path)")
+            
+            // 延迟关闭界面
+            await MainActor.run {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                    dismiss()
                 }
-            } catch {
-                await MainActor.run {
-                    hint = "获取版本失败: \(error.localizedDescription)"
-                    obtainDownloadURL = false
-                }
+            }
+            
+        } catch {
+            await MainActor.run {
+                hint = "❌ 下载失败: \(error.localizedDescription)"
+                print("❌ 下载失败: \(error)")
             }
         }
     }
@@ -166,9 +216,9 @@ struct AddDownloadView: View {
                             directoryServicesIdentifier: account.storeResponse.directoryServicesIdentifier
                         )
                         
-                        // 在主线程显示版本选择器
-                        DispatchQueue.main.async {
-                            self.showVersionSelector(app: app, account: account, item: item)
+                        // 直接开始下载最新版本
+                        Task {
+                            await downloadWithVersion(app: app, account: account, version: nil)
                         }
                     } catch {
                         DispatchQueue.main.async {

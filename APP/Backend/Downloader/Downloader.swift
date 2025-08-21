@@ -4,9 +4,9 @@ import AnyCodable
 
 /// 下载器类，提供下载请求的统一接口
 /// 作为Downloads类的包装器，简化下载操作
-class Downloader: ObservableObject {
+public class Downloader: ObservableObject {
     /// 单例实例
-    static let this = Downloader()
+    public static let this = Downloader()
     
     /// Downloads实例
     private let downloads = Downloads.this
@@ -22,7 +22,7 @@ class Downloader: ObservableObject {
     /// - Returns: 下载请求对象
     /// - Throws: 下载过程中的错误
     @discardableResult
-    func requestDownload(
+    public func requestDownload(
         archive: iTunesResponse.iTunesArchive,
         account: AppStore.Account,
         version: String? = nil
@@ -90,7 +90,7 @@ class Downloader: ObservableObject {
     /// - Returns: 下载请求对象
     /// - Throws: 下载过程中的错误
     @discardableResult
-    func requestDownload(
+    public func requestDownload(
         archive: iTunesResponse.iTunesArchive,
         account: AppStore.Account,
         appVersion: VersionModels.AppVersion

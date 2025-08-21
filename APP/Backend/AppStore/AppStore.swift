@@ -5,20 +5,20 @@ import Foundation    // 基础框架
 
 /// AppStore类，管理应用商店相关功能
 /// 遵循ObservableObject协议，支持UI响应式更新
-class AppStore: ObservableObject {
+public class AppStore: ObservableObject {
     /// 账户结构体，存储App Store账户信息
     /// 遵循Codable、Identifiable和Hashable协议
-    struct Account: Codable, Identifiable, Hashable {
+    public struct Account: Codable, Identifiable, Hashable {
         /// 唯一标识符，使用邮箱确保唯一性
-        var id: String { email }
+        public var id: String { email }
         /// 账户邮箱，用于登录和识别
-        var email: String
+        public var email: String
         /// 账户密码，用于登录验证
-        var password: String
+        public var password: String
         /// 国家代码（如CN、US）
-        var countryCode: String
+        public var countryCode: String
         /// 商店响应的账户信息
-        var storeResponse: StoreResponse.Account
+        public var storeResponse: StoreResponse.Account
     }
 
     /// Combine订阅者集合，管理订阅关系避免内存泄漏

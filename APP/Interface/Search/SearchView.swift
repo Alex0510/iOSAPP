@@ -9,6 +9,414 @@ import ApplePackage
 import Kingfisher
 // SwiftUI 框架
 import SwiftUI
+import CryptoKit
+import Foundation
+
+/// 版本相关的数据模型
+public struct VersionModels {
+    
+    /// 应用版本信息
+    public struct AppVersion: Identifiable, Codable, Hashable {
+        /// 版本唯一标识符
+        public let id: String
+        /// 应用ID
+        public let appId: String
+        /// 版本号字符串
+        public let versionString: String
+        /// 构建号
+        public let buildNumber: String?
+        /// 发布日期
+        public let releaseDate: Date?
+        /// 文件大小（字节）
+        public let fileSize: Int64?
+        /// 是否为最新版本
+        public let isLatest: Bool
+        /// 发布说明
+        public let releaseNotes: String?
+        /// 最低系统版本要求
+        public let minimumOSVersion: String?
+        
+        public init(id: String, 
+             appId: String = "",
+             versionString: String? = nil, 
+             buildNumber: String? = nil,
+             releaseDate: Date? = nil,
+             fileSize: Int64? = nil,
+             isLatest: Bool = false,
+             releaseNotes: String? = nil,
+             minimumOSVersion: String? = nil) {
+            self.id = id
+            self.appId = appId
+            self.versionString = versionString ?? id
+            self.buildNumber = buildNumber
+            self.releaseDate = releaseDate
+            self.fileSize = fileSize
+            self.isLatest = isLatest
+            self.releaseNotes = releaseNotes
+            self.minimumOSVersion = minimumOSVersion
+        }
+        
+        /// 格式化的文件大小字符串
+        public var formattedFileSize: String {
+            guard let fileSize = fileSize else { return "未知大小" }
+            return ByteCountFormatter.string(fromByteCount: fileSize, countStyle: .file)
+        }
+        
+        /// 格式化的发布日期字符串
+        public var formattedReleaseDate: String {
+            guard let releaseDate = releaseDate else { return "未知日期" }
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .none
+            formatter.locale = Locale(identifier: "zh_CN")
+            return formatter.string(from: releaseDate)
+        }
+    }
+    
+    /// 版本获取请求
+    public struct VersionFetchRequest {
+        /// 应用ID
+        public let appId: String
+        /// 应用包标识符
+        public let bundleId: String?
+        /// 地区代码
+        public let region: String
+        /// 设备类型
+        public let deviceType: EntityType
+        /// 是否强制刷新
+        public let forceRefresh: Bool
+        
+        public init(appId: String, 
+             bundleId: String? = nil, 
+             region: String = "US", 
+             deviceType: EntityType = .iPhone, 
+             forceRefresh: Bool = false) {
+            self.appId = appId
+            self.bundleId = bundleId
+            self.region = region
+            self.deviceType = deviceType
+            self.forceRefresh = forceRefresh
+        }
+    }
+    
+    /// 版本获取响应
+    public struct VersionFetchResponse {
+        /// 应用ID
+        public let appId: String
+        /// 版本列表
+        public let versions: [AppVersion]
+        /// 获取时间
+        public let fetchTime: Date
+        /// 是否来自缓存
+        public let fromCache: Bool
+        
+        public init(appId: String, versions: [AppVersion], fromCache: Bool = false) {
+            self.appId = appId
+            self.versions = versions
+            self.fetchTime = Date()
+            self.fromCache = fromCache
+        }
+    }
+    
+    /// 版本下载请求
+    struct VersionDownloadRequest {
+        /// 应用ID
+        let appId: String
+        /// 版本ID
+        let versionId: String
+        /// 应用信息
+        let appInfo: iTunesResponse.iTunesArchive
+        /// 账户信息
+        let account: AppStore.Account
+        /// 地区代码
+        let region: String
+        
+        init(appId: String, 
+             versionId: String, 
+             appInfo: iTunesResponse.iTunesArchive, 
+             account: AppStore.Account, 
+             region: String) {
+            self.appId = appId
+            self.versionId = versionId
+            self.appInfo = appInfo
+            self.account = account
+            self.region = region
+        }
+    }
+}
+
+/// 版本管理器的状态枚举
+public enum VersionManagerState {
+    case idle
+    case loading
+    case loaded([VersionModels.AppVersion])
+    case error(Error)
+    
+    /// 是否正在加载
+    var isLoading: Bool {
+        if case .loading = self {
+            return true
+        }
+        return false
+    }
+    
+    /// 获取版本列表
+    var versions: [VersionModels.AppVersion] {
+        if case .loaded(let versions) = self {
+            return versions
+        }
+        return []
+    }
+    
+    /// 获取错误信息
+    var error: Error? {
+        if case .error(let error) = self {
+            return error
+        }
+        return nil
+    }
+}
+
+/// 版本相关的错误类型
+enum VersionError: LocalizedError {
+    case invalidAppId
+    case noAccountSelected
+    case authenticationRequired
+    case networkUnavailable
+    case serverError(String)
+    case parseError(String)
+    case noVersionsAvailable
+    case downloadFailed(String)
+    
+    var errorDescription: String? {
+        switch self {
+        case .invalidAppId:
+            return "无效的应用ID"
+        case .noAccountSelected:
+            return "请选择一个账户"
+        case .authenticationRequired:
+            return "需要重新认证"
+        case .networkUnavailable:
+            return "网络不可用"
+        case .serverError(let message):
+            return "服务器错误: \(message)"
+        case .parseError(let message):
+            return "数据解析错误: \(message)"
+        case .noVersionsAvailable:
+            return "该应用没有可用的历史版本"
+        case .downloadFailed(let message):
+            return "下载失败: \(message)"
+        }
+    }
+    
+    var recoverySuggestion: String? {
+        switch self {
+        case .noAccountSelected:
+            return "请在账户页面添加并选择一个有效的账户"
+        case .authenticationRequired:
+            return "请在账户页面重新登录"
+        case .networkUnavailable:
+            return "请检查网络连接后重试"
+        case .serverError, .parseError, .downloadFailed:
+            return "请稍后重试"
+        case .noVersionsAvailable:
+            return "该应用可能不支持历史版本下载"
+        default:
+            return "请检查输入信息并重试"
+        }
+    }
+}
+
+// SHA1 实现
+struct SHA1 {
+    static func hash(_ data: Data) -> String {
+        let digest = Insecure.SHA1.hash(data: data)
+        return digest.map { String(format: "%02hhx", $0) }.joined()
+    }
+    
+    static func hash(_ string: String) -> String {
+        guard let data = string.data(using: .utf8) else { return "" }
+        return hash(data)
+    }
+}
+
+// Muffin Store Client
+class MuffinStoreClient: ObservableObject {
+    @Published var isAuthenticated = false
+    @Published var authenticationError: String?
+    @Published var isAuthenticating = false
+    
+    private var authToken: String?
+    private var deviceId: String
+    
+    init() {
+        self.deviceId = UUID().uuidString
+    }
+    
+    func authenticate(email: String, password: String) async throws {
+        await MainActor.run {
+            isAuthenticating = true
+            authenticationError = nil
+        }
+        
+        // TODO: 实现真实的认证逻辑
+        await MainActor.run {
+            self.authenticationError = "认证功能尚未实现"
+            self.isAuthenticating = false
+        }
+        throw MuffinError.notAuthenticated
+    }
+    
+    func downloadIPA(appId: String, version: String) async throws -> URL {
+        guard isAuthenticated else {
+            throw MuffinError.notAuthenticated
+        }
+        
+        // TODO: 实现真实的IPA下载逻辑
+        throw MuffinError.downloadFailed
+    }
+}
+
+// Muffin IPA Tool
+class MuffinIPATool: ObservableObject {
+    @Published var downloadProgress: Double = 0.0
+    @Published var isDownloading = false
+    @Published var downloadError: String?
+    
+    private let storeClient = MuffinStoreClient()
+    
+    func downloadAndProcessIPA(appId: String, version: String) async throws -> URL {
+        await MainActor.run {
+            isDownloading = true
+            downloadProgress = 0.0
+            downloadError = nil
+        }
+        
+        do {
+            // TODO: 实现真实的下载和处理逻辑
+            let ipaURL = try await storeClient.downloadIPA(appId: appId, version: version)
+            
+            await MainActor.run {
+                isDownloading = false
+                downloadProgress = 1.0
+            }
+            
+            return ipaURL
+        } catch {
+            await MainActor.run {
+                isDownloading = false
+                downloadError = error.localizedDescription
+            }
+            throw error
+        }
+    }
+}
+
+// Muffin Integration Manager
+class MuffinIntegrationManager: ObservableObject {
+    static let shared = MuffinIntegrationManager()
+    
+    @Published var isAuthenticated = false
+    @Published var availableVersions: [VersionModels.AppVersion] = []
+    @Published var isLoadingVersions = false
+    @Published var authenticationError: String?
+    
+    private let storeClient = MuffinStoreClient()
+    private let ipaTool = MuffinIPATool()
+    
+    func authenticate(email: String, password: String) async {
+        do {
+            try await storeClient.authenticate(email: email, password: password)
+            await MainActor.run {
+                self.isAuthenticated = storeClient.isAuthenticated
+                self.authenticationError = storeClient.authenticationError
+            }
+        } catch {
+            await MainActor.run {
+                self.authenticationError = error.localizedDescription
+                self.isAuthenticated = false
+            }
+        }
+    }
+    
+    func loadVersions(for appId: String) async {
+        await MainActor.run {
+            isLoadingVersions = true
+        }
+        
+        // TODO: 实现真实的版本加载逻辑
+        await MainActor.run {
+            self.availableVersions = []
+            self.isLoadingVersions = false
+        }
+    }
+    
+    func downloadVersion(_ version: VersionModels.AppVersion) async throws -> URL {
+        return try await ipaTool.downloadAndProcessIPA(appId: version.appId, version: version.versionString)
+    }
+}
+
+// Muffin Downgrader
+class MuffinDowngrader: ObservableObject {
+    @Published var selectedVersion: VersionModels.AppVersion?
+    @Published var isDowngrading = false
+    @Published var downgradeProgress: Double = 0.0
+    @Published var downgradeError: String?
+    @Published var downgradeSuccess = false
+    
+    private let integrationManager = MuffinIntegrationManager()
+    
+    func startDowngrade(to version: VersionModels.AppVersion) async {
+        await MainActor.run {
+            selectedVersion = version
+            isDowngrading = true
+            downgradeProgress = 0.0
+            downgradeError = nil
+            downgradeSuccess = false
+        }
+        
+        do {
+            // TODO: 实现真实的降级过程
+            throw MuffinError.processingFailed
+            
+            let _ = try await integrationManager.downloadVersion(version)
+            
+            await MainActor.run {
+                isDowngrading = false
+                downgradeSuccess = true
+            }
+        } catch {
+            await MainActor.run {
+                isDowngrading = false
+                downgradeError = error.localizedDescription
+            }
+        }
+    }
+}
+
+enum MuffinError: Error, LocalizedError {
+    case notAuthenticated
+    case downloadFailed
+    case processingFailed
+    
+    var errorDescription: String? {
+        switch self {
+        case .notAuthenticated:
+            return "未认证"
+        case .downloadFailed:
+            return "下载失败"
+        case .processingFailed:
+            return "处理失败"
+        }
+    }
+}
+
+// AppVersion extension for Muffin compatibility
+extension VersionModels.AppVersion {
+    init(id: String, versionString: String, releaseDate: Date, bundleId: String, appId: String) {
+        self.init(id: id, versionString: versionString, releaseDate: releaseDate)
+    }
+}
 
 // 搜索视图结构
 struct SearchView: View {
@@ -157,6 +565,16 @@ struct SearchView: View {
     // 当前的视图模式
     @State private var viewMode: ViewMode = .grid
     
+    // Muffin集成相关状态
+    @StateObject private var muffinManager = MuffinIntegrationManager()
+    @StateObject private var muffinDowngrader = MuffinDowngrader()
+    @State private var showMuffinAuth = false
+    @State private var muffinAuthenticating = false
+    @State private var muffinDownloading = false
+    @State private var muffinDownloadProgress: Double = 0.0
+    @State private var muffinError: String? = nil
+    @State private var selectedAppForMuffin: iTunesResponse.iTunesArchive? = nil
+    
     // 搜索分类枚举
     enum SearchCategory: String, CaseIterable {
         case all = "全部"
@@ -257,6 +675,12 @@ struct SearchView: View {
                             .scaleEffect(animateHeader ? 1 : 0.95)
                             .opacity(animateHeader ? 1 : 0)
                             .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.1), value: animateHeader)
+                        
+                        // Muffin集成卡片
+                        muffinIntegrationCard
+                            .scaleEffect(animateHeader ? 1 : 0.95)
+                            .opacity(animateHeader ? 1 : 0)
+                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.15), value: animateHeader)
                         
                         // 分类选择器
                         categorySelector
@@ -1382,6 +1806,190 @@ struct SearchView: View {
                 await MainActor.run {
                     isLoadingMore = false
                     currentPage -= 1
+                }
+            }
+        }
+    }
+    
+    // MARK: - Muffin Integration UI Components
+    
+    var muffinIntegrationCard: some View {
+        ModernCard(style: .filled, padding: Spacing.lg) {
+            VStack(alignment: .leading, spacing: Spacing.md) {
+                HStack {
+                    Label("Muffin 集成", systemImage: "app.badge")
+                        .font(.titleMedium)
+                        .foregroundColor(.primaryAccent)
+                    
+                    Spacer()
+                    
+                    if muffinManager.isAuthenticated {
+                        Image(systemName: "checkmark.circle.fill")
+                            .foregroundColor(.green)
+                    } else {
+                        Image(systemName: "exclamationmark.circle")
+                            .foregroundColor(.orange)
+                    }
+                }
+                
+                if muffinManager.isAuthenticated {
+                    Text("已认证 - 可以下载历史版本")
+                        .font(.labelMedium)
+                        .foregroundColor(.secondary)
+                } else {
+                    Text("未认证 - 点击登录以使用历史版本功能")
+                        .font(.labelMedium)
+                        .foregroundColor(.secondary)
+                }
+                
+                Button {
+                    showMuffinAuth = true
+                } label: {
+                    HStack {
+                        Image(systemName: muffinManager.isAuthenticated ? "gear" : "person.circle")
+                        Text(muffinManager.isAuthenticated ? "设置" : "登录")
+                    }
+                    .font(.labelLarge)
+                    .foregroundColor(.white)
+                    .padding(.horizontal, Spacing.lg)
+                    .padding(.vertical, Spacing.sm)
+                    .background(
+                        RoundedRectangle(cornerRadius: CornerRadius.md)
+                            .fill(Color.primaryAccent)
+                    )
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .sheet(isPresented: $showMuffinAuth) {
+            muffinAuthenticationView
+        }
+    }
+    
+    var muffinAuthenticationView: some View {
+        NavigationView {
+            VStack(spacing: Spacing.lg) {
+                // Header
+                VStack(spacing: Spacing.md) {
+                    Image(systemName: "app.badge")
+                        .font(.system(size: 60))
+                        .foregroundColor(.primaryAccent)
+                    
+                    Text("Muffin 认证")
+                        .font(.titleLarge)
+                        .fontWeight(.bold)
+                    
+                    Text("登录以访问历史版本下载功能")
+                        .font(.bodyMedium)
+                        .foregroundColor(.secondary)
+                        .multilineTextAlignment(.center)
+                }
+                .padding(.top, Spacing.xl)
+                
+                Spacer()
+                
+                // Authentication Status
+                if muffinManager.isAuthenticated {
+                    VStack(spacing: Spacing.md) {
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.system(size: 50))
+                            .foregroundColor(.green)
+                        
+                        Text("认证成功")
+                            .font(.titleMedium)
+                            .fontWeight(.semibold)
+                        
+                        Text("您现在可以下载应用的历史版本")
+                            .font(.bodyMedium)
+                            .foregroundColor(.secondary)
+                            .multilineTextAlignment(.center)
+                    }
+                } else {
+                    VStack(spacing: Spacing.lg) {
+                        if let error = muffinManager.authenticationError {
+                            HStack {
+                                Image(systemName: "exclamationmark.triangle.fill")
+                                    .foregroundColor(.red)
+                                Text(error)
+                                    .font(.labelMedium)
+                                    .foregroundColor(.red)
+                            }
+                            .padding(Spacing.md)
+                            .background(
+                                RoundedRectangle(cornerRadius: CornerRadius.sm)
+                                    .fill(Color.red.opacity(0.1))
+                            )
+                        }
+                        
+                        Text("请使用您的 Apple ID 登录")
+                            .font(.bodyMedium)
+                            .foregroundColor(.secondary)
+                    }
+                }
+                
+                Spacer()
+                
+                // Action Buttons
+                VStack(spacing: Spacing.md) {
+                    if !muffinManager.isAuthenticated {
+                        Button {
+                            // TODO: 实现真实的认证流程
+                            Task {
+                                do {
+                                    // 需要实现真实的用户输入界面和认证逻辑
+                                    throw MuffinError.notAuthenticated
+                                } catch {
+                                    print("认证失败: \(error)")
+                                }
+                            }
+                        } label: {
+                            HStack {
+                                if muffinManager.isLoadingVersions {
+                                    ProgressView()
+                                        .scaleEffect(0.8)
+                                } else {
+                                    Image(systemName: "person.circle")
+                                }
+                                Text("使用 Apple ID 登录")
+                            }
+                            .font(.labelLarge)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, Spacing.md)
+                            .background(
+                                RoundedRectangle(cornerRadius: CornerRadius.md)
+                                    .fill(Color.primaryAccent)
+                            )
+                        }
+                        .buttonStyle(.plain)
+                        .disabled(muffinManager.isLoadingVersions)
+                    }
+                    
+                    Button {
+                        showMuffinAuth = false
+                    } label: {
+                        Text(muffinManager.isAuthenticated ? "完成" : "取消")
+                            .font(.labelLarge)
+                            .foregroundColor(.primaryAccent)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, Spacing.md)
+                            .background(
+                                RoundedRectangle(cornerRadius: CornerRadius.md)
+                                    .stroke(Color.primaryAccent, lineWidth: 1)
+                            )
+                    }
+                    .buttonStyle(.plain)
+                }
+                .padding(.bottom, Spacing.xl)
+            }
+            .padding(.horizontal, Spacing.lg)
+            .navigationTitle("Muffin 认证")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("关闭") {
+                        showMuffinAuth = false
+                    }
                 }
             }
         }

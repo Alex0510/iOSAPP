@@ -1,4 +1,4 @@
-name: Build iOS IPA
+name: Build iOS IPA and Release
 
 on:
   push:
@@ -8,23 +8,22 @@ on:
 
 jobs:
   build:
-    runs-on: macos-14   # 支持 Xcode 15.x（iOS 17 SDK）
+    runs-on: macos-14
     steps:
       # 拉取仓库代码
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 选择 Xcode 版本
+      # 选择 Xcode
       - name: Select Xcode
         run: sudo xcode-select -s /Applications/Xcode_15.4.app
 
-      # 自动检测 workspace 或 project
+      # 自动检测 workspace/project
       - name: Detect Xcode Project
         id: detect
         run: |
           workspace=$(find . -maxdepth 1 -type d -name "*.xcworkspace" | head -n 1)
           project=$(find . -maxdepth 1 -name "*.xcodeproj" | head -n 1)
-
           if [ -n "$workspace" ]; then
             echo "type=workspace" >> $GITHUB_ENV
             echo "file=$workspace" >> $GITHUB_ENV
@@ -36,7 +35,7 @@ jobs:
             exit 1
           fi
 
-      # 自动获取第一个可 build scheme
+      # 自动获取 scheme
       - name: Detect Scheme
         id: scheme
         run: |
@@ -45,14 +44,11 @@ jobs:
           else
             SCHEME=$(xcodebuild -list -json -project "${{ env.file }}" | jq -r '.project.schemes[0]')
           fi
-
           if [ -z "$SCHEME" ] || [ "$SCHEME" = "null" ]; then
-            echo "❌ 没有找到 scheme"
+            echo "❌ 没找到 scheme"
             exit 1
           fi
-
           echo "scheme=$SCHEME" >> $GITHUB_ENV
-          echo "✅ 检测到 Scheme: $SCHEME"
 
       # 解析 SPM 依赖
       - name: Resolve Swift Packages
@@ -95,9 +91,12 @@ jobs:
           zip -r App.ipa Payload
           rm -rf Payload
 
-      # 上传 IPA 到 artifact
-      - name: Upload IPA
-        uses: actions/upload-artifact@v4
+      # 上传到 GitHub Release
+      - name: Create Release and Upload IPA
+        uses: ncipollo/release-action@v1
         with:
-          name: iOS-App-ipa
-          path: App.ipa
+          tag: "v$(date +'%Y%m%d%H%M')"  # 自动生成唯一 tag
+          name: "iOS Build $(date +'%Y-%m-%d %H:%M')"
+          files: App.ipa
+          draft: false
+          prerelease: false

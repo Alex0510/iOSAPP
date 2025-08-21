@@ -57,6 +57,7 @@ jobs:
               -workspace "${{ steps.detect.outputs.file }}" \
               -scheme "${{ steps.detect.outputs.scheme }}" \
               -sdk iphoneos \
+              -destination 'generic/platform=iOS' \
               -configuration Release \
               clean build \
               CONFIGURATION_BUILD_DIR=$PWD/build/Release-iphoneos
@@ -65,6 +66,7 @@ jobs:
               -project "${{ steps.detect.outputs.file }}" \
               -scheme "${{ steps.detect.outputs.scheme }}" \
               -sdk iphoneos \
+              -destination 'generic/platform=iOS' \
               -configuration Release \
               clean build \
               CONFIGURATION_BUILD_DIR=$PWD/build/Release-iphoneos

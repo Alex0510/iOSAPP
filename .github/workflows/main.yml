@@ -11,35 +11,45 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      # 拉取仓库源码
+      # 拉取源码
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 检测项目类型 & 获取 Scheme 名称
+      # 检测项目和 scheme
       - name: Detect project and scheme
         id: detect
         run: |
-          # 检测 .xcworkspace 或 .xcodeproj
-          if ls *.xcworkspace 1> /dev/null 2>&1; then
+          # 找到 .xcworkspace 或 .xcodeproj
+          workspace=$(find . -maxdepth 1 -name "*.xcworkspace" | head -n 1)
+          project=$(find . -maxdepth 1 -name "*.xcodeproj" | head -n 1)
+
+          if [ -n "$workspace" ]; then
             echo "type=workspace" >> $GITHUB_OUTPUT
-            echo "file=$(ls *.xcworkspace | head -n 1)" >> $GITHUB_OUTPUT
-          elif ls *.xcodeproj 1> /dev/null 2>&1; then
+            echo "file=$workspace" >> $GITHUB_OUTPUT
+          elif [ -n "$project" ]; then
             echo "type=project" >> $GITHUB_OUTPUT
-            echo "file=$(ls *.xcodeproj | head -n 1)" >> $GITHUB_OUTPUT
+            echo "file=$project" >> $GITHUB_OUTPUT
           else
-            echo "❌ 没找到 Xcode 工程文件"
+            echo "❌ 没找到 Xcode 工程文件 (.xcworkspace 或 .xcodeproj)"
             exit 1
           fi
 
           # 自动获取第一个 Scheme
-          scheme=$(xcodebuild -list -json | jq -r '.project.schemes[0]')
-          if [ "$scheme" = "null" ]; then
-            scheme=$(xcodebuild -list -json | jq -r '.workspace.schemes[0]')
+          if [ -n "$workspace" ]; then
+            scheme=$(xcodebuild -list -json -workspace "$workspace" | jq -r '.workspace.schemes[0]')
+          else
+            scheme=$(xcodebuild -list -json -project "$project" | jq -r '.project.schemes[0]')
           fi
+
+          if [ -z "$scheme" ] || [ "$scheme" = "null" ]; then
+            echo "❌ 没有找到 scheme"
+            exit 1
+          fi
+
           echo "scheme=$scheme" >> $GITHUB_OUTPUT
           echo "✅ 检测到 Scheme: $scheme"
 
-      # 使用 Xcode 编译源码，输出 .app
+      # 编译 .app
       - name: Build .app
         run: |
           if [ "${{ steps.detect.outputs.type }}" = "workspace" ]; then
@@ -69,7 +79,7 @@ jobs:
           zip -r App.ipa Payload
           rm -rf Payload
 
-      # 上传 ipa 作为 artifact
+      # 上传 ipa
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:

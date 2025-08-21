@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Debug-iphoneos/Collections.build/Objects-normal/arm64/Collections-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Debug-iphoneos/Collections.build/Objects-normal/arm64/Collections-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Debug-iphoneos/Collections.build/Objects-normal/arm64/Collections-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Debug-iphoneos/Collections.build/Objects-normal/arm64/Collections-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-collections/Sources/Collections/Collections.swift" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Debug-iphoneos/Collections.build/Objects-normal/arm64/Collections-a78c890f7126ccfc9a739c69ce9edbfb.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Debug-iphoneos/Collections.build/Objects-normal/arm64/Collections-a78c890f7126ccfc9a739c69ce9edbfb.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Debug-iphoneos/Collections.build/Objects-normal/arm64/Collections-a78c890f7126ccfc9a739c69ce9edbfb.dia",
+    "index-unit-output-path" : "/swift-collections.build/Debug-iphoneos/Collections.build/Objects-normal/arm64/Collections-a78c890f7126ccfc9a739c69ce9edbfb.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Debug-iphoneos/Collections.build/Objects-normal/arm64/Collections-a78c890f7126ccfc9a739c69ce9edbfb.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Debug-iphoneos/Collections.build/Objects-normal/arm64/Collections-a78c890f7126ccfc9a739c69ce9edbfb.o",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Debug-iphoneos/Collections.build/Objects-normal/arm64/Collections-a78c890f7126ccfc9a739c69ce9edbfb.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Debug-iphoneos/Collections.build/Objects-normal/arm64/Collections-a78c890f7126ccfc9a739c69ce9edbfb~partial.swiftmodule"
+  }
+}

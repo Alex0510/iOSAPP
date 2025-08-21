@@ -8,7 +8,7 @@ import SwiftUI
 // 主视图，包含标签页导航
 struct MainView: View {
     // 下载状态管理对象
-    @StateObject var dvm = Downloads.this
+    @StateObject var dvm = Downloads.shared
     // 选中的标签页索引
     @State private var selectedTab = 0
     
@@ -36,7 +36,7 @@ struct MainView: View {
                 .tabItem {
                     // 设置下载标签页的标签、图标，并显示正在运行的任务数量徽章
                     Label("Download", systemImage: "arrow.down.circle.fill")
-                        .badge(dvm.runningTaskCount)
+                        .badge(dvm.requests.filter { $0.runtime.status == .downloading }.count)
                 }
                 .tag(2)
         }

@@ -56,7 +56,7 @@ struct PackageView: View {
             }
 
             // 如果下载已完成
-            if Downloads.this.isCompleted(for: request) {
+            if Downloads.shared.isCompleted(for: request) {
                 // 定义一个列表分区
                 Section {
                     // 创建一个安装按钮
@@ -112,7 +112,7 @@ struct PackageView: View {
                     case .stopped:
                         // 下载停止时显示继续下载按钮
                         Button("Continue Download") {
-                            Downloads.this.resume(requestID: request.id)
+                            Downloads.shared.resume(request.id)
                         }
                     case .downloading,
                          .pending:
@@ -172,8 +172,8 @@ struct PackageView: View {
             Section {
                 // 创建删除按钮
                 Button("Delete") {
-                    // 删除下载请求并关闭当前视图
-                    Downloads.this.delete(request: request)
+                    // 删除下载请求
+                    Downloads.shared.delete(request: request)
                     dismiss()
                 }
                 .foregroundStyle(.red)  // 设置按钮文本为红色

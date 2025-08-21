@@ -54,6 +54,7 @@
 		859DF6082E55A5D500F0702E /* ApplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 859DF6072E55A5D500F0702E /* ApplePackage */; };
 		859DF63F2E55D13B00F0702E /* ApplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 859DF63E2E55D13B00F0702E /* ApplePackage */; };
 		859DF6422E55D17200F0702E /* ApplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 859DF6412E55D17200F0702E /* ApplePackage */; };
+		85D327C92E5723FA000F2613 /* VersionQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D327C82E5723FA000F2613 /* VersionQueryService.swift */; };
 		ModernDS001 /* ModernDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ModernDS002 /* ModernDesignSystem.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		859A3D522E5487930037231D /* appstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstore.png; sourceTree = "<group>"; };
 		859A3D532E5487930037231D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		859A3D542E5487930037231D /* playstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playstore.png; sourceTree = "<group>"; };
+		85D327C82E5723FA000F2613 /* VersionQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionQueryService.swift; sourceTree = "<group>"; };
 		ModernDS002 /* ModernDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernDesignSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,6 +255,7 @@
 				50D44D272C3F946600CF6A69 /* SearchView.swift */,
 				50D44D422C3FA6DC00CF6A69 /* ProductView.swift */,
 				50D44D402C3FA6CC00CF6A69 /* ArchivePreviewView.swift */,
+				85D327C82E5723FA000F2613 /* VersionQueryService.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				506367A92C423D2700634EEA /* Downloads+Report.swift in Sources */,
 				5095BD282C4233E7000EA1F6 /* AddDownloadView.swift in Sources */,
 				506367A72C423CE900634EEA /* MD5.swift in Sources */,
+				85D327C92E5723FA000F2613 /* VersionQueryService.swift in Sources */,
 				50D44D262C3F946100CF6A69 /* AccountView.swift in Sources */,
 				5095BD2A2C423442000EA1F6 /* SimpleProgress.swift in Sources */,
 				50D0C8BA2C401AD600538F49 /* Installer+TLS.swift in Sources */,
@@ -576,6 +580,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.pxx917144686.APP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.8;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -607,6 +614,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.pxx917144686.APP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.8;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -14,7 +14,7 @@ private let valueEncoder = JSONEncoder()
 // JSON解码器实例
 private let valueDecoder = JSONDecoder()
 // 配置文件存储目录
-private let configDir = documentsDirectory
+private let configDir = APP.documentsDirectory
     .appendingPathComponent("Config")
 
 // 文件存储实现类，遵循PersistProvider协议
@@ -85,7 +85,7 @@ struct Persist<Value: Codable> {
     }
 }
 
-// 可发布持久化属性包装器，结合了@Published和@Persist的功能
+// 持久化属性包装器，结合了@Published和@Persist的功能
 @propertyWrapper
 struct PublishedPersist<Value: Codable> {
     // 内部使用@Persist存储值

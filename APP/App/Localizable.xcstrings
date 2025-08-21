@@ -200,10 +200,22 @@
         }
       }
     },
+    "Apple ID 认证" : {
+
+    },
+    "Apple ID 集成" : {
+
+    },
     "appleID 认证" : {
 
     },
     "appleID 集成" : {
+
+    },
+    "AppleID 集成" : {
+
+    },
+    "AppleID认证" : {
 
     },
     "APP详情" : {
@@ -615,6 +627,7 @@
       }
     },
     "MD5 mismatch" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -629,18 +642,6 @@
           }
         }
       }
-    },
-    "Muffin 认证" : {
-
-    },
-    "Muffin 集成" : {
-
-    },
-    "MuffinStore 集成" : {
-
-    },
-    "Muffin认证" : {
-
     },
     "Package" : {
       "localizations" : {
@@ -1082,9 +1083,6 @@
         }
       }
     },
-    "Version mismatch" : {
-
-    },
     "We will store your account and password on disk without encryption. Please do not connect your device to untrusted hardware or use this app on a open system like macOS." : {
       "localizations" : {
         "en" : {
@@ -1297,7 +1295,7 @@
     "请使用您的 Apple ID 登录" : {
 
     },
-    "请完成Muffin认证以继续" : {
+    "请完成AppleID认证以继续" : {
 
     },
     "请求下载" : {

@@ -1,10 +1,11 @@
 // 导入 SwiftUI 框架
 import SwiftUI
+import Foundation
 
 // 下载视图结构体
 struct DownloadView: View {
     // 使用 @StateObject 修饰下载视图模型，确保在视图生命周期内保持单例
-    @StateObject var vm = Downloads.this
+    @StateObject var vm = Downloads.shared
 
     // 视图主体内容
     var body: some View {
@@ -16,7 +17,9 @@ struct DownloadView: View {
                 .navigationTitle("Download")
         }
         // 设置导航视图样式为堆栈样式
+#if !os(macOS)
         .navigationViewStyle(.stack)
+#endif
     }
 
     // 内容视图
@@ -86,7 +89,7 @@ struct DownloadView: View {
                     case .stopped:
                         // 创建恢复按钮，点击后恢复下载
                         Button {
-                            vm.resume(requestID: req.id)
+                            vm.resume(req.id)
                         } label: {
                             Label("Resume", systemImage: "play.fill")
                         }
@@ -94,7 +97,7 @@ struct DownloadView: View {
                         // 原代码存在拼写错误，"Puase" 应改为 "Pause"
                         // 创建暂停按钮，点击后暂停下载
                         Button {
-                            vm.suspend(requestID: req.id)
+                            vm.suspend(req.id)
                         } label: {
                             Label("Pause", systemImage: "stop.fill")
                         }

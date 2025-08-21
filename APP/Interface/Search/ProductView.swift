@@ -13,32 +13,57 @@ struct ProductView: View {
     let archive: iTunesResponse.iTunesArchive
     // 地区代码
     let region: String
-
     // 账户状态管理对象
     @StateObject var vm = AppStore.this
-    // 下载状态管理对象
-    @StateObject var dvm = Downloads.this
+    // 下载管理器
+    @StateObject var dvm = Downloads.shared
+    // 版本查询服务
+    private let versionService = VersionQueryService.shared
+    // @StateObject var versionService = VersionQueryService.shared
     // 版本管理相关状态
     @State private var showingVersionSelector = false
     @State private var versions: [VersionModels.AppVersion] = []
     @State private var loadingVersions = false
     @State private var versionError: String?
-    @State private var versionCache: [String: VersionModels.VersionFetchResponse] = [:]
+    // 移除本地缓存，使用VersionQueryService的内置缓存[:]
     
     // MARK: - Version Manager (Merged from VersionManager.swift)
     private func fetchVersions(for request: VersionModels.VersionFetchRequest, account: AppStore.Account) async throws -> VersionModels.VersionFetchResponse {
-        let cacheKey = "\(request.appId)_\(request.region)"
-        
-        // 检查缓存
-        if !request.forceRefresh, let cached = versionCache[cacheKey] {
-            let cacheAge = Date().timeIntervalSince(cached.fetchTime)
-            if cacheAge < 3600 { // 1小时缓存
-                return cached
+        // 使用VersionQueryService查询版本信息
+        return try await withCheckedThrowingContinuation { continuation in
+            versionService.queryVersions(appId: request.appId) { result in
+                // 检查查询是否成功
+                guard result.success else {
+                    let errorMessage = result.error ?? "版本查询失败"
+                    let error = NSError(domain: "VersionQuery", code: -1, userInfo: [NSLocalizedDescriptionKey: errorMessage])
+                    continuation.resume(throwing: error)
+                    return
+                }
+                
+                // 转换结果格式
+                let versions = result.versions.map { versionInfo in
+                    VersionModels.AppVersion(
+                        id: versionInfo.id,
+                        appId: request.appId,
+                        versionString: versionInfo.version,
+                        buildNumber: nil,
+                        releaseDate: nil,
+                        fileSize: versionInfo.fileSize,
+                        isLatest: false,
+                        releaseNotes: versionInfo.releaseNotes,
+                        minimumOSVersion: nil
+                    )
+                }
+                
+                let response = VersionModels.VersionFetchResponse(
+                    appId: request.appId,
+                    versions: versions,
+                    fromCache: false
+                )
+                
+                continuation.resume(returning: response)
             }
         }
-        
-        // TODO: 实现真实的版本信息获取逻辑
-        throw VersionError.downloadFailed("许可证获取功能暂未实现")
     }
 
     // 初始化方法

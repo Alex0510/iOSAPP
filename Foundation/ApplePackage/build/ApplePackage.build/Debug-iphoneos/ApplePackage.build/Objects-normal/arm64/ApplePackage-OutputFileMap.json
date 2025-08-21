@@ -1,0 +1,228 @@
+{
+  "" : {
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/ApplePackage.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/ApplePackage~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Commands/Authenticate.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Authenticate.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Authenticate.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Authenticate.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Authenticate.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Authenticate.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Authenticate.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Authenticate.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Authenticate~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Commands/Download.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Download.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Download.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Download.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Download.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Download.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Download.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Download.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Download~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Commands/Purchase.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Purchase.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Purchase.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Purchase.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Purchase.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Purchase.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Purchase.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Purchase.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Purchase~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Commands/Search.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Search.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Search.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Search.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Search.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Search.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Search.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Search.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/Search~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Networking/HTTPClient.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPClient.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPClient.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPClient.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPClient.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPClient.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPClient.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPClient.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPClient~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Networking/HTTPDownloadClient.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPDownloadClient.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPDownloadClient.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPDownloadClient.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPDownloadClient.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPDownloadClient.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPDownloadClient.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPDownloadClient.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPDownloadClient~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Networking/HTTPEndpoint.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPEndpoint.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPEndpoint.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPEndpoint.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPEndpoint.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPEndpoint.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPEndpoint.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPEndpoint.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPEndpoint~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Networking/HTTPMethod.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPMethod.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPMethod.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPMethod.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPMethod.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPMethod.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPMethod.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPMethod.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPMethod~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Networking/HTTPPayload.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPPayload.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPPayload.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPPayload.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPPayload.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPPayload.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPPayload.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPPayload.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPPayload~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Networking/HTTPRequest.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPRequest.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPRequest.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPRequest.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPRequest.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPRequest.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPRequest.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPRequest.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPRequest~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Networking/HTTPResponse.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPResponse.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPResponse.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPResponse.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPResponse.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPResponse.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPResponse.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPResponse.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/HTTPResponse~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Signature/SignatureClient.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/SignatureClient.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/SignatureClient.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/SignatureClient.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/SignatureClient.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/SignatureClient.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/SignatureClient.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/SignatureClient.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/SignatureClient~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Store/StoreClient.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreClient.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreClient.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreClient.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreClient.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreClient.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreClient.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreClient.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreClient~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Store/StoreEndpoint+Enhanced.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint+Enhanced.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint+Enhanced.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint+Enhanced.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint+Enhanced.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint+Enhanced.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint+Enhanced.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint+Enhanced.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint+Enhanced~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Store/StoreEndpoint.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreEndpoint~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Store/StoreRequest.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreRequest.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreRequest.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreRequest.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreRequest.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreRequest.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreRequest.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreRequest.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreRequest~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/Store/StoreResponse.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreResponse.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreResponse.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreResponse.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreResponse.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreResponse.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreResponse.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreResponse.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/StoreResponse~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/iTunes/iTunesClient.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesClient.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesClient.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesClient.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesClient.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesClient.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesClient.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesClient.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesClient~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/iTunes/iTunesEndpoint.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesEndpoint.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesEndpoint.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesEndpoint.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesEndpoint.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesEndpoint.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesEndpoint.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesEndpoint.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesEndpoint~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/iTunes/iTunesRequest.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesRequest.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesRequest.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesRequest.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesRequest.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesRequest.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesRequest.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesRequest.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesRequest~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/Sources/ApplePackage/iTunes/iTunesResponse.swift" : {
+    "const-values" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesResponse.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesResponse.d",
+    "diagnostics" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesResponse.dia",
+    "index-unit-output-path" : "/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesResponse.o",
+    "llvm-bc" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesResponse.bc",
+    "object" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesResponse.o",
+    "swift-dependencies" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesResponse.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage/build/ApplePackage.build/Debug-iphoneos/ApplePackage.build/Objects-normal/arm64/iTunesResponse~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "" : {
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_NIODataStructures-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_NIODataStructures-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_NIODataStructures-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_NIODataStructures-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/Sources/_NIODataStructures/Heap.swift" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/Heap.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/Heap.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/Heap.dia",
+    "index-unit-output-path" : "/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/Heap.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/Heap.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/Heap.o",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/Heap.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/Heap~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/Sources/_NIODataStructures/PriorityQueue.swift" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/PriorityQueue.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/PriorityQueue.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/PriorityQueue.dia",
+    "index-unit-output-path" : "/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/PriorityQueue.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/PriorityQueue.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/PriorityQueue.o",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/PriorityQueue.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/PriorityQueue~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/Sources/_NIODataStructures/_TinyArray.swift" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_TinyArray.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_TinyArray.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_TinyArray.dia",
+    "index-unit-output-path" : "/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_TinyArray.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_TinyArray.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_TinyArray.o",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_TinyArray.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_TinyArray~partial.swiftmodule"
+  }
+}

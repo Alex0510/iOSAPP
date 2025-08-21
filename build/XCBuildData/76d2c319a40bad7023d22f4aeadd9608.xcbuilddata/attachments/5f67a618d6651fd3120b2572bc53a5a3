@@ -1,0 +1,38 @@
+{
+  "" : {
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyCodable-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyCodable-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyCodable-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyCodable-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/Sources/AnyCodable/AnyCodable.swift" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyCodable.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyCodable.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyCodable.dia",
+    "index-unit-output-path" : "/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyCodable.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyCodable.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyCodable.o",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyCodable.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyCodable~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/Sources/AnyCodable/AnyDecodable.swift" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyDecodable.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyDecodable.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyDecodable.dia",
+    "index-unit-output-path" : "/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyDecodable.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyDecodable.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyDecodable.o",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyDecodable.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyDecodable~partial.swiftmodule"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/Sources/AnyCodable/AnyEncodable.swift" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyEncodable.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyEncodable.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyEncodable.dia",
+    "index-unit-output-path" : "/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyEncodable.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyEncodable.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyEncodable.o",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyEncodable.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/AnyCodable/build/AnyCodable.build/Debug-iphoneos/AnyCodable.build/Objects-normal/arm64/AnyEncodable~partial.swiftmodule"
+  }
+}

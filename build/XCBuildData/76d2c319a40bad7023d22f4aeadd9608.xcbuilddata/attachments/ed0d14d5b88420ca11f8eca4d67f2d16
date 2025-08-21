@@ -1,0 +1,4 @@
+module FLEX {
+umbrella header "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/FLEX/Classes/Headers/FLEX.h"
+export *
+}

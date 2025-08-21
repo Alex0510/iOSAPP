@@ -24,7 +24,7 @@ class ArchivePreviewMuffinIntegrationManager: ObservableObject {
     }
 }
 
-// APP预览视图，显示APP的基本信息并支持版本管理和Muffin集成
+// APP预览视图
 struct ArchivePreviewView: View {
     // 要显示的APP归档信息
     let archive: iTunesResponse.iTunesArchive
@@ -34,7 +34,7 @@ struct ArchivePreviewView: View {
     @State private var isLoadingVersions = false
     @State private var versionError: String?
     @State private var showVersionSelector = false
-        // Muffin集成状态
+    // AppleID集成状态
     @StateObject private var muffinManager = ArchivePreviewMuffinIntegrationManager()
     @State private var showMuffinAuth = false
     
@@ -101,8 +101,7 @@ struct ArchivePreviewView: View {
         }
     }
     
-    // MARK: - Version Management
-    
+    // MARK: - Version Management    
     private func loadVersions() {
         guard !isLoadingVersions else { return }
         
@@ -136,8 +135,7 @@ struct ArchivePreviewView: View {
         throw NSError(domain: "VersionFetch", code: -1, userInfo: [NSLocalizedDescriptionKey: "版本获取功能尚未实现"])
     }
     
-    // MARK: - UI Components
-    
+    // MARK: - UI Components    
     private var versionSelectorView: some View {
         NavigationView {
             VStack {
@@ -197,7 +195,7 @@ struct ArchivePreviewView: View {
                         .font(.system(size: 60))
                         .foregroundColor(.blue)
                     
-                    Text("Muffin 集成")
+                    Text("Apple ID 集成")
                         .font(.title2)
                         .fontWeight(.bold)
                     
@@ -291,7 +289,7 @@ struct ArchivePreviewView: View {
                 .padding(.bottom, 32)
             }
             .padding(.horizontal, 24)
-            .navigationTitle("Muffin 认证")
+            .navigationTitle("Apple ID 认证")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

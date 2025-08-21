@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/console-kit/build/console-kit.build/Debug-iphoneos/ConsoleKit.build/Objects-normal/arm64/ConsoleKit-master.dia",
+    "emit-module-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/console-kit/build/console-kit.build/Debug-iphoneos/ConsoleKit.build/Objects-normal/arm64/ConsoleKit-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/console-kit/build/console-kit.build/Debug-iphoneos/ConsoleKit.build/Objects-normal/arm64/ConsoleKit-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/console-kit/build/console-kit.build/Debug-iphoneos/ConsoleKit.build/Objects-normal/arm64/ConsoleKit-master.swiftdeps"
+  },
+  "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/console-kit/Sources/ConsoleKit/Exports.swift" : {
+    "const-values" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/console-kit/build/console-kit.build/Debug-iphoneos/ConsoleKit.build/Objects-normal/arm64/Exports.swiftconstvalues",
+    "dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/console-kit/build/console-kit.build/Debug-iphoneos/ConsoleKit.build/Objects-normal/arm64/Exports.d",
+    "diagnostics" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/console-kit/build/console-kit.build/Debug-iphoneos/ConsoleKit.build/Objects-normal/arm64/Exports.dia",
+    "index-unit-output-path" : "/console-kit.build/Debug-iphoneos/ConsoleKit.build/Objects-normal/arm64/Exports.o",
+    "llvm-bc" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/console-kit/build/console-kit.build/Debug-iphoneos/ConsoleKit.build/Objects-normal/arm64/Exports.bc",
+    "object" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/console-kit/build/console-kit.build/Debug-iphoneos/ConsoleKit.build/Objects-normal/arm64/Exports.o",
+    "swift-dependencies" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/console-kit/build/console-kit.build/Debug-iphoneos/ConsoleKit.build/Objects-normal/arm64/Exports.swiftdeps",
+    "swiftmodule" : "/Users/pxx917144686/Library/Developer/Xcode/DerivedData/APP-ckdyxjrwfygzlkfqweexjxsmufln/SourcePackages/checkouts/console-kit/build/console-kit.build/Debug-iphoneos/ConsoleKit.build/Objects-normal/arm64/Exports~partial.swiftmodule"
+  }
+}

@@ -95,14 +95,51 @@ extension Downloads.Request {
         var speed: String = ""
         // 下载进度百分比
         var percent: Double = 0
-        // 错误信息，可选字符串类型
+        // 错误信息
         var error: String? = nil
+        // 本地文件路径（下载完成后）
+        var localPath: String? = nil
+        // 进度观察者（不参与编码）
+        var progressObservation: NSKeyValueObservation? = nil
 
-        // 根据进度百分比生成 Progress 对象
+        // 计算属性，返回 Progress 对象
         var progress: Progress {
             let p = Progress(totalUnitCount: 100)
             p.completedUnitCount = Int64(percent * 100)
             return p
+        }
+        
+        // 自定义编码，排除不需要持久化的属性
+        enum CodingKeys: String, CodingKey {
+            case status, speed, percent, error, localPath
+        }
+        
+        func encode(to encoder: Encoder) throws {
+            var container = encoder.container(keyedBy: CodingKeys.self)
+            try container.encode(status, forKey: .status)
+            try container.encode(speed, forKey: .speed)
+            try container.encode(percent, forKey: .percent)
+            try container.encodeIfPresent(error, forKey: .error)
+            try container.encodeIfPresent(localPath, forKey: .localPath)
+        }
+        
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            status = try container.decode(Status.self, forKey: .status)
+            speed = try container.decode(String.self, forKey: .speed)
+            percent = try container.decode(Double.self, forKey: .percent)
+            error = try container.decodeIfPresent(String.self, forKey: .error)
+            localPath = try container.decodeIfPresent(String.self, forKey: .localPath)
+            progressObservation = nil // 不从持久化数据中恢复
+        }
+        
+        init() {
+            status = .stopped
+            speed = ""
+            percent = 0
+            error = nil
+            localPath = nil
+            progressObservation = nil
         }
     }
 }

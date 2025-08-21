@@ -8,9 +8,9 @@ import Foundation
 struct MuffinAuthenticationCard: View {
     var body: some View {
         VStack {
-            Text("Muffin认证")
+            Text("AppleID认证")
                 .font(.headline)
-            Text("请完成Muffin认证以继续")
+            Text("请完成AppleID认证以继续")
                 .font(.caption)
                 .foregroundColor(.secondary)
         }
@@ -43,7 +43,7 @@ struct AddDownloadView: View {
     // 账户状态管理对象
     @StateObject var avm = AppStore.this
     // 下载状态管理对象
-    @StateObject var dvm = Downloads.this
+    @StateObject var dvm = Downloads.shared
     // MuffinStore集成管理器
     // MuffinIntegrationManager 已移至 SearchView.swift
     // @StateObject var muffinManager = MuffinIntegrationManager.shared
@@ -59,11 +59,11 @@ struct AddDownloadView: View {
     var body: some View {
         // 使用List布局展示界面元素
         List {
-            // MuffinStore集成状态卡片
+            // AppleID集成状态卡片
             Section {
                 MuffinAuthenticationCard()
             } header: {
-                Text("MuffinStore 集成")
+                Text("AppleID 集成")
             } footer: {
                 Text("登录后可下载应用的历史版本，获得更多下载选项。")
             }

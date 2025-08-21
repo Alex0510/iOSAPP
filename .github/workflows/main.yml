@@ -1,4 +1,4 @@
-name: Build iOS IPA
+name: Auto Build iOS IPA
 
 on:
   push:
@@ -11,32 +11,57 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      # 拉取仓库源码
+      # 拉取源码
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 使用 Xcode 编译源码，输出 .app
+      # 检测项目类型 (.xcworkspace or .xcodeproj)
+      - name: Detect project type
+        id: detect
+        run: |
+          if ls *.xcworkspace 1> /dev/null 2>&1; then
+            echo "type=workspace" >> $GITHUB_OUTPUT
+            echo "name=$(ls *.xcworkspace | head -n 1)" >> $GITHUB_OUTPUT
+          elif ls *.xcodeproj 1> /dev/null 2>&1; then
+            echo "type=project" >> $GITHUB_OUTPUT
+            echo "name=$(ls *.xcodeproj | head -n 1)" >> $GITHUB_OUTPUT
+          else
+            echo "❌ 没找到 Xcode 项目文件 (.xcworkspace 或 .xcodeproj)"
+            exit 1
+          fi
+
+      # 使用 xcodebuild 编译源码
       - name: Build .app
         run: |
-          xcodebuild \
-            -workspace YourApp.xcworkspace \   # 如果是 .xcodeproj 就改成 -project
-            -scheme YourApp \
-            -sdk iphoneos \
-            -configuration Release \
-            clean build \
-            CONFIGURATION_BUILD_DIR=$PWD/build/Release-iphoneos
+          if [ "${{ steps.detect.outputs.type }}" = "workspace" ]; then
+            xcodebuild \
+              -workspace "${{ steps.detect.outputs.name }}" \
+              -scheme YourApp \
+              -sdk iphoneos \
+              -configuration Release \
+              clean build \
+              CONFIGURATION_BUILD_DIR=$PWD/build/Release-iphoneos
+          else
+            xcodebuild \
+              -project "${{ steps.detect.outputs.name }}" \
+              -scheme YourApp \
+              -sdk iphoneos \
+              -configuration Release \
+              clean build \
+              CONFIGURATION_BUILD_DIR=$PWD/build/Release-iphoneos
+          fi
 
       # 打包 .app -> .ipa
       - name: Package IPA
         run: |
           mkdir Payload
-          cp -r build/Release-iphoneos/YourApp.app Payload/
-          zip -r YourApp.ipa Payload
+          cp -r build/Release-iphoneos/*.app Payload/
+          zip -r App.ipa Payload
           rm -rf Payload
 
-      # 上传 ipa 作为 artifact
+      # 上传 ipa
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: YourApp-ipa
-          path: YourApp.ipa
+          name: iOS-App-ipa
+          path: App.ipa

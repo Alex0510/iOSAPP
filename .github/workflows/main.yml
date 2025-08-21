@@ -8,82 +8,63 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
-
+    runs-on: macos-14   # 当前 GitHub 提供的环境，支持 Xcode 15.x
     steps:
-      # 拉取源码
+      # 拉取仓库代码
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 检测项目和 scheme
-      - name: Detect project and scheme
+      # 选择 Xcode 版本 (这里是 15.4，对应 iOS 17 SDK)
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app
+
+      # 自动识别是 .xcworkspace 还是 .xcodeproj
+      - name: Detect Xcode Project
         id: detect
         run: |
-          # 找到 .xcworkspace 或 .xcodeproj
-          workspace=$(find . -maxdepth 1 -name "*.xcworkspace" | head -n 1)
-          project=$(find . -maxdepth 1 -name "*.xcodeproj" | head -n 1)
-
-          if [ -n "$workspace" ]; then
-            echo "type=workspace" >> $GITHUB_OUTPUT
-            echo "file=$workspace" >> $GITHUB_OUTPUT
-          elif [ -n "$project" ]; then
-            echo "type=project" >> $GITHUB_OUTPUT
-            echo "file=$project" >> $GITHUB_OUTPUT
+          if ls *.xcworkspace 1> /dev/null 2>&1; then
+            echo "type=workspace" >> $GITHUB_ENV
+            echo "file=$(ls *.xcworkspace | head -n 1)" >> $GITHUB_ENV
+          elif ls *.xcodeproj 1> /dev/null 2>&1; then
+            echo "type=project" >> $GITHUB_ENV
+            echo "file=$(ls *.xcodeproj | head -n 1)" >> $GITHUB_ENV
           else
-            echo "❌ 没找到 Xcode 工程文件 (.xcworkspace 或 .xcodeproj)"
+            echo "❌ 没找到 .xcodeproj 或 .xcworkspace"
             exit 1
           fi
-
-          # 自动获取第一个 Scheme
-          if [ -n "$workspace" ]; then
-            scheme=$(xcodebuild -list -json -workspace "$workspace" | jq -r '.workspace.schemes[0]')
-          else
-            scheme=$(xcodebuild -list -json -project "$project" | jq -r '.project.schemes[0]')
-          fi
-
-          if [ -z "$scheme" ] || [ "$scheme" = "null" ]; then
-            echo "❌ 没有找到 scheme"
-            exit 1
-          fi
-
-          echo "scheme=$scheme" >> $GITHUB_OUTPUT
-          echo "✅ 检测到 Scheme: $scheme"
 
       # 编译 .app
       - name: Build .app
         run: |
-          if [ "${{ steps.detect.outputs.type }}" = "workspace" ]; then
+          if [ "${{ env.type }}" = "workspace" ]; then
             xcodebuild \
-              -workspace "${{ steps.detect.outputs.file }}" \
-              -scheme "${{ steps.detect.outputs.scheme }}" \
+              -workspace "${{ env.file }}" \
+              -scheme APP \
               -sdk iphoneos \
-              -destination 'generic/platform=iOS' \
               -configuration Release \
               clean build \
               CONFIGURATION_BUILD_DIR=$PWD/build/Release-iphoneos
           else
             xcodebuild \
-              -project "${{ steps.detect.outputs.file }}" \
-              -scheme "${{ steps.detect.outputs.scheme }}" \
+              -project "${{ env.file }}" \
+              -scheme APP \
               -sdk iphoneos \
-              -destination 'generic/platform=iOS' \
               -configuration Release \
               clean build \
               CONFIGURATION_BUILD_DIR=$PWD/build/Release-iphoneos
           fi
 
-      # 打包 .app -> .ipa
+      # 打包成 IPA
       - name: Package IPA
         run: |
           mkdir Payload
-          app_path=$(ls build/Release-iphoneos/*.app | head -n 1)
-          cp -r "$app_path" Payload/
-          zip -r App.ipa Payload
+          cp -r build/Release-iphoneos/APP.app Payload/
+          zip -r APP.ipa Payload
           rm -rf Payload
 
-      # 上传 ipa
+      # 上传 IPA 到 Artifact
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: iOS-App-ipa
-          path: App.ipa
+          name: APP-ipa
+          path: APP.ipa

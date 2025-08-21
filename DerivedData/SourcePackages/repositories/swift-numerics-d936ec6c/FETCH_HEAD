@@ -227,6 +227,8 @@ d86286fc8bf0f7fddda6718c37a16a11297654c9	not-for-merge	'refs/pull/321/head' of h
 e74905c6d50aeb9615dd5928f79b5cc280159b56	not-for-merge	'refs/pull/324/head' of https://github.com/apple/swift-numerics
 5bfe9e16ce296a3d82f99db148f2d26d4a0d178a	not-for-merge	'refs/pull/325/head' of https://github.com/apple/swift-numerics
 e46ddfe0878e599c1aac55226cd5e2ddc5ae7205	not-for-merge	'refs/pull/326/head' of https://github.com/apple/swift-numerics
+cbdb286797ae83e9a9a0edf1ebfb60f6b4c4babf	not-for-merge	'refs/pull/328/head' of https://github.com/apple/swift-numerics
+dfc94238ff880945600f565de9e74123c69ba3de	not-for-merge	'refs/pull/328/merge' of https://github.com/apple/swift-numerics
 67528d4a5398e3f420a02ef1be4501d72275d2f4	not-for-merge	'refs/pull/33/head' of https://github.com/apple/swift-numerics
 6ac520ac59ec177fd45deafaac4b7c53b6ed9b30	not-for-merge	'refs/pull/34/head' of https://github.com/apple/swift-numerics
 0cc4950453ab30d7015585f3dfc2eaf2579c7e19	not-for-merge	'refs/pull/36/head' of https://github.com/apple/swift-numerics

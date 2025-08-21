@@ -225,12 +225,14 @@ b9f6557e644853b0e1e5412f681052eb8bc64358	not-for-merge	'refs/pull/348/head' of h
 0f367b91b895068ce27b1061c4f807292c498266	not-for-merge	'refs/pull/352/head' of https://github.com/apple/swift-async-algorithms
 c343cdba2c34dc059be2849ddd78264ce9a06b06	not-for-merge	'refs/pull/352/merge' of https://github.com/apple/swift-async-algorithms
 dd890c870c832f53316629c88df6925401a68ceb	not-for-merge	'refs/pull/354/head' of https://github.com/apple/swift-async-algorithms
-ed15653c0eec7db618950ceeaab3862404955e36	not-for-merge	'refs/pull/357/head' of https://github.com/apple/swift-async-algorithms
-47e46e7b7367d7e92a31f75fa1934a1a6453694b	not-for-merge	'refs/pull/357/merge' of https://github.com/apple/swift-async-algorithms
+607ff7b1e2825fdbce198ac6dca934498c7e4042	not-for-merge	'refs/pull/357/head' of https://github.com/apple/swift-async-algorithms
+b3a814024f5c2b74dfcba9f55a787d0fe58e763d	not-for-merge	'refs/pull/357/merge' of https://github.com/apple/swift-async-algorithms
 9371d6997ae2021426e00109d02fad845a7c2c8e	not-for-merge	'refs/pull/359/head' of https://github.com/apple/swift-async-algorithms
 26ed6937fd190cdd37aa417b2a367f47cbfb6d57	not-for-merge	'refs/pull/36/head' of https://github.com/apple/swift-async-algorithms
 f1f576240a2792af270e517320b900a0e58321c3	not-for-merge	'refs/pull/360/head' of https://github.com/apple/swift-async-algorithms
 047f914032b73244c262c7a5313971e2ab409ce9	not-for-merge	'refs/pull/360/merge' of https://github.com/apple/swift-async-algorithms
+cc85fd90106e5873fd1cafeafe9ad69b60ff1bc3	not-for-merge	'refs/pull/362/head' of https://github.com/apple/swift-async-algorithms
+17fffc237d77b89a9d2f6e83b8bec06a952c1c3a	not-for-merge	'refs/pull/362/merge' of https://github.com/apple/swift-async-algorithms
 bb706cb11a2674a5f7e29adc489c61646f7871e5	not-for-merge	'refs/pull/37/head' of https://github.com/apple/swift-async-algorithms
 718443670c24b370e1bdbf8b5bf1683f3a580eae	not-for-merge	'refs/pull/38/head' of https://github.com/apple/swift-async-algorithms
 992ebe4d1d42a90bb68ac240d773fbf99675bdf2	not-for-merge	'refs/pull/39/head' of https://github.com/apple/swift-async-algorithms

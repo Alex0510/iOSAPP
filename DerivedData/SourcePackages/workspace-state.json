@@ -24,20 +24,6 @@
       {
         "basedOn" : null,
         "packageRef" : {
-          "identity" : "applepackage",
-          "kind" : "fileSystem",
-          "location" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage",
-          "name" : "ApplePackage"
-        },
-        "state" : {
-          "name" : "fileSystem",
-          "path" : "/Users/pxx917144686/Downloads/APP123/Foundation/ApplePackage"
-        },
-        "subpath" : "applepackage"
-      },
-      {
-        "basedOn" : null,
-        "packageRef" : {
           "identity" : "async-http-client",
           "kind" : "remoteSourceControl",
           "location" : "https://github.com/swift-server/async-http-client.git",
@@ -119,20 +105,6 @@
           "name" : "sourceControlCheckout"
         },
         "subpath" : "console-kit"
-      },
-      {
-        "basedOn" : null,
-        "packageRef" : {
-          "identity" : "digger",
-          "kind" : "fileSystem",
-          "location" : "/Users/pxx917144686/Downloads/APP123/Foundation/Digger",
-          "name" : "Digger"
-        },
-        "state" : {
-          "name" : "fileSystem",
-          "path" : "/Users/pxx917144686/Downloads/APP123/Foundation/Digger"
-        },
-        "subpath" : "digger"
       },
       {
         "basedOn" : null,
@@ -620,8 +592,8 @@
         },
         "state" : {
           "checkoutState" : {
-            "revision" : "02b6abe5f6eef7e3cbd5f247c5cc24e246efcfe0",
-            "version" : "0.9.19"
+            "revision" : "a3f5c2bae0f04b0bce9ef3c4ba6bd1031a0564c4",
+            "version" : "0.9.17"
           },
           "name" : "sourceControlCheckout"
         },

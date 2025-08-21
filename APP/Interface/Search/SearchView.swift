@@ -324,17 +324,66 @@ class MuffinIntegrationManager: ObservableObject {
     private let storeClient = MuffinStoreClient()
     private let ipaTool = MuffinIPATool()
     
+    init() {
+        // 检查AppStore中是否已有账户登录
+        checkAppStoreAuthentication()
+    }
+    
+    /// 检查AppStore中的账户状态
+    private func checkAppStoreAuthentication() {
+        let appStore = AppStore.this
+        // 如果AppStore中有账户，则认为已认证
+        if !appStore.accounts.isEmpty {
+            DispatchQueue.main.async {
+                self.isAuthenticated = true
+                self.authenticationError = nil
+            }
+        }
+    }
+    
     func authenticate(email: String, password: String) async {
-        do {
-            try await storeClient.authenticate(email: email, password: password)
+        // 首先检查AppStore中是否已有此账户
+        let appStore = AppStore.this
+        if let existingAccount = appStore.accounts.first(where: { $0.email.lowercased() == email.lowercased() }) {
             await MainActor.run {
-                self.isAuthenticated = storeClient.isAuthenticated
-                self.authenticationError = storeClient.authenticationError
+                self.isAuthenticated = true
+                self.authenticationError = nil
+            }
+            return
+        }
+        
+        // 如果AppStore中没有此账户，尝试使用ApplePackage进行认证
+        do {
+            let authenticator = ApplePackage.Authenticator(email: email)
+            let storeResponse = try authenticator.authenticate(password: password, code: nil)
+            
+            // 保存到AppStore
+            let savedAccount = appStore.save(email: email, password: password, account: storeResponse)
+            
+            await MainActor.run {
+                self.isAuthenticated = true
+                self.authenticationError = nil
             }
         } catch {
             await MainActor.run {
                 self.authenticationError = error.localizedDescription
                 self.isAuthenticated = false
+            }
+        }
+    }
+    
+    /// 使用AppStore中已有的账户进行认证
+    func authenticateWithExistingAccount() {
+        let appStore = AppStore.this
+        if !appStore.accounts.isEmpty {
+            DispatchQueue.main.async {
+                self.isAuthenticated = true
+                self.authenticationError = nil
+            }
+        } else {
+            DispatchQueue.main.async {
+                self.isAuthenticated = false
+                self.authenticationError = "请先在账户页面添加Apple ID账户"
             }
         }
     }
@@ -1810,14 +1859,12 @@ struct SearchView: View {
             }
         }
     }
-    
-    // MARK: - Muffin Integration UI Components
-    
+      
     var muffinIntegrationCard: some View {
         ModernCard(style: .filled, padding: Spacing.lg) {
             VStack(alignment: .leading, spacing: Spacing.md) {
                 HStack {
-                    Label("Muffin 集成", systemImage: "app.badge")
+                    Label("appleID 集成", systemImage: "app.badge")
                         .font(.titleMedium)
                         .foregroundColor(.primaryAccent)
                     
@@ -1875,7 +1922,7 @@ struct SearchView: View {
                         .font(.system(size: 60))
                         .foregroundColor(.primaryAccent)
                     
-                    Text("Muffin 认证")
+                    Text("appleID 认证")
                         .font(.titleLarge)
                         .fontWeight(.bold)
                     
@@ -1932,8 +1979,28 @@ struct SearchView: View {
                 // Action Buttons
                 VStack(spacing: Spacing.md) {
                     if !muffinManager.isAuthenticated {
+                        // 使用现有账户按钮
                         Button {
-                            // TODO: 实现真实的认证流程
+                            muffinManager.authenticateWithExistingAccount()
+                        } label: {
+                            HStack {
+                                Image(systemName: "person.2.circle")
+                                Text("使用现有账户")
+                            }
+                            .font(.labelLarge)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, Spacing.md)
+                            .background(
+                                RoundedRectangle(cornerRadius: CornerRadius.md)
+                                    .fill(Color.green)
+                            )
+                        }
+                        .buttonStyle(.plain)
+                        
+                        // 新增账户按钮
+                        Button {
+                            // TODO: 实现新账户登录界面
                             Task {
                                 do {
                                     // 需要实现真实的用户输入界面和认证逻辑
@@ -1948,17 +2015,17 @@ struct SearchView: View {
                                     ProgressView()
                                         .scaleEffect(0.8)
                                 } else {
-                                    Image(systemName: "person.circle")
+                                    Image(systemName: "person.circle.fill")
                                 }
-                                Text("使用 Apple ID 登录")
+                                Text("添加新的 Apple ID")
                             }
                             .font(.labelLarge)
-                            .foregroundColor(.white)
+                            .foregroundColor(.primaryAccent)
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, Spacing.md)
                             .background(
                                 RoundedRectangle(cornerRadius: CornerRadius.md)
-                                    .fill(Color.primaryAccent)
+                                    .stroke(Color.primaryAccent, lineWidth: 1)
                             )
                         }
                         .buttonStyle(.plain)
@@ -1983,7 +2050,7 @@ struct SearchView: View {
                 .padding(.bottom, Spacing.xl)
             }
             .padding(.horizontal, Spacing.lg)
-            .navigationTitle("Muffin 认证")
+            .navigationTitle("appleID 认证")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

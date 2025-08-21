@@ -1,0 +1,42 @@
+name: Build iOS IPA
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      # 拉取仓库源码
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 使用 Xcode 编译源码，输出 .app
+      - name: Build .app
+        run: |
+          xcodebuild \
+            -workspace YourApp.xcworkspace \   # 如果是 .xcodeproj 就改成 -project
+            -scheme YourApp \
+            -sdk iphoneos \
+            -configuration Release \
+            clean build \
+            CONFIGURATION_BUILD_DIR=$PWD/build/Release-iphoneos
+
+      # 打包 .app -> .ipa
+      - name: Package IPA
+        run: |
+          mkdir Payload
+          cp -r build/Release-iphoneos/YourApp.app Payload/
+          zip -r YourApp.ipa Payload
+          rm -rf Payload
+
+      # 上传 ipa 作为 artifact
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: YourApp-ipa
+          path: YourApp.ipa
